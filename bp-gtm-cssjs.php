@@ -64,7 +64,7 @@ function bp_gtm_autocomplete_js() {
     global $bp;
     // Include the autocomplete JS for required pages only inside GTM component
     if ((!empty($bp->action_variables[1]) && $bp->action_variables[0]) && ('projects' == $bp->action_variables[0] || 'tasks' == $bp->action_variables[0] ) && ('create' == $bp->action_variables[1] || 'edit' == $bp->action_variables[1])) {
-        wp_enqueue_script('bp-gtm-autocomplete', WP_PLUGIN_URL . '/bp-gtm-system/_inc/autocomplete/autocomplete.js', array('jquery'));
+        wp_enqueue_script('bp-gtm-autocomplete', plugins_url('/_inc/autocomplete/autocomplete.js', __FILE__), array('jquery'));
     }
 }
 
