@@ -653,7 +653,7 @@ jQuery(document).ready(function() {
     jQuery('#gtm_form .delete_file_discussion').click(function(){
         var textarea = jQuery(this).parent().parent().find('textarea');
         var file_id = textarea.attr('id').substring(12);
-        console.log(textarea)
+        if(confirm('Do you really want to delete this file?')){
         jQuery.ajax({
             type: 'GET',
             url: ajaxurl,
@@ -666,7 +666,7 @@ jQuery(document).ready(function() {
                      textarea.end().hide().remove();
                 }
             }
-        });
+        });}
     });
     
 })
