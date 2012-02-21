@@ -364,3 +364,15 @@ function bp_gtm_done_item() {
     return true;
 }
 
+add_action('wp_ajax_bp_update_description', 'bp_update_description');
+function bp_update_description(){
+    global $wpdb, $bp;
+    $return = $wpdb->query($wpdb->prepare("UPDATE {$bp->gtm->table_files} SET description=%s WHERE id=%d", $_GET['description'], $_GET['file_id']));
+    die($return->last_error);
+}
+add_action('wp_ajax_bp_delete_file', 'bp_delete_file');
+function bp_delete_file(){
+    global $wpdb, $bp;
+    $return = $wpdb->query($wpdb->prepare("DELETE FROM {$bp->gtm->table_files} WHERE id=%d", $_GET['file_id']));
+    die($return->last_error);
+}

@@ -15,12 +15,12 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
 <?php do_action('bp_before_gtm_task_create'); ?>
 
 <p>
-    <label for="task_name">* <?php _e('Task name', 'bp_gtm'); ?></label>
+    <label for="task_name"><?php _e('Task name', 'bp_gtm'); ?><span class="required">*</span></label>
     <input type="text" name="task_name" id="task_name" value="" />
 </p>
 
 <p>
-    <label for="task_desc">* <?php _e('Task description', 'bp_gtm') ?></label>
+    <label for="task_desc"><?php _e('Task description', 'bp_gtm') ?></label>
     <?php
     if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
         wp_editor(
@@ -37,7 +37,7 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
     <?php } ?>
 </p>
 
-<label for="task_resp"><?php _e('Who is responsible for this task execution or has access if its hidden?', 'bp_gtm'); ?></label>
+<label for="task_resp"><?php _e('Who is responsible for this task execution?', 'bp_gtm'); ?><span class="required">*</span></label>
 <?php bp_gtm_filter_users($bp_gtm['theme']) ?>
 <?php do_action('bp_gtm_task_extra_fields_editable') ?>
 
@@ -45,34 +45,34 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
 
 <label for="task_deadline">* <?php _e('Task Deadline', 'bp_gtm'); ?></label>
 <input type="text" name="task_deadline" id="task_deadline" value="" readonly="readonly"/>
+<?php do_action('bp_after_gtm_task_create', $bp_gtm); ?>
+<div class="clear-both"></div>
 <div id="tasks_tax">
     <div class="float">
-        <label for="tags"><?php _e('Task Tags', 'bp_gtm');
-_e('(comma separated)', 'bp_gtm'); ?></label>
+        <label for="tags"><?php _e('Task Tags', 'bp_gtm'); _e('(comma separated)', 'bp_gtm'); ?></label>
+        <p><?php _e('You can add tags to your task. If you want to add more tags, separate it with comma.', 'bp_gtm');?></p>
         <ul class="first acfb-holder">
-            <div class="paste-tags"></div>
+            
             <div class="clear-both"></div>
             <li>
                 <input type="text" name="task_tags" class="tags" id="tags" />
             </li>
+            <div class="paste-tags"></div>
         </ul>
     </div>
     <div class="right">
-        <label for="cats"><?php _e('Task Categories', 'bp_gtm');
-echo ' ';
-_e('(comma separated)', 'bp_gtm'); ?></label>
+        <label for="cats"><?php _e('Task Categories', 'bp_gtm');_e('(comma separated)', 'bp_gtm'); ?></label>
+        <p><?php _e('You can select or add categories for your task. If you want to add more categories, separate it with comma.', 'bp_gtm');?></p>
         <ul class="second acfb-holder">
-            <div class="paste-cats"></div>
+            
             <div class="clear-both"></div>
             <li>
                 <input type="text" name="task_cats" class="cats" id="cats" />
             </li>
+            <div class="paste-cats"></div>
         </ul>
     </div>
 </div>  
-<?php do_action('bp_after_gtm_task_create', $bp_gtm); ?>
-
-
 <input type="hidden" name="task_creator" value="<?php echo $bp->loggedin_user->id; ?>" />
 <input type="hidden" name="task_parent" value="<?php echo $parent_task ?>" />
 <input type="hidden" name="task_group" value="<?php bp_current_group_id() ?>" />

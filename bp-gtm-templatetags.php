@@ -312,6 +312,19 @@ function bp_gtm_terms_for_project($project_id, $tax) {
         echo sprintf(__('<p>There are no tags to display. Create them <a href="%s" target="_blank">here</a></p>', 'bp_gtm'), $link);
     }
 }
+function bp_gtm_get_cats_for_group(){
+    $terms = BP_GTM_Taxon::get_terms_in_group(bp_get_current_group_id(), 'cat');
+    if (count($terms) > 0) {
+        echo '<div class="group_cats">';
+        foreach ($terms as $tag) {
+            if ($tag['name'] != '') {
+                ($tag['used'] == '1') ? $used = 'checked="checked"' : $used = '';
+                echo '<p><input name="project_cats[]" type="checkbox" ' . $used . ' value="' . stripslashes($tag['name']) . '" /> <span>' . stripslashes($tag['name']) . '</span></p>';
+            }
+        }
+        echo '</div>';
+    }
+}
 
 function bp_gtm_project_list_settings() {
     $options = array();
