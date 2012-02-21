@@ -32,7 +32,8 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
     <div id="projects_tax">
         <div class="float">
             <label for="project_tags"><?php _e('Project Tags', 'bp_gtm');
-    _e(' (comma separated)', 'bp_gtm'); ?></label>
+    _e(' (comma separated)', 'bp_gtm');
+    ?></label>
             <p><?php _e('You can add tags to your project. If you want to add more tags, separate it with comma.', 'bp_gtm'); ?></p>
             <ul class="first acfb-holder">
                 <div class="clear-both"></div>
@@ -47,7 +48,8 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
 
         <div class="right">
             <label for="project_cats"><?php _e('Project Categories', 'bp_gtm');
-_e(' (comma separated)', 'bp_gtm'); ?></label>
+_e(' (comma separated)', 'bp_gtm');
+?></label>
             <p><?php _e('You can select or add categories for your project. If you want to add more categories, separate it with comma.', 'bp_gtm'); ?></p>
             <ul class="second acfb-holder">
 
@@ -55,8 +57,8 @@ _e(' (comma separated)', 'bp_gtm'); ?></label>
                 <li>
                     <input type="text" name="project_cats" class="cats" id="cats" />
                 </li>
+                <div class="paste-cats"></div>
             </ul>
-            <div class="paste-cats"></div>
 <?php bp_gtm_terms_for_project($project[0]->id, 'cat'); ?>
 
         </div>

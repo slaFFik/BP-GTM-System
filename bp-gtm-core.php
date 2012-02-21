@@ -249,7 +249,6 @@ class BP_GTM extends BP_Group_Extension {
         // save tags if any
         $this->bp_gtm_insert_term($_POST['project_tag_names'], $_POST['project_tags'], $project_id, 'tag');
 
-
         // save categories if any
         $this->bp_gtm_insert_term($_POST['project_cats'], $_POST['project_cats'], $project_id, 'cat');
 
@@ -537,13 +536,15 @@ class BP_GTM extends BP_Group_Extension {
      */
     protected function bp_gtm_insert_term($term_manes, $task_tags, $project_id = 0, $term_type='tag', $task_id = 0, $existing_terms = array()) {
         global $wpdb, $bp;
-        if(empty($term_manes)) $term_manes= array();
-        if(empty($task_tags)) $task_tags= array();
+        
+//        var_dump($task_tags, $term_manes);die;
         if(!is_array($term_manes) && !is_array($task_tags)){
         $tags = $this->bp_gtm_split_string($term_manes, $task_tags); /// split terms into array of values
         if (!empty($existing_terms)) {
             $tags = array_unique(array_merge($tags, $existing_terms));
         }} else {
+            if(empty($term_manes)) $term_manes= array();
+            if(empty($task_tags)) $task_tags= array();
             $tags = array_unique(array_merge($term_manes, $task_tags));
         }
         if (!empty($tags)) {
