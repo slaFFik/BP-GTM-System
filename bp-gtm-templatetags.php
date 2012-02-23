@@ -205,7 +205,7 @@ function bp_gtm_task_project($parent_task = 0, $task = null) {
     if ($parent_task == 0) :
         ?>
         <p>
-            <label for="task_project">* <?php _e('Project that this task corresponds to', 'bp_gtm'); ?></label>
+            <label for="task_project"><?php _e('Project that this task corresponds to', 'bp_gtm'); ?></label>
             <?php
             $projects = bp_gtm_get_projects(bp_get_current_group_id(), 'alpha');
             if (count($projects) > 0) :
@@ -310,6 +310,19 @@ function bp_gtm_terms_for_project($project_id, $tax) {
     } else {
         $link = $gtm_link . 'terms';
         echo sprintf(__('<p>There are no tags to display. Create them <a href="%s" target="_blank">here</a></p>', 'bp_gtm'), $link);
+    }
+}
+function bp_gtm_get_cats_for_group(){
+    $terms = BP_GTM_Taxon::get_terms_in_group(bp_get_current_group_id(), 'cat');
+    if (count($terms) > 0) {
+        echo '<div class="group_cats">';
+        foreach ($terms as $tag) {
+            if ($tag['name'] != '') {
+                ($tag['used'] == '1') ? $used = 'checked="checked"' : $used = '';
+                echo '<p><input name="project_cats[]" type="checkbox" ' . $used . ' value="' . stripslashes($tag['name']) . '" /> <span>' . stripslashes($tag['name']) . '</span></p>';
+            }
+        }
+        echo '</div>';
     }
 }
 

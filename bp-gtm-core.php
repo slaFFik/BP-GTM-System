@@ -249,15 +249,14 @@ class BP_GTM extends BP_Group_Extension {
         // save tags if any
         $this->bp_gtm_insert_term($_POST['project_tag_names'], $_POST['project_tags'], $project_id, 'tag');
 
-
         // save categories if any
-        $this->bp_gtm_insert_term($_POST['project_cat_names'], $_POST['project_cats'], $project_id, 'cat');
+        $this->bp_gtm_insert_term($_POST['project_cats'], $_POST['project_cats'], $project_id, 'cat');
 
 
 
         // display user message
         if ($inserted_project != null) {
-            foreach ($resps as $resp) {
+            foreach ($_POST['user_ids'] as $resp) {
                 $resp_id = bp_core_get_userid($resp);
                 bp_core_add_notification($project_id, $resp_id, 'gtm', 'project_created', $_POST['project_group']);
             }
@@ -325,7 +324,7 @@ class BP_GTM extends BP_Group_Extension {
 
         // update cats
         $updated_cat = $wpdb->query($wpdb->prepare("DELETE FROM " . $bp->gtm->table_taxon . " WHERE `project_id` = %d AND `taxon` = 'cat'", $project_id));
-        $this->bp_gtm_insert_term($_POST['project_cat_names'], $_POST['project_cats'], $project_id, 'cat', 0, $_POST['project_old_cats']);
+        $this->bp_gtm_insert_term($_POST['project_old_cats'], $_POST['project_cats'], $project_id, 'cat', 0);
 
 
         // display user message
@@ -399,7 +398,7 @@ class BP_GTM extends BP_Group_Extension {
         // save tags if any
         // get rid of unnecessary chars in tags' list
         $this->bp_gtm_insert_term($_POST['task_tag_names'], $_POST['task_tags'], $project_id, 'tag', $task_id);
-        $this->bp_gtm_insert_term($_POST['task_cat_names'], $_POST['task_cats'], $project_id, 'cat', $task_id);
+        $this->bp_gtm_insert_term($_POST['project_cats'], $_POST['project_cats'], $project_id, 'cat', $task_id);
 
         // display user message
         if ($inserted_task != null) {
@@ -472,11 +471,11 @@ class BP_GTM extends BP_Group_Extension {
         // delete old tags
         $updated_tag = $wpdb->query($wpdb->prepare("DELETE FROM " . $bp->gtm->table_taxon . " WHERE `task_id` = %d AND `taxon` = 'tag'", $task_id));
         // get rid of unnecessary chars in existed tags
-        $this->bp_gtm_insert_term($_POST['task_tag_names'], $_POST['task_tags'], $project_id, 'tag', $task_id, $_POST['task_old_tags']);
+        $this->bp_gtm_insert_term($_POST['task_old_tags'], $_POST['project_cats'], $project_id, 'tag', $task_id);
 
         // update cats
         $updated_cat = $wpdb->query($wpdb->prepare("DELETE FROM " . $bp->gtm->table_taxon . " WHERE `task_id` = %d AND `taxon` = 'cat'", $task_id));
-        $this->bp_gtm_insert_term($_POST['task_cat_names'], $_POST['task_cats'], $project_id, 'cat', $task_id, $_POST['task_old_cats']);
+        $this->bp_gtm_insert_term($_POST['task_old_cats'], $_POST['project_cats'], $project_id, 'cat', $task_id);
 
 
         // display user message
@@ -528,18 +527,25 @@ class BP_GTM extends BP_Group_Extension {
 
     /**
      * Insert new term (tag or category in database)
-     * @param string $term_manes string with terms adding by ajax autocompliter
-     * @param type $task_tags string comma separated new terms
+     * @param string/array $term_manes string with terms adding by ajax autocompliter
+     * @param string/array $task_tags string comma separated new terms
      * @param int $project_id id of terms project 
      * @param int $group_id  id of terms group 
      * @param string $term_type this is tag or cat
      * @return bool true if insert are success and false if not
      */
-    protected function bp_gtm_insert_term($term_manes, $task_tags, $project_id, $term_type, $task_id = 0, $existing_terms = array()) {
+    protected function bp_gtm_insert_term($term_manes, $task_tags, $project_id = 0, $term_type='tag', $task_id = 0, $existing_terms = array()) {
         global $wpdb, $bp;
+        
+//        var_dump($task_tags, $term_manes);die;
+        if(!is_array($term_manes) && !is_array($task_tags)){
         $tags = $this->bp_gtm_split_string($term_manes, $task_tags); /// split terms into array of values
         if (!empty($existing_terms)) {
             $tags = array_unique(array_merge($tags, $existing_terms));
+        }} else {
+            if(empty($term_manes)) $term_manes= array();
+            if(empty($task_tags)) $task_tags= array();
+            $tags = array_unique(array_merge($term_manes, $task_tags));
         }
         if (!empty($tags)) {
             foreach ($tags as $tag) {

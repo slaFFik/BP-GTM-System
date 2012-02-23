@@ -81,31 +81,33 @@ function bp_gtm_datepicker_js() {
 // Add global styles and autocomplete if required
 function bp_gtm_add_css() {
     global $bp;
-    if ($bp->current_component == $bp->groups->slug && !empty($bp->action_variables[1]) && ('create' == $bp->action_variables[1] || 'edit' == $bp->action_variables[1]))
+//    if ((!empty($bp->action_variables[1]) && $bp->action_variables[0]) && ('projects' == $bp->action_variables[0] || 'tasks' == $bp->action_variables[0] ) && ('create' == $bp->action_variables[1] || 'edit' == $bp->action_variables[1])) 
         wp_enqueue_style('bp-gtm-autocomplete', plugins_url('_inc/autocomplete.css', __FILE__));
 
 
-    wp_enqueue_style('bp-gtm-style', plugins_url('_inc/style.css', __FILE__));
-}
-
-// Admin page styles
-function bp_gtm_admin_css() {
-    wp_enqueue_style('bp-gtm-admin-style', plugins_url('_inc/admin-styles.css', __FILE__));
-}
-
-function gtm_js_date_format($php_date_str = '') {
-    $js_date_str = 'M d, yy';
-    $dates = array(
-        'F j, Y' => 'MM d, yy',
-        'Y/m/d' => 'yy/mm/dd',
-        'm/d/Y' => 'mm/dd/yy',
-        'd/m/Y' => 'dd/mm/yy',
-        'd.m.Y' => 'dd.mm.yy'
-    );
-
-    if (isset($dates[$php_date_str])) {
-        $js_date_str = $dates[$php_date_str];
+        wp_enqueue_style('bp-gtm-style', plugins_url('_inc/style.css', __FILE__));
     }
 
-    return $js_date_str;
-}
+// Admin page styles
+    function bp_gtm_admin_css() {
+        wp_enqueue_style('bp-gtm-admin-style', plugins_url('_inc/admin-styles.css', __FILE__));
+    }
+
+    function gtm_js_date_format($php_date_str = '') {
+        $js_date_str = 'M d, yy';
+        $dates = array(
+            'F j, Y' => 'MM d, yy',
+            'Y/m/d' => 'yy/mm/dd',
+            'm/d/Y' => 'mm/dd/yy',
+            'd/m/Y' => 'dd/mm/yy',
+            'd.m.Y' => 'dd.mm.yy'
+        );
+
+        if (isset($dates[$php_date_str])) {
+            $js_date_str = $dates[$php_date_str];
+        }
+
+        return $js_date_str;
+    }
+
+    
