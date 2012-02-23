@@ -1187,7 +1187,7 @@ function bp_gtm_get_personal_filter_project_list() {
         return $tags;
     }
     function bp_gtm_get_task_cats($task_id){
-         $tags = '';
+        $tags = '';
         $terms = BP_GTM_Taxon::get_terms_4task(bp_get_current_group_id(), $task_id, 'tag');
         if (!empty($terms)) {
                 foreach ($terms as $tag) {

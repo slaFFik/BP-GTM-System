@@ -37,11 +37,11 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
     <?php } ?>
 </p>
 
-<label for="task_resp"><?php _e('Who is responsible for this task execution?', 'bp_gtm'); ?><span class="required">*</span></label>
+<label for="task_resp"><?php _e('Who is responsible for this task execution?', 'bp_gtm'); ?></label>
 <?php bp_gtm_filter_users($bp_gtm['theme']) ?>
 <?php do_action('bp_gtm_task_extra_fields_editable') ?>
 
-<?php $count_tasks = bp_gtm_task_project($parent_task); ?>
+<?php bp_gtm_task_project($parent_task); ?>
 
 <label for="task_deadline"><?php _e('Task Deadline', 'bp_gtm'); ?><span class="required">*</span></label>
 <input type="text" name="task_deadline" id="task_deadline" value="" readonly="readonly"/>
