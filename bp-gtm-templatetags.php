@@ -1198,4 +1198,4 @@ function bp_gtm_get_personal_filter_project_list() {
         }
         return $tags;
     }
-    ?>
+?>

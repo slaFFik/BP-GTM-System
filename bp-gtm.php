@@ -43,7 +43,7 @@ function bp_gtm_init(){
     $bp_gtm['label_gtm_system'] = __('ToDo','bp_gtm');
     $bp_gtm['label_assignments'] = __('Assignments','bp_gtm');
     
-    $bp_gtm['def_g_role'] = 5;
+    $bp_gtm['def_g_role'] = 4;
     $bp_gtm['def_admin_g_role'] = 1;
     
     add_option('bp_gtm', $bp_gtm, '', 'yes');
