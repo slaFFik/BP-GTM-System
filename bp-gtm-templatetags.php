@@ -14,7 +14,7 @@ function bp_gtm_filter_users($resps = null) {
                 <?php while (bp_group_members()) : bp_group_the_member(); ?>
                     <?php $member = bp_get_member_user_login(); ?>
                     <li  <?php echo in_array($member, $check) ? 'class="red"' : ''; ?> ><input type="checkbox" name="user_ids[<?php esc_attr(bp_member_user_login()) ?>]" class="check-user" value="<?php esc_attr(bp_member_user_login()) ?>" <?php echo in_array($member, $check) ? 'checked="checked"' : ''; ?> />
-                            <?php bp_group_member_avatar_thumb(); ?>
+                        <?php bp_group_member_avatar_thumb(); ?>
                         <h5><?php echo $member; ?></h5>
                         <?php if (bp_is_active('friends')) : ?>
                             <div class="action">
@@ -235,9 +235,16 @@ function bp_gtm_task_project($parent_task = 0, $task = null) {
 function bp_gtm_term_task_edit_loop($task_id, $tax) {
     $terms = BP_GTM_Taxon::get_terms_4task(bp_get_current_group_id(), $task_id, $tax);
     if (count($terms) > 0) {
+        if($tax!='tag'){
         foreach ($terms as $tag) {
             ($tag['used'] == '1') ? $used = 'checked="checked"' : $used = '';
             echo '<input name="task_old_' . $tax . 's[]" type="checkbox" ' . $used . ' value="' . stripslashes($tag['name']) . '" /> ' . stripslashes($tag['name']) . '<br>';
+        }
+        } else {
+           foreach ($terms as $tag) {
+            if($tag['used'] == '1')
+             echo '<li class="resps-tab" id="un-tag"><span>' . stripslashes($tag['name']) . '</span> <span class="p">X</span></li>';
+        } 
         }
     } else {
         $link = 'terms';
@@ -299,20 +306,28 @@ function bp_gtm_get_responsibles($task_resp_id) {
 function bp_gtm_terms_for_project($project_id, $tax) {
     $terms = BP_GTM_Taxon::get_terms_4project(bp_get_current_group_id(), $project_id, $tax);
     if (count($terms) > 0) {
-        echo '<p>';
-        foreach ($terms as $tag) {
-            if ($tag['name'] != '') {
-                ($tag['used'] == '1') ? $used = 'checked="checked"' : $used = '';
-                echo '<input name="project_old_' . $tax . 's[]" type="checkbox" ' . $used . ' value="' . stripslashes($tag['name']) . '" /> ' . stripslashes($tag['name']) . '<br>';
+        if ($tax != 'tag') {
+            echo '<p>';
+            foreach ($terms as $tag) {
+                if ($tag['name'] != '') {
+                    ($tag['used'] == '1') ? $used = 'checked="checked"' : $used = '';
+                    echo '<input name="project_old_' . $tax . 's[]" type="checkbox" ' . $used . ' value="' . stripslashes($tag['name']) . '" /> ' . stripslashes($tag['name']) . '<br>';
+                }
+            }
+            echo '</p>';
+        } else {
+            foreach ($terms as $tag) {
+                if ($tag['used'] == '1')
+                    echo '<li class="resps-tab" id="un-tag"><span>' . stripslashes($tag['name']) . '</span> <span class="p">X</span></li>';
             }
         }
-        echo '</p>';
     } else {
         $link = $gtm_link . 'terms';
         echo sprintf(__('<p>There are no tags to display. Create them <a href="%s" target="_blank">here</a></p>', 'bp_gtm'), $link);
     }
 }
-function bp_gtm_get_cats_for_group(){
+
+function bp_gtm_get_cats_for_group() {
     $terms = BP_GTM_Taxon::get_terms_in_group(bp_get_current_group_id(), 'cat');
     if (count($terms) > 0) {
         echo '<div class="group_cats">';
@@ -1139,22 +1154,48 @@ function bp_gtm_get_personal_filter_project_list() {
     echo bp_core_fetch_avatar($arg);
     echo bp_core_get_userlink($arg['item_id']);
         ?></div>
-            <?php
-        }
+        <?php
+    }
 
-        function bp_gtm_get_format_date($date) {
-            $option = get_option('date_format');
-            return date_i18n($option, strtotime($date));
-        }
+    function bp_gtm_get_format_date($date) {
+        $option = get_option('date_format');
+        return date_i18n($option, strtotime($date));
+    }
 
-        function bp_gtm_format_date($date) {
-            echo bp_gtm_get_format_date($date);
-        }
+    function bp_gtm_format_date($date) {
+        echo bp_gtm_get_format_date($date);
+    }
 
-        function bp_gtm_view_disscuss_link($id, $gtm_link, $type) {
-            ?>
+    function bp_gtm_view_disscuss_link($id, $gtm_link, $type) {
+        ?>
         <a class="topic-title" href="<?php echo $gtm_link . $type . '/view/' . $id ?>" title="<?php _e('Permalink', 'bp_gtm') ?>">
             <?php echo bp_gtm_get_el_name_by_id($id, $type); ?>
         </a>
-    <?php }
+    <?php
+    }
+
+    function bp_gtm_get_project_cats($project_id) {
+        $tags = '';
+        $terms = BP_GTM_Taxon::get_terms_4project(bp_get_current_group_id(), $project_id, 'tag');
+        if (!empty($terms)) {
+                foreach ($terms as $tag) {
+                        if($tag['used'] == '1'){
+                        $tags .= '|'.stripslashes($tag['name']);
+                    }
+                }
+        }
+        return $tags;
+    }
+    function bp_gtm_get_task_cats($task_id){
+         $tags = '';
+        $terms = BP_GTM_Taxon::get_terms_4task(bp_get_current_group_id(), $task_id, 'tag');
+        if (!empty($terms)) {
+                foreach ($terms as $tag) {
+                        if($tag['used'] == '1'){
+                        $tags .= '|'.stripslashes($tag['name']);
+                    }
+                }
+        }
+        return $tags;
+    }
     ?>

@@ -46,10 +46,12 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
                 <li>
                     <input type="text" name="task_tags" class="tags" id="tags" />
                 </li>
+                <div class="clear-both"></div>
+                <?php bp_gtm_term_task_edit_loop($task[0]->id, 'tag'); ?>
                 <div class="paste-tags"></div>
             </ul>
 
-<?php bp_gtm_term_task_edit_loop($task[0]->id, 'tag'); ?>
+
 
         </div>
         <div class="right">
@@ -62,16 +64,17 @@ _e('(comma separated)', 'bp_gtm');
                 <li>
                     <input type="text" name="task_cats" class="tags" id="cats" />
                 </li>
+                <div class="clear-both"></div>
+                <?php bp_gtm_term_task_edit_loop($task[0]->id, 'cat'); ?>
                 <div class="paste-cats"></div>
 
             </ul>
-<?php bp_gtm_term_task_edit_loop($task[0]->id, 'cat'); ?>
 
         </div>
     </div>
     <input type="hidden" name="task_id" value="<?php echo $task[0]->id ?>" />
     <input type="hidden" name="task_group" value="<?php bp_current_group_id() ?>" />
-    <input type="hidden" name="task_tag_names" id="tag_names" value="" class="" />
+    <input type="hidden" name="task_tag_names" id="tag_names" value="" class="<?php echo bp_gtm_get_task_cats($task[0]->id)?>" />
     <input type="hidden" name="task_cat_names" id="cat_names" value="" class="" />
     <p>&nbsp;</p><div class="clear-both"></div><p>&nbsp;</p>
     <p><input type="submit" value="<?php _e('Update Task', 'bp_gtm') ?> &rarr;" id="save" name="editTask" /></p>

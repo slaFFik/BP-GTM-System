@@ -40,9 +40,11 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
                 <li>
                     <input type="text" name="project_tags" class="tags" id="tags" />
                 </li>
-            </ul>
+                <div class="clear-both"></div>
+                <?php bp_gtm_terms_for_project($project[0]->id, 'tag'); ?>
             <div class="paste-tags"></div>
-<?php bp_gtm_terms_for_project($project[0]->id, 'tag'); ?>
+            </ul>
+
 
         </div>
 
@@ -57,9 +59,11 @@ _e(' (comma separated)', 'bp_gtm');
                 <li>
                     <input type="text" name="project_cats" class="cats" id="cats" />
                 </li>
+                <div class="clear-both"></div>
+                <?php bp_gtm_terms_for_project($project[0]->id, 'cat'); ?>
                 <div class="paste-cats"></div>
             </ul>
-<?php bp_gtm_terms_for_project($project[0]->id, 'cat'); ?>
+
 
         </div>
     </div>
@@ -67,7 +71,7 @@ _e(' (comma separated)', 'bp_gtm');
     <input type="hidden" name="project_id" value="<?php echo $project[0]->id ?>" />
     <input type="hidden" name="project_group" value="<?php bp_current_group_id() ?>" />
     <input type="hidden" name="project_cat_names" id="cat_names" value="" class="" />
-    <input type="hidden" name="project_tag_names" id="tag_names" value="" class="" />
+    <input type="hidden" name="project_tag_names" id="tag_names" value="" class="<?php echo bp_gtm_get_project_cats($project[0]->id)?>" />
 
     <p>&nbsp;</p><div class="clear"></div>
     <p><input type="submit" value="<?php _e('Update Project', 'bp_gtm') ?> &rarr;" id="save" name="editProject" /></p>

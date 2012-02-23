@@ -471,7 +471,7 @@ class BP_GTM extends BP_Group_Extension {
         // delete old tags
         $updated_tag = $wpdb->query($wpdb->prepare("DELETE FROM " . $bp->gtm->table_taxon . " WHERE `task_id` = %d AND `taxon` = 'tag'", $task_id));
         // get rid of unnecessary chars in existed tags
-        $this->bp_gtm_insert_term($_POST['task_old_tags'], $_POST['project_cats'], $project_id, 'tag', $task_id);
+        $this->bp_gtm_insert_term($_POST['task_tag_names'], '', $project_id, 'tag', $task_id);
 
         // update cats
         $updated_cat = $wpdb->query($wpdb->prepare("DELETE FROM " . $bp->gtm->table_taxon . " WHERE `task_id` = %d AND `taxon` = 'cat'", $task_id));
@@ -536,8 +536,7 @@ class BP_GTM extends BP_Group_Extension {
      */
     protected function bp_gtm_insert_term($term_manes, $task_tags, $project_id = 0, $term_type='tag', $task_id = 0, $existing_terms = array()) {
         global $wpdb, $bp;
-        
-//        var_dump($task_tags, $term_manes);die;
+
         if(!is_array($term_manes) && !is_array($task_tags)){
         $tags = $this->bp_gtm_split_string($term_manes, $task_tags); /// split terms into array of values
         if (!empty($existing_terms)) {
