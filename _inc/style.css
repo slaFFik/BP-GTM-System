@@ -223,7 +223,7 @@ div#box{position:relative;padding:7px;border:1px solid #ededed;width:300px;borde
     font-size: 12px;
 }
 #gtm_form .item-list #th-title{
-    width: 35%;
+    width: 35% !important;
 }
 #gtm_form .item-list thead tr th{
     text-align: left;
