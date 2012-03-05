@@ -534,11 +534,20 @@ jQuery(document).ready(function() {
             e.preventDefault()
             paste_terms(project_tags_val, 'tags')
             project_tags.val('');
-            jQuery('#tag_names').addClass('|'+project_tags_val);
+            jQuery('#tag_names').addClass('|'+replace_coma(project_tags_val));
         } else if(e.which==13 && project_tags_val==''){
             e.preventDefault()
         }
     });
+    jQuery('#projects_tax [name="tags"]').click(function(){
+        var obj = jQuery(this).parent().find(':text');
+        var project_tags_val = obj.val();
+        paste_terms(project_tags_val, 'tags')
+        obj.val('');
+        jQuery('#tag_names').addClass('|'+replace_coma(project_tags_val));
+    });
+    
+    
     jQuery('#projects_tax .float .p, #tasks_tax .float .p').live('click', function(){
         var class_remove = jQuery(this).parent().find('span:first').text();
         jQuery(this).parent().remove();
@@ -552,11 +561,20 @@ jQuery(document).ready(function() {
             e.preventDefault();
             paste_cats(project_tags_val, 'cats')
             project_tags.val('');
-            jQuery('#cat_names').addClass('|'+project_tags_val);
+            jQuery('#cat_names').addClass('|'+replace_coma(project_tags_val));
         } else if(e.which==13 && project_tags_val==''){
             e.preventDefault()
         }
     });
+    jQuery('#projects_tax [name="cats"]').click(function(){
+        var obj = jQuery(this).parent().find(':text');
+        var project_tags_val = obj.val();
+        paste_cats(project_tags_val, 'cats')
+        obj.val('');
+        jQuery('#cat_names').addClass('|'+replace_coma(project_tags_val));
+    });
+    
+    
     jQuery('#projects_tax .right .p, #tasks_tax .right .p,').live('click', function(){
         var class_remove = jQuery(this).parent().find('span:first').text();
         jQuery(this).parent().remove();
@@ -591,7 +609,7 @@ jQuery(document).ready(function() {
             var terms = project_tags_val.split(',');
             for(var c in terms){
                 if(jQuery.trim(terms[c]))
-                    jQuery('<p><input type="checkbox" id="un-'+terms[c]+'" checked="checked"value="'+terms[c]+'"/><span class="text"></span></p>').find('.text').text(terms[c]).end().prependTo('#projects_tax .paste-'+block+', #tasks_tax .paste-'+block);
+                    jQuery('<p><input name="project_cats[]" type="checkbox" id="un-'+terms[c]+'" checked="checked" value="'+terms[c]+'"/><span class="text"></span></p>').find('.text').text(terms[c]).end().prependTo('#projects_tax .paste-'+block+', #tasks_tax .paste-'+block);
             }
         }
         //        console.log(jQuery('<span><input type="checkbox" id="un-'+project_tags_val+'" checked="checked" value="'+project_tags_val+'"/><span class="text"></span></span>').find('.text'))
@@ -654,19 +672,25 @@ jQuery(document).ready(function() {
         var textarea = jQuery(this).parent().parent().find('textarea');
         var file_id = textarea.attr('id').substring(12);
         if(confirm('Do you really want to delete this file?')){
-        jQuery.ajax({
-            type: 'GET',
-            url: ajaxurl,
-            data: {
-                file_id: file_id,
-                action: 'bp_delete_file'
-            },
-            success: function(data) {
-                if(!data){
-                     textarea.end().hide().remove();
+            jQuery.ajax({
+                type: 'GET',
+                url: ajaxurl,
+                data: {
+                    file_id: file_id,
+                    action: 'bp_delete_file'
+                },
+                success: function(data) {
+                    if(!data){
+                        textarea.end().hide().remove();
+                    }
                 }
-            }
-        });}
+            });
+        }
     });
+ function replace_coma(str){
+     return str.replace(/,/gi, '| ');
+     
+ }   
+    
     
 })

@@ -1012,7 +1012,7 @@ function bp_gtm_get_personal_filter_project_list() {
         $type_title = substr($type, 0, -1);
         if (bp_gtm_check_access($type_title . '_edit')) {
             ?>
-            <a href="<?php echo $gtm_link . $type . '/edit/' . $project_id ?>" title="<?php sprintf(_e('Edit this %s', 'bp_gtm'), $type_title); ?>"><img height="16" width="16" src="<?php echo WP_PLUGIN_URL . "/bp-gtm-system/_inc/images/edit.png" ?>" alt="<?php _e('Edit', 'bp_gtm') ?>" /></a>&nbsp;
+            <a href="<?php echo $gtm_link . $type . '/edit/' . $project_id ?>" title="<?php printf(__('Edit this %s', 'bp_gtm'), $type_title); ?>"><img height="16" width="16" src="<?php echo plugins_url("_inc/images/edit.png", __FILE__) ?>" alt="<?php _e('Edit', 'bp_gtm') ?>" /></a>&nbsp;
 
             <?php
         }
@@ -1021,7 +1021,7 @@ function bp_gtm_get_personal_filter_project_list() {
     function bp_gtm_view_link($project_id, $project_name, $gtm_link, $type) {
         if (bp_gtm_check_access($type . '_view')) {
             ?>
-            <a class="topic-title" href="<?php echo $gtm_link . $type . 's/view/' . $project_id ?>" title="<?php sprintf(_e('Permalink on %s\'s page', 'bp_gtm'), $type) ?>">
+            <a class="topic-title" href="<?php echo $gtm_link . $type . 's/view/' . $project_id ?>" title="<?php printf(__('Permalink on %s\'s page', 'bp_gtm'), $type) ?>">
                 <?php echo $project_name; ?>
             </a>
             <?php
@@ -1031,7 +1031,7 @@ function bp_gtm_get_personal_filter_project_list() {
     function bp_gtm_delete_task_link($task_id) {
         if (bp_gtm_check_access('task_delete')) {
             ?>
-            <a class="delete_me" id="<?php echo $task_id; ?>" href="#" title="<?php _e('Delete this task', 'bp_gtm'); ?>"><img height="16" width="16" src="<?php echo WP_PLUGIN_URL . "/bp-gtm-system/_inc/images/delete.png" ?>" alt="<?php _e('Delete', 'bp_gtm') ?>" /></a>&nbsp;
+            <a class="delete_me" id="<?php echo $task_id; ?>" href="#" title="<?php _e('Delete this task', 'bp_gtm'); ?>"><img height="16" width="16" src="<?php echo plugins_url("_inc/images/delete.png", __FILE__) ?>" alt="<?php _e('Delete', 'bp_gtm') ?>" /></a>&nbsp;
 
             <?php
         }
@@ -1087,10 +1087,10 @@ function bp_gtm_get_personal_filter_project_list() {
     }
 
     function bp_gtm_edit_button($project_id, $gtm_link, $type) {
-        if (bp_gtm_check_access($type . '_edit')) {
+        if (bp_gtm_check_access($type . '_edit')) { 
             ?>
 
-            <a class="button" href="<?php echo $gtm_link . $type . 's/edit/' . $project_id; ?>" title="<?php sprintf(_e('Edit this %s', 'bp_gtm'), $type); ?>"><?php _e('Edit', 'bp_gtm'); ?></a>
+            <a class="button" href="<?php echo $gtm_link . $type . 's/edit/' . $project_id; ?>" title="<?php printf(__('Edit this %s', 'bp_gtm'), $type); ?>"><?php _e('Edit', 'bp_gtm'); ?></a>
             <?php
         }
     }

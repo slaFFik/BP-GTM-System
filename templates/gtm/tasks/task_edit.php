@@ -44,7 +44,7 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
             <ul class="first acfb-holder">
                 <div class="clear-both"></div>
                 <li>
-                    <input type="text" name="task_tags" class="tags" id="tags" />
+                    <input type="text" name="task_tags" class="tags" id="tags" /><input type="button" name="tags" value="<?php _e('Add tag', 'bp_gtm');?>"/>
                 </li>
                 <div class="clear-both"></div>
                 <?php bp_gtm_term_task_edit_loop($task[0]->id, 'tag'); ?>
@@ -62,7 +62,7 @@ _e('(comma separated)', 'bp_gtm');
             <ul class="second acfb-holder">
                 <div class="clear-both"></div>
                 <li>
-                    <input type="text" name="task_cats" class="tags" id="cats" />
+                    <input type="text" name="task_cat" class="tags" id="cats" /><input type="button" name="cats" value="<?php _e('Add cat', 'bp_gtm');?>"/>
                 </li>
                 <div class="clear-both"></div>
                 <?php bp_gtm_term_task_edit_loop($task[0]->id, 'cat'); ?>

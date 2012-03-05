@@ -31,14 +31,14 @@ function bp_gtm_files_form($bp_gtm) {
                   </div>';
         echo '<div id="additional-file-info">
                     <div class="additional-file-info">
-                        <span>' . __('Allowed file types *', 'bp_gtm') . '</span>
+                        <span>' . __('Allowed file types', 'bp_gtm') . '</span>
                  ';
         foreach ($bp_gtm['files_types'] as $type) {
             echo '<span>.' . $type . '</span>';
         }
         echo '</div>';
         echo '<div class="additional-file-info">
-                            <span>' . __('Maximum size of uploaded file *', 'bp_gtm') . '</span>
+                            <span>' . __('Maximum size of uploaded file', 'bp_gtm') . '</span>
                             <span>' . round($bp_gtm['files_size'] / 1024, 2) . ' Mb</span>';
         echo '</div>
                    </div>';
@@ -211,7 +211,7 @@ function bp_gtm_discuss_file_link($file) {
     $date_format = get_option('date_format');
     $name = str_replace('/', '', substr($file->path, strrpos($file->path, '/'), strlen($file->path) - 1)); // what's the name
     $path = bp_gtm_file_path($file->path);
-    $user = bp_core_get_user_displayname($file->owner_id);
+    $user = bp_core_get_userlink($file->owner_id);
     return '<a href="' . $path . '">' . $name . '</a> Uploaded by 
         <span class="file_uploader">' . $user . '</span> at <span class="file_uploader">' . date($date_format, $file->date_uploaded) . '</span>
             <span class="edit_buttons"><span class="edit_description">' . __('Edit description', 'bp_gtm') . '</span>

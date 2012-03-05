@@ -250,8 +250,8 @@ class BP_GTM extends BP_Group_Extension {
         $this->bp_gtm_insert_term($_POST['project_tag_names'], $_POST['project_tags'], $project_id, 'tag');
 
         // save categories if any
-        $this->bp_gtm_insert_term($_POST['project_cats'], $_POST['project_cats'], $project_id, 'cat');
-
+        $this->bp_gtm_insert_term($_POST['project_old_cats'], $_POST['project_cats'], $project_id, 'cat');
+//        var_dump($_POST['project_old_cats'], $_POST['project_cats']);die;
 
 
         // display user message
@@ -325,7 +325,7 @@ class BP_GTM extends BP_Group_Extension {
         // update cats
         $updated_cat = $wpdb->query($wpdb->prepare("DELETE FROM " . $bp->gtm->table_taxon . " WHERE `project_id` = %d AND `taxon` = 'cat'", $project_id));
         $this->bp_gtm_insert_term($_POST['project_old_cats'], $_POST['project_cats'], $project_id, 'cat', 0);
-
+//var_dump($_POST['project_old_cats'], $_POST['project_cats']);die;
 
         // display user message
         if ($updated_project != null || $updated_cat != null || $updated_tag != null) {
@@ -398,7 +398,7 @@ class BP_GTM extends BP_Group_Extension {
         // save tags if any
         // get rid of unnecessary chars in tags' list
         $this->bp_gtm_insert_term($_POST['task_tag_names'], $_POST['task_tags'], $project_id, 'tag', $task_id);
-        $this->bp_gtm_insert_term($_POST['project_cats'], $_POST['project_cats'], $project_id, 'cat', $task_id);
+        $this->bp_gtm_insert_term($_POST['project_old_cats'], $_POST['project_cats'], $project_id, 'cat', $task_id);
 
         // display user message
         if ($inserted_task != null) {

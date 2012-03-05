@@ -516,3 +516,6 @@ able#personal tr th#th-postcount{
 #gtm_form .edit_buttons span {
     color: blue;
 }
+#gtm_form .tags,#gtm_form .cats {
+    width: 65%;
+}

@@ -227,10 +227,10 @@ function bp_gtm_ajax_autocomplete_results() {
 function bp_gtm_done_link($type, $elem_id, $el_type = false) {
     if (!empty($_GET['filter']) && $_GET['filter'] == 'done') {
         if (bp_gtm_check_access($el_type . '_undone'))
-            echo "<a class='undone_me' id='$elem_id' href='#' title='" . __('Mark as pending', 'bp_gtm') . "'><img height='16' width='16' src='" . WP_PLUGIN_URL . "/bp-gtm-system/_inc/images/undone.png" . "' alt='" . __('Undone', 'bp_gtm') . "' /></a>";
+            echo "<a class='undone_me' id='$elem_id' href='#' title='" . __('Mark as pending', 'bp_gtm') . "'><img height='16' width='16' src='" . plugins_url("_inc/images/undone.png", __FILE__) . "' alt='" . __('Undone', 'bp_gtm') . "' /></a>";
     }else {
         if (bp_gtm_check_access($el_type . '_done'))
-            echo "<a class='done_me' id='$elem_id' href='#' title='" . __('Mark as completed', 'bp_gtm') . "'><img height='16' width='16' src='" . WP_PLUGIN_URL . "/bp-gtm-system/_inc/images/done.png" . "' alt='" . __('Done', 'bp_gtm') . "' /></a>";
+            echo "<a class='done_me' id='$elem_id' href='#' title='" . __('Mark as completed', 'bp_gtm') . "'><img height='16' width='16' src='" . plugins_url("_inc/images/done.png", __FILE__)  . "' alt='" . __('Done', 'bp_gtm') . "' /></a>";
     }
 }
 
