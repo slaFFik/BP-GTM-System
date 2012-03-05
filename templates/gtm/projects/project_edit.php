@@ -73,7 +73,7 @@ _e(' (comma separated)', 'bp_gtm');
     <input type="hidden" name="project_cat_names" id="cat_names" value="" class="" />
     <input type="hidden" name="project_tag_names" id="tag_names" value="" class="<?php echo bp_gtm_get_project_cats($project[0]->id)?>" />
 
-    <p>&nbsp;</p><div class="clear"></div>
+    <p>&nbsp;</p><div class="clear-both"></div>
     <p><input type="submit" value="<?php _e('Update Project', 'bp_gtm') ?> &rarr;" id="save" name="editProject" /></p>
 <?php wp_nonce_field('bp_gtm_edit_project') ?>
 
