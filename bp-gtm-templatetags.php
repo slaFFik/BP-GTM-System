@@ -1051,7 +1051,7 @@ function bp_gtm_get_personal_filter_project_list() {
         if (bp_gtm_check_access('task_create')) {
             ?>
             <a href="<?php echo $gtm_link ?>tasks/create?<?php echo $task_id; ?>" title="<?php _e('Create SubTask', 'bp_gtm'); ?>">
-                <img src="<?php echo WP_PLUGIN_URL . '/bp-gtm-system/_inc/images/add.png'; ?>" alt="<?php _e('Create SubTask', 'bp_gtm'); ?>" height='16' width='16' />
+                <img src="<?php echo plugins_url('_inc/images/add.png', __FILE__); ?>" alt="<?php _e('Create SubTask', 'bp_gtm'); ?>" height='16' width='16' />
             </a>
             <?php
         }
@@ -1198,4 +1198,19 @@ function bp_gtm_get_personal_filter_project_list() {
         }
         return $tags;
     }
+    /**
+     * Get link with description with description in title
+     * @param object $parent_task 
+     */
+   function  bp_gtm_get_parent_task_link($parent_task, $gtm_link){
+//       var_dump($parent_task);
+//       var_dump($parent_task[0]);
+       if (bp_gtm_check_access('task_view')) {
+            
+            return '<a class="topic-title parent-task-link" href="'. $gtm_link . 'tasks/view/' . $parent_task[0]->id .'" 
+                        title="'.trim(strip_tags($parent_task[0]->desc)).'">'. $parent_task[0]->name.'</a>';
+            
+        }
+        return false;
+   }
 ?>
