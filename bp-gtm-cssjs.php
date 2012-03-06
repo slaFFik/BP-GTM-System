@@ -16,8 +16,10 @@ add_action('wp_head', 'bp_gtm_autocomplete_js');
 function bp_gtm_js_groups_all() {
 
     // one main js file
-    if (!is_admin())
+    if (!is_admin()){
         wp_enqueue_script('BP_GTM_GLOBAL_JS', plugins_url('_inc/global.js', __FILE__), array('jquery'));
+        wp_enqueue_script('tool_tip', plugins_url('_inc/jquery.tools.min.js', __FILE__), array('jquery'));
+    }
 
     if (is_admin())
         wp_enqueue_script('BP_GTM_ADMIN_JS', plugins_url('_inc/admin-scripts.js', __FILE__), array('jquery'));

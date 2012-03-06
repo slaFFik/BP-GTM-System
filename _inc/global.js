@@ -690,7 +690,14 @@ jQuery(document).ready(function() {
  function replace_coma(str){
      return str.replace(/,/gi, '| ');
      
- }   
+ }
+ jQuery('.projects-list .td-title a[title], .task-list .td-title a[title]').tooltip(
+        {
+            opacity: 0.7,
+            position: ['bottom'],
+            offset: [0, 50]
+        }
+    );
     
     
 })

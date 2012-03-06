@@ -1003,7 +1003,7 @@ function bp_gtm_get_personal_filter_project_list() {
     function bp_gtm_delete_link($project_id, $type = 'project') {
         if (bp_gtm_check_access($type . '_delete')) {
             ?>
-            <a class="delete_me" id="<?php echo $project_id; ?>" href="#" title="<?php _e('Delete this project and all corresponding tasks', 'bp_gtm'); ?>"><img height="16" width="16" src="<?php echo WP_PLUGIN_URL . "/bp-gtm-system/_inc/images/delete.png" ?>" alt="<?php _e('Delete', 'bp_gtm') ?>" /></a>&nbsp;
+            <a class="delete_me" id="<?php echo $project_id; ?>" href="#" title="<?php _e('Delete this project and all corresponding tasks', 'bp_gtm'); ?>"><img height="16" width="16" src="<?php echo plugins_url("_inc/images/delete.png", __FILE__) ?>" alt="<?php _e('Delete', 'bp_gtm') ?>" /></a>&nbsp;
             <?php
         }
     }
@@ -1018,11 +1018,11 @@ function bp_gtm_get_personal_filter_project_list() {
         }
     }
 
-    function bp_gtm_view_link($project_id, $project_name, $gtm_link, $type) {
+    function bp_gtm_view_link($project, $gtm_link, $type) {
         if (bp_gtm_check_access($type . '_view')) {
             ?>
-            <a class="topic-title" href="<?php echo $gtm_link . $type . 's/view/' . $project_id ?>" title="<?php printf(__('Permalink on %s\'s page', 'bp_gtm'), $type) ?>">
-                <?php echo $project_name; ?>
+            <a class="topic-title" href="<?php echo $gtm_link . $type . 's/view/' . $project->id ?>" title="<?php echo $project->desc ?>">
+                <?php echo $project->name; ?>
             </a>
             <?php
         }

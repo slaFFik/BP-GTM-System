@@ -522,3 +522,14 @@ able#personal tr th#th-postcount{
 #gtm_form .parent-task-link{
     color: #555;
 }
+.tooltip{
+    background-color: #EAEAEA;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    min-width: 150px;
+    min-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #afafaf;
+}
