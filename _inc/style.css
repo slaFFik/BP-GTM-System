@@ -533,3 +533,6 @@ able#personal tr th#th-postcount{
     vertical-align: middle;
     border: 1px solid #afafaf;
 }
+#gtm_form .edit_buttons .edit_description, #gtm_form .edit_buttons .delete_file_discussion{
+    color: #6FA5FD;
+} 
