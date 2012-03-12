@@ -539,7 +539,7 @@ jQuery(document).ready(function() {
             e.preventDefault()
         }
     });
-    jQuery('#projects_tax [name="tags"]').click(function(){
+    jQuery('#projects_tax [name="tags"], #tasks_tax [name="tags"]').click(function(){
         var obj = jQuery(this).parent().find(':text');
         var project_tags_val = obj.val();
         paste_terms(project_tags_val, 'tags')
@@ -566,7 +566,7 @@ jQuery(document).ready(function() {
             e.preventDefault()
         }
     });
-    jQuery('#projects_tax [name="cats"]').click(function(){
+    jQuery('#projects_tax [name="cats"], #tasks_tax [name="cats"]').click(function(){
         var obj = jQuery(this).parent().find(':text');
         var project_tags_val = obj.val();
         paste_cats(project_tags_val, 'cats')
