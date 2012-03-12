@@ -65,8 +65,8 @@ _e('(comma separated)', 'bp_gtm');
                     <input type="text" name="task_cat" class="tags" id="cats" /><input type="button" name="cats" value="<?php _e('Add cat', 'bp_gtm');?>"/>
                 </li>
                 <div class="clear-both"></div>
-                <?php bp_gtm_term_task_edit_loop($task[0]->id, 'cat'); ?>
                 <div class="paste-cats"></div>
+                <?php bp_gtm_term_task_edit_loop($task[0]->id, 'cat'); ?>
 
             </ul>
 

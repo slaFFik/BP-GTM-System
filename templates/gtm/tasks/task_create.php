@@ -71,8 +71,8 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
                 <input type="text" name="task_cat" class="cats" id="cats" /><input type="button" name="cats" value="<?php _e('Add cat', 'bp_gtm');?>"/>
             </li>
             <div class="clear-both"></div>
-            <?php bp_gtm_get_cats_for_group();?>
             <div class="paste-cats"></div>
+            <?php bp_gtm_get_cats_for_group();?>
         </ul>
     </div>
 </div>  

@@ -728,7 +728,7 @@ function bp_gtm_save_p_settings($data) {
  */
 function bp_gtm_tabs($group = false) {
     global $bp, $groups_template;
-
+    $bp_gtm = get_option('bp_gtm');
     if (!$group)
         $group = ( $groups_template->group ) ? $groups_template->group : $bp->groups->current_group;
 
@@ -754,7 +754,7 @@ function bp_gtm_tabs($group = false) {
         <li<?php if ('involved' == $current_tab) : ?> class="current"<?php endif; ?>><a href="<?php echo $gtm_link ?>/involved"><?php _e('Involved', 'bp_gtm') ?></a></li>
     <?php } ?>
     <?php
-    if (bp_gtm_check_access('files_view')) {
+    if (bp_gtm_check_access('files_view') && $bp_gtm['files'] == 'on') {
 //        unlink(WP_CONTENT_DIR.'/uploads/gtm/files/discuss/28_bbpress.2.0.2.zip')
         ?>
         <li<?php if ('files' == $current_tab) : ?> class="current"<?php endif; ?>><a href="<?php echo $gtm_link ?>/files"><?php _e('Files', 'bp_gtm') ?></a></li>
