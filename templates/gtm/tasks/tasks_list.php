@@ -67,7 +67,9 @@ if (count($option['tasks']) > 0) { ?>
                         <?php bp_gtm_get_group_project_respossibles($task); ?>
                     </td>
                     <td class="td-group">
-                        <?php bp_gtm_view_link($project, $gtm_link, 'project'); ?>
+                        <?php
+                         $project = BP_GTM_Projects::get_project_by_id($task->project_id);
+                         bp_gtm_view_link($project, $gtm_link, 'project'); ?>
                     </td>
                     <td class="td-group">
                         <div class="object-name center"><?php bp_gtm_format_date($task->deadline); ?></div>

@@ -450,14 +450,14 @@ function bp_gtm_tasks_navi_content() {
                         <span class="all_in_all" title="<?php _e('Current number of subtasks', 'bp_gtm'); ?>"><?php echo bp_gtm_get_subtasks_count($task->id) ?></span>&nbsp;
                         <?php bp_get_create_subtask_link($task->id, $gtm_link); ?>
                     </span>
-                    <?php bp_gtm_view_link($task->id, $task->name, $gtm_link, 'task') ?>
+                    <?php bp_gtm_view_link($task, $gtm_link, 'task') ?>
 
                 </td>
                 <td class="td-poster">
                     <?php bp_gtm_get_responsibles($task->resp_id); ?>
                 </td>
                 <td class="td-group">
-                    <?php bp_gtm_view_link($task->project_id, bp_gtm_get_el_name_by_id($task->project_id, 'project'), $gtm_link, 'project'); ?>
+                    <?php bp_gtm_view_link(BP_GTM_Projects::get_project_by_id($task->project_id), $gtm_link, 'project'); ?>
                 </td>
                 <td class="td-group">
                     <div class="object-name center"><?php bp_gtm_format_date($task->deadline) ?></div>

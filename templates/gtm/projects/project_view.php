@@ -10,7 +10,7 @@ if (empty($project)) {
 <?php //print_var($project);  ?>
 <div id="message" class="error"></div>
 <div id="topic-meta">
-    <h3>#P<?php echo $project['0']->id ?> &rarr;<?php bp_gtm_view_link($project['0']->id, $project['0']->name, $gtm_link, 'project') ?> <?php if (!empty($project_done)) echo $project_done; ?></h3>
+    <h3>#P<?php echo $project['0']->id ?> &rarr;<?php bp_gtm_view_link($project['0'], $gtm_link, 'project') ?> <?php if (!empty($project_done)) echo $project_done; ?></h3>
     <?php bp_gtm_view_list_button($gtm_link); ?>
     <?php bp_gtm_pending_complited_tasks($project['0']->id, $gtm_link); ?>
 
