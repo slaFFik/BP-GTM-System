@@ -27,7 +27,7 @@ if (count($task) == 0) {
 
         <?php bp_gtm_complite_tast_button($task['0']->id, $task['0']->done); ?>
 
-    <?php bp_gtm_delete_tast_button($task['0']->id); ?>
+        <?php bp_gtm_delete_tast_button($task['0']->id); ?>
 
         <div class="admin-links">
             <?php
@@ -42,7 +42,7 @@ if (count($task) == 0) {
     <ul id="topic-post-list" class="item-list">
         <li id="post-0" class="">
             <div class="poster-meta">
-    <?php bp_gtm_poster_meta($task['0'], 'task'); ?>
+            <?php bp_gtm_poster_meta($task['0'], 'task'); ?>
             </div>
 
             <div class="post-content" id="">
@@ -65,7 +65,7 @@ if (count($task) == 0) {
             if ($task['0']->project_id != '0') {
                 echo ' | ';
                 _e('Project: ', 'bp_gtm');
-                bp_gtm_view_link($task['0']->project_id, bp_gtm_get_el_name_by_id($task['0']->project_id, 'project'), $gtm_link, 'project');
+                bp_gtm_view_link(BP_GTM_Projects::get_project_by_id($task['0']->project_id), $gtm_link, 'project');
             }
             ?>
         </div>
