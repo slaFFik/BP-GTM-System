@@ -16,7 +16,7 @@ class BP_GTM_Actions {
         $bp_gtm = get_option('bp_gtm');
 //        var_dump($bp_gtm);die;
         if( bp_gtm_check_access('involved_roles') &&
-                ( $bp_gtm['groups'] == 'all' || array_key_exists($bp->groups->current_group->id, $bp_gtm['groups']) ) ){
+                ( $bp_gtm['groups'] == 'all' || (!empty($bp_gtm['groups']) && array_key_exists($bp->groups->current_group->id, $bp_gtm['groups']) )) ){
             
             add_action('bp_directory_involved_actions', array($this, 'role_extra_button'));
         }

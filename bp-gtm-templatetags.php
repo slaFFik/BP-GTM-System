@@ -656,7 +656,7 @@ function bp_gtm_display_span_role($user_id = false) {
 
     $bp_gtm = get_option('bp_gtm');
 
-    if ($bp_gtm['groups'] == 'all' || array_key_exists($bp->groups->current_group->id, $bp_gtm['groups'])) {
+    if ($bp_gtm['groups'] == 'all' || (!empty($bp_gtm['groups']) && array_key_exists($bp->groups->current_group->id, $bp_gtm['groups']) )) {
 
         if (!$user_id)
             $user_id = $members_template->member->user_id;
