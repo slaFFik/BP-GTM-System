@@ -612,7 +612,6 @@ jQuery(document).ready(function() {
                     jQuery('<p><input name="project_cats[]" type="checkbox" id="un-'+terms[c]+'" checked="checked" value="'+terms[c]+'"/><span class="text"></span></p>').find('.text').text(terms[c]).end().prependTo('#projects_tax .paste-'+block+', #tasks_tax .paste-'+block);
             }
         }
-        //        console.log(jQuery('<span><input type="checkbox" id="un-'+project_tags_val+'" checked="checked" value="'+project_tags_val+'"/><span class="text"></span></span>').find('.text'))
         return false;
     }
   

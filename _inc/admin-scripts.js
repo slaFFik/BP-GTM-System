@@ -58,7 +58,6 @@ jQuery(document).ready(function($){
                 action: 'bp_gtm_add_def_role'
             },
             success: function(data){
-                console.log(typeof data);
                 $('div.def_roles ul.def_roles_list').append(data);
             //                if(data.length < 4){
             //                   $('div.def_roles ul.def_roles_list').append('<li id="li-" class="one">#'+data+': '+new_role+'</li><div id="toggler"><div class="box"></div></div>');
