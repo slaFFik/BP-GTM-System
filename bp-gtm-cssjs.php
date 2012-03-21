@@ -56,6 +56,7 @@ function bp_gtm_localize_js() {
         'person_navi_filter' => $person_navi_filter,
         'date_format' => $date_format,
         'files_count' => $bp_gtm['files_count'],
+        'ajaxurl' => home_url('/wp-load.php')
     );
     $localize['mce'] = $bp_gtm['mce'] == 'on' ? 'on' : ''; // on/off tinymce
 
@@ -69,7 +70,6 @@ function bp_gtm_autocomplete_js() {
         wp_enqueue_script('bp-gtm-autocomplete', plugins_url('/_inc/autocomplete/autocomplete.js', __FILE__), array('jquery'));
     }
 }
-
 function bp_gtm_datepicker_js() {
     global $bp;
     $lang = WPLANG != '' ? WPLANG : 'en_GB';

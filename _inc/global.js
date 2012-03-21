@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
     if (typeof ajaxurl == 'undefined')
-        var ajaxurl = '/wp-load.php';
+        var ajaxurl = bp_gtm_strings.ajaxurl;
     
     
     /*
