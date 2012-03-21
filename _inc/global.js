@@ -333,7 +333,7 @@ jQuery(document).ready(function() {
         jQuery(this).addClass('current');
         jQuery.ajax({
             type: 'GET',
-            url: '/wp-load.php',
+            url: ajaxurl,
             data: {
                 nextPage: pageN,
                 what: bp_gtm_strings.discuss_nav_what,
@@ -359,7 +359,7 @@ jQuery(document).ready(function() {
         jQuery(this).addClass('current');
         jQuery.ajax({
             type: 'GET',
-            url: '/wp-load.php',
+            url: ajaxurl,
             data: {
                 nextPage: pageN,
                 filter: bp_gtm_strings.task_navi_filter,
@@ -437,7 +437,7 @@ jQuery(document).ready(function() {
         jQuery(this).addClass('current');
         jQuery.ajax({
             type: 'GET',
-            url: '/wp-load.php',
+            url: ajaxurl,
             data: {
                 nextPage: pageN,
                 filter: bp_gtm_strings.person_navi_filter,
@@ -511,7 +511,6 @@ jQuery(document).ready(function() {
          * Autocomplete init
          */ 
         // for cats
-        ajaxurl = '/wp-load.php'
         var resps = jQuery("ul.second").autoCompleteCats({
             type: 'resps'
         });
