@@ -395,7 +395,7 @@ jQuery(document).ready(function() {
         });
     });
     if(jQuery.fn.datepicker){
-        var datepicker_settings = jQuery.datepicker.regional[bp_gtm_strings.lang];
+        var datepicker_settings        = jQuery.datepicker.regional[bp_gtm_strings.lang];
         datepicker_settings.dateFormat = bp_gtm_strings.date_format;
         jQuery("#project_deadline").datepicker(datepicker_settings);
         jQuery("#task_deadline").datepicker(datepicker_settings);
@@ -418,7 +418,7 @@ jQuery(document).ready(function() {
             );
     }
     
-    //---------------------MEMEBER SECTIOn
+    //---------------------MEMEBER SECTION
 
     jQuery("a#open_project").click(function(eopen) {
         eopen.preventDefault();

@@ -1,14 +1,14 @@
 <?php
 /*
-Plugin Name: BP GTM System
-Plugin URI: http://ovirium.com/plugins/bp-gtm-system/
-Description: Create a tasks management system for BuddyPress groups in your network with lots of features.
-Author: slaFFik
-Version: 1.9.5
-DB Version: 42
-Author URI: http://cosydale.com/
-Domain Path: /langs/
-Text Domain: bp_gtm
+Plugin Name:    BP GTM System
+Plugin URI:     http://ovirium.com/portfolio/bp-gtm-system/
+Description:    Create a tasks management system for BuddyPress groups in your network with lots of features. <a href="http://wp-bp.com">Powered by WP-BP.com</a>
+Author:         slaFFik
+Version:        1.9.5.1
+DB Version:     42
+Author URI:     http://ovirium.com/
+Domain Path:    /langs/
+Text Domain:    bp_gtm
 */
 
 add_action('bp_init', 'bp_gtm_init');
@@ -21,30 +21,30 @@ function bp_gtm_init(){
     register_deactivation_hook( __File__, 'bp_gtm_deactivation');
     $file_data = bp_gtm_get_file_data(GTM_DIR.'/bp-gtm.php', array());
    
-    $bp_gtm['deactivate'] = 'only';
+    $bp_gtm['deactivate']               = 'only';
     
-    $bp_gtm['mce'] = 'on';
-    $bp_gtm['p_todo'] = 'on';
-    $bp_gtm['display_activity'] = 'on';
+    $bp_gtm['mce']                      = 'on';
+    $bp_gtm['p_todo']                   = 'on';
+    $bp_gtm['display_activity']         = 'on';
     $bp_gtm['display_activity_discuss'] = 'on';
     
-    $bp_gtm['groups'] = 'all';
-    $bp_gtm['groups_own_roles'] = 'none';
+    $bp_gtm['groups']                   = 'all';
+    $bp_gtm['groups_own_roles']         = 'none';
     
-    $bp_gtm['files'] = 'off';
-    $bp_gtm['files_count'] = '3';
-    $bp_gtm['files_size'] = '500';
-    $bp_gtm['files_types'] = array('zip','rar','7z','pdf','djvu','txt','gif','jpeg','jpg','png');
+    $bp_gtm['files']                    = 'off';
+    $bp_gtm['files_count']              = '3';
+    $bp_gtm['files_size']               = '500';
+    $bp_gtm['files_types']              = array('zip','rar','7z','pdf','djvu','txt','gif','jpeg','jpg','png');
     
-    $bp_gtm['db_version'] = '1';
-
-    $bp_gtm['theme'] = 'gtm';
+    $bp_gtm['db_version']               = '1';
     
-    $bp_gtm['label_gtm_system'] = __('ToDo','bp_gtm');
-    $bp_gtm['label_assignments'] = __('Assignments','bp_gtm');
+    $bp_gtm['theme']                    = 'gtm';
     
-    $bp_gtm['def_g_role'] = 4;
-    $bp_gtm['def_admin_g_role'] = 1;
+    $bp_gtm['label_gtm_system']         = __('ToDo','bp_gtm');
+    $bp_gtm['label_assignments']        = __('Assignments','bp_gtm');
+    
+    $bp_gtm['def_g_role']               = 4;
+    $bp_gtm['def_admin_g_role']         = 1;
     
     add_option('bp_gtm', $bp_gtm, '', 'yes');
     
@@ -431,7 +431,5 @@ function bp_gtm_register_widgets() {
     add_action('widgets_init', create_function('', 'return register_widget("BP_GTM_gTax_Cloud");'));
 }
 add_action('plugins_loaded', 'bp_gtm_register_widgets');
-
-
 
 ?>
