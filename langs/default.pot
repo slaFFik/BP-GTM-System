@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BP GTM System\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-03 12:13+0200\n"
+"POT-Creation-Date: 2012-08-02 22:31+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: slaFFik <slaffik@list.ru>\n"
 "Language-Team: slaFFik @ Ovirium <slava.abakumov@gmail.com>\n"
@@ -54,191 +54,197 @@ msgstr ""
 msgid "Import All Groups Users"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:106
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:107
 msgid "All changes were saved. Go and check results!"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:124
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:125
 msgid "BP GTM System"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:124
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:125
 msgid "Group Tasks Management"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:139
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:147
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:140
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:148
 msgid "Save Changes"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:187
-msgid "Do you want to use Rich Editor (TinyMCE) to format projects/tasks descriptions with visual editor?"
-msgstr ""
-
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:188
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:195
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:202
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:209
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:234
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:119
-msgid "Enable"
+msgid "Do you want to use Rich Editor (TinyMCE) to format projects/tasks descriptions with visual editor?"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:189
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:196
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:203
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:210
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:235
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:120
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:217
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:242
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:144
+msgid "Enable"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:190
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:197
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:204
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:211
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:218
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:243
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:145
 msgid "Disable"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:194
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:195
+msgid "Do you want to use subtasks feature (tasks under tasks in hierarchy)?"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:202
 msgid "Do you want to display for each user his personal Assignments page under My Account menu?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:201
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:209
 msgid "Do you want to display a notification entry in activity feed for newly created tasks and projects?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:208
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:216
 msgid "Do you want to display a notification entry in activity feed for all discussion posts of any tasks and projects?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:215
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:223
 msgid "Please choose here a theme, that will be used on frontend for BP GTM System:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:228
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:236
 msgid "Be patient, if there is no <code>index.php</code> in that theme, then you will be redirected to the site main page."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:233
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:241
 msgid "Display menu for changing members roles in groups members and involved lists?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:239
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:247
 msgid "Export All GTM Data"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:242
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:250
 msgid "Import Data"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:246
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:254
 msgid "Please check here how you would like to uninstall BP GTM System:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:247
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:255
 msgid "Deactivate the plugin and delete all options and tables from the DB"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:248
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:256
 msgid "Deactivate the plugin only, all saved data won't be touched"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:249
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:257
 msgid "After choosing deactivation method you could go to <a href=\"plugins.php?plugin_status=all\">Plugins's page</a> and deactivate the plugin safely."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:262
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:270
 msgid "Which groups should have GTM System turned on?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:263
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:271
 msgid "Own roles?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:269
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:290
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:277
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:298
 msgid "All groups"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:318
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:326
 msgid "Add New Default Role"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:322
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:330
 msgid "Choose a default role for a new member of any group:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:332
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:340
 msgid "Choose a default role for a group creator in newly created group:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:345
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:353
 msgid "Here you can change some GTM labels that are used throughout your site."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:350
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:358
 msgid "Used in group menu navigation - to reach the list of group tasks or projects"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:354
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:362
 msgid "Used in user personal navigation under My Account menu"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:369
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:377
 msgid ""
 "Using this menu you can easily import all group members from any group into GTM System role tables.<br>\n"
 "                    This action is needed when you had a community for some time and then decided to use this awesome plugin.<br>\n"
 "                    You should do this <strong>only once</strong> - just after BP GTM System activation."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:373
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:381
 msgid "Please choose here, whom you would like group users to be after importing:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:376
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:384
 msgid "Administrators"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:384
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:392
 msgid "Moderators"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:392
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:400
 msgid "Ordinary Members"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:399
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:407
 msgid "Import Users"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:460
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:468
 msgid "All users from all groups were successfully imported"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:462
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:470
 msgid "Some error occured while importing users. Perhaps, you have already imported all of them?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:492
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:500
 #, php-format
 msgid "GTM data backup was successfully created in <code>/wp-content/uploads/gtm/</code>. <a href=\"%s\">Download that file</a>"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:494
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:502
 msgid "There were some errors while exporting data. Please try again."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:509
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:517
 msgid "File with GTM data should have .zip or .json extension"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:515
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:523
 msgid "File was successfully uploaded."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:594
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:602
 msgid "All GTM data was successfully imported."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:596
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:604
 msgid "There was an error while importing GTM data."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:598
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-admin.php:606
 msgid "There were some errors while uploading a backup file. Please try again."
 msgstr ""
 
@@ -299,12 +305,12 @@ msgid "Do you want to display categories and tags usage count?"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-classes.php:188
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:199
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:197
 msgid "Yes"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-classes.php:190
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:199
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:197
 msgid "No"
 msgstr ""
 
@@ -332,90 +338,90 @@ msgstr ""
 msgid "There was an error posting your reply, please try again."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:267
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:263
 msgid "New project was successfully created."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:277
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:273
 msgid "There was an error creating new project, please try again."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:347
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:338
 msgid "Project data was successfully updated."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:371
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:362
 msgid "Everything was deleted successfully."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:427
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:412
 msgid "New task was successfully created."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:437
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:422
 msgid "There was an error creating new task, please try again."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:508
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:490
 msgid "Task data was successfully updated."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:659
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:694
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:756
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:674
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:649
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:684
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:746
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:700
 msgid "Tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:668
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:695
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:752
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:665
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:658
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:685
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:742
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:691
 msgid "Projects"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:677
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:696
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:777
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:721
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:667
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:686
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:767
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:747
 msgid "Settings"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:723
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:713
 msgid "Personal settings were successfully updated."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:725
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:728
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:715
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:718
 msgid "There was an error updating personal settings, please try again."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:760
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:694
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:750
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:720
 msgid "Classifier"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:764
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:703
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:754
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:729
 msgid "Involved"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:770
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:760
 msgid "Files"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:773
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:712
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:763
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:738
 msgid "Discussions"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:785
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:179
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:542
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:683
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:980
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1008
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1108
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-core.php:775
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:177
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:568
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:709
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1006
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1037
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1145
 msgid "Delete"
 msgstr ""
 
@@ -462,7 +468,7 @@ msgid "Save"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-cssjs.php:48
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1040
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1069
 msgid "completed"
 msgstr ""
 
@@ -492,7 +498,7 @@ msgid "Undone"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-functions.php:233
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1099
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1136
 msgid "Mark as completed"
 msgstr ""
 
@@ -612,458 +618,506 @@ msgstr ""
 msgid "%s posted a comment to the project %s"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:33
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:31
 msgid "Sorry, no members were found."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:73
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:71
 msgid "Admin"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:108
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:106
 msgid "Mention this user"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:125
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:123
 msgid "Send a private meassage"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:125
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:123
 msgid "PM"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:141
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:139
 msgid "Notify user about pending tasks and projects"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:141
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:139
 msgid "N"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:158
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:156
 #, php-format
 msgid "%s task"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:160
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:158
 #, php-format
 msgid "%s project"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:171
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:169
 msgid "Permalink on this term page"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:176
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:537
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:989
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1058
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:174
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:563
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1015
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1096
 msgid "Edit"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:196
-msgid "Permalink to this task page"
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:194
+#, php-format
+msgid "Permalink to this %s page"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:210
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:208
 msgid "Project that this task corresponds to"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:222
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:220
 msgid "Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:228
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:226
 msgid "Please create at least one project to proceed."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:246
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:251
 #, php-format
 msgid "There are no %ss to display. Create them <a href=\"%s\" target=\"_blank\">here</a>"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:262
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:267
 #, php-format
 msgid "said %s:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:287
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:292
 msgid "Responsible"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:314
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:326
 #, php-format
 msgid "<p>There are no tags to display. Create them <a href=\"%s\" target=\"_blank\">here</a></p>"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:323
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:349
 msgid "Completed Projects"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:327
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:353
 msgid "Projects by A/Z"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:331
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:357
 msgid "Projects by Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:348
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:374
 msgid "All Completed Tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:352
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:378
 msgid "Tasks by A/Z"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:356
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:364
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:381
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:382
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:390
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:407
 msgid "Tasks by Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:360
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:377
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:386
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:403
 msgid "Tasks whithout Project"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:371
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:397
 msgid "Completed Tasks in Project"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:387
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:413
 msgid "Pending Tasks in Project"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:389
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:596
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:855
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:415
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:622
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:881
 msgid "Go to project's page"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:389
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:415
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/roles.php:40
 msgid "View Project"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:424
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:450
 msgid "Current number of subtasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:454
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:618
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:480
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:644
 msgid "There are no tasks to display."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:499
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:525
 msgid "There are no posts to display."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:515
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:541
 #, php-format
 msgid "<span id=\"cur_discuss\">%d - %d</span> out of %d.&nbsp;"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:516
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:542
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/personal.php:181
 msgid "Pagination:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:525
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:551
 msgid "List of the latest tasks/projects discussions in this group."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:534
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:885
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1136
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:225
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:560
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:911
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1173
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:272
 msgid "Permalink"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:590
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:849
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:616
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:875
 msgid "Permalink on task's page"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:641
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:644
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:667
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:670
 msgid "Role"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:644
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:670
 msgid "Group Admin"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:646
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:672
 msgid "No Role"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:657
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:683
 msgid "Permissions"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:658
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:684
 msgid "Delete role"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:748
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:774
 msgid "All Completed Personal Tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:752
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:778
 msgid "Personal Tasks by A/Z"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:756
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:782
 msgid "Personal Tasks by Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:760
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:786
 msgid "Personal Tasks without Projects"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:766
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:792
 msgid "Personal Tasks in Group"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:772
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:798
 msgid "Personal Tasks in Project"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:786
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:825
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:812
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:851
 msgid "Projects List"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:786
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:806
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:825
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:812
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:832
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:851
 msgid "Close"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:796
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:835
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:822
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:861
 msgid "Click on a project to see its tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:806
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:832
 msgid "Groups List"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:816
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:842
 msgid "Click on a group to see its tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:909
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:935
 msgid "Personal Projects by Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:913
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:939
 msgid "Personal Projects by A/Z"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:925
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:951
 msgid "Tasks Discussions"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:927
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:953
 msgid "Task Name"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:931
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:957
 msgid "Projects Discussions"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:932
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:958
 msgid "Project Name"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:972
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1065
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:998
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1103
 msgid "Pending tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:974
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1066
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1000
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1104
 msgid "Completed tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:980
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1006
 msgid "Delete this project and all corresponding tasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1008
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1108
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1015
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1096
+#, php-format
+msgid "Edit this %s"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1037
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1145
 msgid "Delete this task"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1018
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1047
 msgid "Create new"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1027
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1028
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1056
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1057
 msgid "Create SubTask"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1045
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1075
 #, php-format
-msgid "%s created %s on %s:"
+msgid "%s created project on %s:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1050
-msgid "&larr; Back To "
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1077
+#, php-format
+msgid "%s created task on %s:"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1058
-msgid "Edit this "
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1084
+msgid "&larr; Back To Projects List"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1073
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1087
+msgid "&larr; Back To Tasks List"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1111
 msgid "Create new subtask for this task"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1073
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1111
 msgid "New SubTask"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1080
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1117
 msgid "Show SubTasks for this task"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1080
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1117
 msgid "Show SubTasks"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1088
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1125
 msgid "Go to a parent task page: "
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1090
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1127
 msgid "Parent Task"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1099
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm-templatetags.php:1136
 msgid "Complete"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:43
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:44
 msgid "ToDo"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:44
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:45
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/involved.php:70
 msgid "Assignments"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:233
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:235
 msgid "Owner"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:234
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:236
 msgid "Project Manager"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:235
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:237
 msgid "Doer"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:236
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:238
 msgid "Client"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:237
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/bp-gtm.php:239
 msgid "Guest"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:34
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:33
 msgid "Close this window"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:35
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:34
 #, php-format
 msgid "Change a role for %s"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:36
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:35
 msgid "Select new role for this user."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:39
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:38
 msgid "select a role"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:69
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:74
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:67
 msgid "Change role"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:74
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/actions.php:67
 msgid "R"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:76
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:24
+msgid "Upload Files"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:25
+msgid "Select files you want to add to the project."
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:28
+msgid "Add new"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:34
+msgid "Allowed file types"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:41
+msgid "Maximum size of uploaded file"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:60
+#, php-format
+msgid "List of %s documents."
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:101
 #, php-format
 msgid "You cannot upload %s. This file type is not supported."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:79
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:104
 #, php-format
 msgid "You cannot upload %s-files. File size is larger than the maximum."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:100
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:125
 #, php-format
 msgid "There was an error uploding %s. Do you have enough rights?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:112
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:137
 msgid "Tasks/Projects/Discussion Posts Files Management"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:117
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:142
 msgid "If you want your users and group members upload files into tasks, projects and discussion post, you can set all the options here."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:118
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:143
 msgid "First of all you need to decide - do you need file management?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:124
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:149
 msgid "Up to how many files would you like to allow users to upload for each task, project or discussion post?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:125
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:150
 msgid "Should be numeric, otherwise will not be saved. Set 0 for unlimited number."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:129
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:154
 msgid "Which file types would you like users have ability to upload?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:135
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:160
 msgid "Media"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:137
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:162
 msgid "Archives"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:139
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:164
 msgid "Documents"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:141
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:166
 msgid "Other"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:158
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:183
 msgid "What is the maximum size of uploaded file?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:169
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:194
 #, php-format
 msgid "Please remember that 1MB = 1024KB. Should be less than WordPress limit: %d%s"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:217
+msgid "Edit description"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:218
+msgid "Delete file"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/files.php:222
+msgid "Update Description"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/lib/involved.php:72
@@ -1346,20 +1400,24 @@ msgid "File Name"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/files.php:14
-msgid "Type"
+msgid "Uploaded by"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/files.php:15
-msgid "Date Uploaded"
+msgid "Type"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/files.php:16
+msgid "Date Uploaded"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/files.php:17
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/involved/involved_list.php:24
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/projects_list.php:42
 msgid "Actions"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/files.php:49
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/files.php:53
 msgid "There are no files to display."
 msgstr ""
 
@@ -1496,39 +1554,71 @@ msgstr ""
 msgid "Project description"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:24
-msgid "Who is responsible for this project execution or has access if its hidden?"
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:25
+msgid "Responsible Users"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:39
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:38
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:27
+msgid "Please select one or more responsible users. You can select them by clicking them"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:32
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:28
 msgid "Project Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:43
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:42
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:33
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:29
+msgid "Select a date for the project when it should be finished."
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:38
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:34
 msgid "Project Tags"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:43
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:52
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:42
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:54
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:39
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:53
 msgid "(comma separated)"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:52
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:54
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:40
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:37
+msgid "You can add tags to your project. If you want to add more tags, separate it with comma."
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:44
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:41
+msgid "Add tag"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:51
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:52
 msgid "Project Categories"
 msgstr ""
 
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:54
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:55
+msgid "You can select or add categories for your project. If you want to add more categories, separate it with comma."
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_create.php:58
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:60
+msgid "Add cat"
+msgstr ""
+
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:1
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:73
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:77
 msgid "Update Project"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:26
-msgid "Who is responsible for this project execution or have access if its hidden?"
+msgid "Who is responsible for this project execution?"
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:35
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_edit.php:53
+msgid " (comma separated)"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/projects/project_view.php:4
@@ -1567,50 +1657,57 @@ msgstr ""
 msgid "List of tasks in this group. Use links in the right to filter them."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:6
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:7
 msgid "Create New SubTask for"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:9
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:10
 msgid "Create New Task"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:18
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:19
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:8
 msgid "Task name"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:23
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:24
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:11
 msgid "Task description"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:40
-msgid "Who is responsible for this task execution or has access if its hidden?"
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:41
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:27
+msgid "Who is responsible for this task execution?"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:46
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:47
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:34
 msgid "Task Deadline"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:50
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:53
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:40
 msgid "Task Tags"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:60
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:52
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:54
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:43
+msgid "You can add tags to your task. If you want to add more tags, separate it with comma."
+msgstr ""
+
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:65
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:58
 msgid "Task Categories"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:1
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:70
-msgid "Update Task"
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_create.php:66
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:61
+msgid "You can select or add categories for your task. If you want to add more categories, separate it with comma."
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:27
-msgid "Who is responsible for this task execution or have access if its hidden?"
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:1
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_edit.php:80
+msgid "Update Task"
 msgstr ""
 
 #: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/tasks/task_view.php:5
@@ -1683,8 +1780,8 @@ msgstr ""
 msgid "View tasks and projects for <i>\"%s\"</i>"
 msgstr ""
 
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/terms/term_view.php:15
-#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/terms/term_view.php:32
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/terms/term_view.php:17
+#: W:\_server\home\ovi\gtm\wp-content\plugins\bp-gtm-system/templates/gtm/terms/term_view.php:34
 msgid "Done?"
 msgstr ""
 
