@@ -1113,8 +1113,7 @@ function bp_gtm_get_personal_filter_project_list() {
         }
     }
 
-    function bp_gtm_view_subtask_button($task_id) {
-        ?>
+    function bp_gtm_view_subtask_button($task_id) { ?>
         <a class="button show_subtasks" id="<?php echo $task_id ?>" href="#subtasks" title="<?php _e('Show SubTasks for this task', 'bp_gtm'); ?>"><?php _e('Show SubTasks', 'bp_gtm') ?></a>
         <?php
     }
@@ -1154,8 +1153,8 @@ function bp_gtm_get_personal_filter_project_list() {
         $arg['height'] = '25';
         ?>
         <div class="poster-name"><?php
-    echo bp_core_fetch_avatar($arg);
-    echo bp_core_get_userlink($arg['item_id']);
+            echo bp_core_fetch_avatar($arg);
+            echo bp_core_get_userlink($arg['item_id']);
         ?></div>
         <?php
     }

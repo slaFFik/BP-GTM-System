@@ -24,6 +24,7 @@ function bp_gtm_init(){
     $bp_gtm['deactivate']               = 'only';
     
     $bp_gtm['mce']                      = 'on';
+    $bp_gtm['subtasks']                 = 'on';
     $bp_gtm['p_todo']                   = 'on';
     $bp_gtm['display_activity']         = 'on';
     $bp_gtm['display_activity_discuss'] = 'on';

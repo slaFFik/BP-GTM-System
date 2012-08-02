@@ -54,12 +54,12 @@ if (count($option['tasks']) > 0) { ?>
                 <tr id="<?php echo $task->id; ?>" class="<?php bp_gtm_task_check_date($task->id, $task->deadline); ?>">
 
                     <td class="td-title">
-                        <span class="subtasks_<?php echo $task->id; ?>">
-                            <span class="all_in_all" title="<?php _e('Current number of subtasks', 'bp_gtm'); ?>"><?php echo bp_gtm_get_subtasks_count($task->id) ?></span>&nbsp;
-                            <?php
-                            bp_get_create_subtask_link($task->id, $gtm_link);
-                            ?>
-                        </span>
+                        <?php if($bp_gtm['subtasks'] == 'on') { ?>
+                            <span class="subtasks_<?php echo $task->id; ?>">
+                                <span class="all_in_all" title="<?php _e('Current number of subtasks', 'bp_gtm'); ?>"><?php echo bp_gtm_get_subtasks_count($task->id) ?></span>&nbsp;
+                                <?php bp_get_create_subtask_link($task->id, $gtm_link); ?>
+                            </span>
+                        <?php } ?>
                         <?php bp_gtm_view_link($task, $gtm_link, 'task') ?>
                         </a>
                     </td>

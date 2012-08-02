@@ -57,10 +57,11 @@ class BP_GTM_ADMIN_PAGE {
     function save_data($bp_gtm) {
         if (isset($_POST['saveData'])) {
             // on/off data
-            $bp_gtm['deactivate'] = $_POST['bp_gtm_deactivate'];
-            $bp_gtm['mce'] = $_POST['bp_gtm_mce'];
-            $bp_gtm['p_todo'] = $_POST['bp_gtm_p_todo'];
-            $bp_gtm['display_activity'] = $_POST['bp_gtm_display_activity'];
+            $bp_gtm['deactivate']               = $_POST['bp_gtm_deactivate'];
+            $bp_gtm['mce']                      = $_POST['bp_gtm_mce'];
+            $bp_gtm['subtasks']                 = $_POST['bp_gtm_subtasks'];
+            $bp_gtm['p_todo']                   = $_POST['bp_gtm_p_todo'];
+            $bp_gtm['display_activity']         = $_POST['bp_gtm_display_activity'];
             $bp_gtm['display_activity_discuss'] = $_POST['bp_gtm_display_activity_discuss'];
 
             if ($_POST['bp_gtm_allgroups'] == 'all') {
@@ -86,7 +87,7 @@ class BP_GTM_ADMIN_PAGE {
             $bp_gtm['files_types'] = $_POST['bp_gtm_files_types'];
 
             if (trim($_POST['label_gtm_system']) != '' && trim($_POST['label_assignments']) != '') {
-                $bp_gtm['label_gtm_system'] = stripslashes(apply_filters('bp_gtm_labes', $_POST['label_gtm_system']));
+                $bp_gtm['label_gtm_system']  = stripslashes(apply_filters('bp_gtm_labes', $_POST['label_gtm_system']));
                 $bp_gtm['label_assignments'] = stripslashes(apply_filters('bp_gtm_labes', $_POST['label_assignments']));
             }
 
@@ -189,6 +190,13 @@ class BP_GTM_ADMIN_PAGE {
             <p><input name="bp_gtm_mce" id="bp_gtm_mce_off" type="radio" value="off" ' . ('off' == $bp_gtm['mce'] ? 'checked="checked" ' : '') . '/> <label for="bp_gtm_mce_off">' . __('Disable', 'bp_gtm') . '</label></p>';
 
         echo '<hr />';
+
+        // Subtasks
+        echo '<p>' . __('Do you want to use subtasks feature (tasks under tasks in hierarchy)?', 'bp_gtm') . '</p>';
+        echo '<p><input name="bp_gtm_subtasks" id="bp_gtm_subtasks_on" type="radio" value="on" ' . ('on' == $bp_gtm['subtasks'] ? 'checked="checked" ' : '') . '/> <label for="bp_gtm_subtasks_on">' . __('Enable', 'bp_gtm') . '</label></p>
+            <p><input name="bp_gtm_subtasks" id="bp_gtm_subtasks_off" type="radio" value="off" ' . ('off' == $bp_gtm['subtasks'] ? 'checked="checked" ' : '') . '/> <label for="bp_gtm_subtasks_off">' . __('Disable', 'bp_gtm') . '</label></p>';
+
+        echo '<hr />';        
 
         // personal Assignments link
         echo '<p>' . __('Do you want to display for each user his personal Assignments page under My Account menu?', 'bp_gtm') . '</p>';
@@ -472,17 +480,17 @@ function bp_gtm_export_data() {
         wp_mkdir_p(WP_CONTENT_DIR . '/uploads/gtm', 0777);
 
     $file_stamp = 'all_data_' . date('Y') . '-' . date('m') . '-' . date('d');
-    $dir_stamp = WP_CONTENT_DIR . '/uploads/gtm/';
-    $url_stamp = WP_CONTENT_URL . '/uploads/gtm/' . $file_stamp . '.zip';
-    $file = $dir_stamp . $file_stamp;
+    $dir_stamp  = WP_CONTENT_DIR . '/uploads/gtm/';
+    $url_stamp  = WP_CONTENT_URL . '/uploads/gtm/' . $file_stamp . '.zip';
+    $file       = $dir_stamp . $file_stamp;
 
-    $data->tasks = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_tasks}"));
-    $data->projects = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_projects}"));
-    $data->resps = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_resps}"));
-    $data->discuss = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_discuss}"));
-    $data->terms = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_terms}"));
-    $data->taxon = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_taxon}"));
-    $data->roles = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles}"));
+    $data->tasks      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_tasks}"));
+    $data->projects   = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_projects}"));
+    $data->resps      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_resps}"));
+    $data->discuss    = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_discuss}"));
+    $data->terms      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_terms}"));
+    $data->taxon      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_taxon}"));
+    $data->roles      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles}"));
     $data->roles_caps = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles_caps}"));
 
     if (file_put_contents($file . '.json', $json->encode($data))) {

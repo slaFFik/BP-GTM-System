@@ -25,15 +25,15 @@ class BP_GTM extends BP_Group_Extension {
     function __construct() {
         global $bp;
 
-        $bp_gtm = get_option('bp_gtm');
-        $bp_gtm_group = get_option('bp_gtm_g_' . $bp->groups->current_group->id . '_settings');
-        $this->name = esc_html(empty($bp_gtm_group['tab-name']) ? $bp_gtm['label_gtm_system'] : $bp_gtm_group['tab-name']);
-        $this->slug = $bp->gtm->slug;
-        $this->display_hook = 'bp_gtm_screen_pages';
+        $bp_gtm                   = get_option('bp_gtm');
+        $bp_gtm_group             = get_option('bp_gtm_g_' . $bp->groups->current_group->id . '_settings');
+        $this->name               = esc_html(empty($bp_gtm_group['tab-name']) ? $bp_gtm['label_gtm_system'] : $bp_gtm_group['tab-name']);
+        $this->slug               = $bp->gtm->slug;
+        $this->display_hook       = 'bp_gtm_screen_pages';
         $this->enable_create_step = false;
-        $this->enable_edit_item = false;
-        $this->enable_nav_item = $this->enable_nav_item($bp_gtm);
-        $this->nav_item_position = 25;
+        $this->enable_edit_item   = false;
+        $this->enable_nav_item    = $this->enable_nav_item($bp_gtm);
+        $this->nav_item_position  = 25;
     }
 
     /* Add this method the end of your extension class */
@@ -121,8 +121,8 @@ class BP_GTM extends BP_Group_Extension {
         $bp_gtm_group_settings['tab-name'] = !empty($_POST['tab-name']) ? $_POST['tab-name'] : '';
 
 
-        $bp_gtm_group_settings['display'] = $_POST['gtm-display'];
-        $bp_gtm_group_settings['tasks_pp'] = $_POST['gtm-tasks-pp'];
+        $bp_gtm_group_settings['display']    = $_POST['gtm-display'];
+        $bp_gtm_group_settings['tasks_pp']   = $_POST['gtm-tasks-pp'];
         $bp_gtm_group_settings['discuss_pp'] = $_POST['gtm-discuss-pp'];
 
         /* Check the nonce first */
@@ -208,9 +208,9 @@ class BP_GTM extends BP_Group_Extension {
             bp_core_add_message(__('Your reply was successfully posted.', 'bp_gtm'));
             // record to activity feed
             bp_gtm_group_activity(array(
-                'user_id' => $_POST['author_id'],
-                'group_id' => $bp->groups->current_group->id,
-                'elem_id' => $post_id,
+                'user_id'   => $_POST['author_id'],
+                'group_id'  => $bp->groups->current_group->id,
+                'elem_id'   => $post_id,
                 'elem_type' => $elem_type,
                 'elem_name' => $text
             ));
@@ -263,9 +263,9 @@ class BP_GTM extends BP_Group_Extension {
             bp_core_add_message(__('New project was successfully created.', 'bp_gtm'));
             // record to activity feed
             bp_gtm_group_activity(array(
-                'user_id' => $_POST['project_creator'],
-                'group_id' => $bp->groups->current_group->id,
-                'elem_id' => $project_id,
+                'user_id'   => $_POST['project_creator'],
+                'group_id'  => $bp->groups->current_group->id,
+                'elem_id'   => $project_id,
                 'elem_type' => 'project',
                 'elem_name' => $name
             ));
@@ -372,7 +372,7 @@ class BP_GTM extends BP_Group_Extension {
         if (!check_admin_referer('bp_gtm_new_task'))
             return false;
 
-        $name = apply_filters('bp_gtm_task_name_content', $_POST['task_name']);
+        $name        = apply_filters('bp_gtm_task_name_content', $_POST['task_name']);
         $description = apply_filters('bp_gtm_task_desc_content', $_POST['task_desc']);
 
         if ($_POST['task_parent'] == 0) {
@@ -412,9 +412,9 @@ class BP_GTM extends BP_Group_Extension {
             bp_core_add_message(__('New task was successfully created.', 'bp_gtm'));
             // record to activity feed
             bp_gtm_group_activity(array(
-                'user_id' => $_POST['task_creator'],
-                'group_id' => $bp->groups->current_group->id,
-                'elem_id' => $task_id,
+                'user_id'   => $_POST['task_creator'],
+                'group_id'  => $bp->groups->current_group->id,
+                'elem_id'   => $task_id,
                 'elem_type' => 'task',
                 'elem_name' => $name
             ));
@@ -437,9 +437,9 @@ class BP_GTM extends BP_Group_Extension {
         $task_id = $_POST['task_id'];
         if (!$project_id)
             $project_id = $_POST['task_project'];
-        $name = apply_filters('bp_gtm_task_name_content', $_POST['task_name']);
+        $name        = apply_filters('bp_gtm_task_name_content', $_POST['task_name']);
         $description = apply_filters('bp_gtm_task_desc_content', $_POST['task_desc']);
-        $status = bp_gtm_get_project_status($project_id);
+        $status      = bp_gtm_get_project_status($project_id);
 
         // resps workaround
         if (!empty($_POST['user_ids'])) {
@@ -501,9 +501,9 @@ class BP_GTM extends BP_Group_Extension {
     protected function bp_gtm_split_string($autocomp_tags = null, $not_autocomp_tags = null) {
         $not_empty_tags = array();
         if (!empty($autocomp_tags)) {
-            $temp = $autocomp_tags;
-            $temp = str_replace(' ', '', $temp);
-            $temp = str_replace('**', ' ', $temp);
+            $temp  = $autocomp_tags;
+            $temp  = str_replace(' ', '', $temp);
+            $temp  = str_replace('**', ' ', $temp);
             $tags1 = explode('|', $temp);
             $tags1 = array_slice($tags1, 1);
         } else {
@@ -636,40 +636,40 @@ function bp_gtm_personal_nav() {
 
         // Main Navi
         bp_core_new_nav_item(array(
-            'name' => $bp_gtm['label_assignments'] . ' (' . $count_ass['all'] . ')',
-            'slug' => $bp->gtm->slug,
-            'position' => 45,
+            'name'                    => $bp_gtm['label_assignments'] . ' (' . $count_ass['all'] . ')',
+            'slug'                    => $bp->gtm->slug,
+            'position'                => 45,
             'show_for_displayed_user' => bp_is_my_profile(),
-            'screen_function' => 'bp_gtm_personal_pages',
-            'default_subnav_slug' => 'tasks',
-            'item_css_id' => $bp->gtm->id));
+            'screen_function'         => 'bp_gtm_personal_pages',
+            'default_subnav_slug'     => 'tasks',
+            'item_css_id'             => $bp->gtm->id));
 
         // Subnav items in profile
         bp_core_new_subnav_item(array(
-            'name' => __('Tasks', 'bp_gtm') . ' (' . $count_ass['tasks'] . ')',
-            'slug' => 'tasks',
-            'parent_url' => $gtm_profile_link,
-            'parent_slug' => $bp->gtm->slug,
+            'name'            => __('Tasks', 'bp_gtm') . ' (' . $count_ass['tasks'] . ')',
+            'slug'            => 'tasks',
+            'parent_url'      => $gtm_profile_link,
+            'parent_slug'     => $bp->gtm->slug,
             'screen_function' => 'bp_gtm_personal_pages',
-            'position' => 10,
+            'position'        => 10,
             'user_has_access' => bp_is_my_profile()));
 
         bp_core_new_subnav_item(array(
-            'name' => __('Projects', 'bp_gtm') . ' (' . $count_ass['projects'] . ')',
-            'slug' => 'projects',
-            'parent_url' => $gtm_profile_link,
-            'parent_slug' => $bp->gtm->slug,
+            'name'            => __('Projects', 'bp_gtm') . ' (' . $count_ass['projects'] . ')',
+            'slug'            => 'projects',
+            'parent_url'      => $gtm_profile_link,
+            'parent_slug'     => $bp->gtm->slug,
             'screen_function' => 'bp_gtm_personal_pages',
-            'position' => 20,
+            'position'        => 20,
             'user_has_access' => bp_is_my_profile()));
 
         bp_core_new_subnav_item(array(
-            'name' => __('Settings', 'bp_gtm'),
-            'slug' => 'settings',
-            'parent_url' => $gtm_profile_link,
-            'parent_slug' => $bp->gtm->slug,
+            'name'            => __('Settings', 'bp_gtm'),
+            'slug'            => 'settings',
+            'parent_url'      => $gtm_profile_link,
+            'parent_slug'     => $bp->gtm->slug,
             'screen_function' => 'bp_gtm_personal_pages',
-            'position' => 30,
+            'position'        => 30,
             'user_has_access' => bp_is_my_profile()));
     }
 }
@@ -827,7 +827,7 @@ function bp_gtm_save_g_resps($task_id, $project_id, $group_id, $resps) {
 function bp_gtm_covert_date($date) {
     $timestamp = strtotime($date);
     if (!$timestamp) {
-        $times = explode('/', $date);
+        $times     = explode('/', $date);
         $timestamp = $times[1] . '/' . $times[0] . '/' . $times[2];
         $timestamp = strtotime($timestamp);
     };

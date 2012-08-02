@@ -16,7 +16,7 @@ if (count($task) == 0) {
         <h3>#T<?php echo $task['0']->id ?> &rarr; <a href="<?php echo $gtm_link . 'tasks/view/' . $task['0']->id ?>"><?php echo $task['0']->name; ?></a> <?php echo $task_status; ?></h3>
         <?php bp_gtm_view_list_button($gtm_link, 'tasks'); ?>
         <?php
-        if ($task['0']->parent_id == '0') {
+        if ($task['0']->parent_id == '0' && $bp_gtm['subtasks'] == 'on') {
             bp_gtm_create_subtask_button($task['0']->id, $gtm_link);
             bp_gtm_view_subtask_button($task['0']->id);
         }
