@@ -1022,9 +1022,10 @@ function bp_gtm_get_personal_filter_project_list() {
         if(is_array($project)){
             $project = $project[0];
         }
-        if (bp_gtm_check_access($type . '_view')) {
+        if (bp_gtm_check_access($type . '_view')) { 
+            $title = !empty($project->desc)?' title="'.strip_tags($project->desc).'"':'';
             ?>
-            <a class="topic-title" href="<?php echo $gtm_link . $type . 's/view/' . $project->id ?>" title="<?php echo strip_tags($project->desc) ?>">
+            <a class="topic-title" href="<?php echo $gtm_link . $type . 's/view/' . $project->id ?>"<?php echo $title ?>>
                 <?php echo $project->name; ?>
             </a>
             <?php
