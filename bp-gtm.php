@@ -4,7 +4,7 @@ Plugin Name:    BP GTM System
 Plugin URI:     http://ovirium.com/portfolio/bp-gtm-system/
 Description:    Create a tasks management system for BuddyPress groups in your network with lots of features. <a href="http://wp-bp.com">Powered by WP-BP.com</a>
 Author:         slaFFik
-Version:        1.9.5.1
+Version:        1.9.6
 DB Version:     42
 Author URI:     http://ovirium.com/
 Domain Path:    /langs/
