@@ -55,7 +55,7 @@ function bp_gtm_localize_js() {
         'person_navi_filter'   => $person_navi_filter,
         'date_format'          => $date_format,
         'files_count'          => $bp_gtm['files_count'],
-        'ajaxurl'              => home_url('/wp-load.php')
+        'ajaxurl'              => home_url('/wp-admin/admin-ajax.php')
     );
     $localize['mce'] = $bp_gtm['mce'] == 'on' ? 'on' : ''; // on/off tinymce
 
