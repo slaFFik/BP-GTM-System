@@ -53,7 +53,8 @@ function bp_gtm_localize_js() {
         'task_navi_filter'     => $filter,
         'task_navi_project'    => $project,
         'person_navi_filter'   => $person_navi_filter,
-        'date_format'          => $date_format,
+        'date_format'          => 'yy-mm-dd',                //keep this to ISO 8601
+        'date_format_human'    => $date_format,
         'files_count'          => $bp_gtm['files_count'],
         'ajaxurl'              => home_url('/wp-admin/admin-ajax.php')
     );
@@ -96,8 +97,11 @@ function bp_gtm_admin_css() {
 
 function gtm_js_date_format($php_date_str = '') {
     $js_date_str = 'M d, yy';
+
+    //TODO whole range of JS/jQueryUI <--> PHP date format covered? this probably needs to be changed to more general approach...
     $dates = array(
         'F j, Y' => 'MM d, yy',
+        'j F Y' => 'd MM yy',
         'Y/m/d'  => 'yy/mm/dd',
         'm/d/Y'  => 'mm/dd/yy',
         'd/m/Y'  => 'dd/mm/yy',

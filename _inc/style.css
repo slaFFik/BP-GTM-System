@@ -1,4 +1,4 @@
-input#project_deadline, input#task_deadline {width:275px !important}
+input#project_deadline_human, input#task_deadline_human {width:275px !important}
 
 .ui-datepicker {width:17em;padding:.2em .2em 0;background:#fff;border:1px solid #eaeaea;border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
 .ui-datepicker .ui-datepicker-header {position:relative;padding:.2em 0}

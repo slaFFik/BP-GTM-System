@@ -45,7 +45,8 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
 <?php bp_gtm_task_project($parent_task); ?>
 
 <label for="task_deadline"><?php _e('Task Deadline', 'bp_gtm'); ?><span class="required">*</span></label>
-<input type="text" name="task_deadline" id="task_deadline" value="" readonly="readonly"/>
+<input type="text" name="task_deadline_human" id="task_deadline_human" value="" readonly="readonly"/>
+<input type="hidden" name="task_deadline" id="task_deadline" value="" readonly="readonly"/>
 <?php do_action('bp_after_gtm_task_create', $bp_gtm); ?>
 <div class="clear-both"></div>
 <div id="tasks_tax">
