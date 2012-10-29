@@ -27,7 +27,8 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
     <?php bp_gtm_filter_users(explode(' ', $project[0]->resp_id)) ?>
     <label for="project_deadline"><?php _e('Project Deadline', 'bp_gtm'); ?><span class="required">*</span></label>
     <p><?php _e('Select a date for the project when it should be finished.', 'bp_gtm') ?></p>
-    <input type="text" name="project_deadline" id="project_deadline" value="<?php echo date($date_format, strtotime($project[0]->deadline)) ?>" readonly="readonly"/>
+    <input type="text" name="project_deadline" id="project_deadline_human" value="<?php bp_gtm_format_date($project[0]->deadline) ?>" readonly="readonly"/>
+    <input type="hidden" name="project_deadline" id="project_deadline" value="<?php echo $project[0]->deadline ?>" readonly="readonly"/>
     <?php do_action('bp_after_gtm_project_create', $bp_gtm); ?>
     <div id="projects_tax">
         <div class="float">
