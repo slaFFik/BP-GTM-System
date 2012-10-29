@@ -1,0 +1,2308 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BP GTM System v1.9.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-10-29 10:40:59+0000\n"
+"Last-Translator: admin <tattle@teatrovalleoccupato.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: bp-gtm-admin.php:30
+#@ bp_gtm
+msgid "GTM System"
+msgstr "GTM System"
+
+#: bp-gtm-admin.php:43
+#@ bp_gtm
+msgid "Display/Hide Some Features"
+msgstr "Visualizza/nascondi alcune caratteristiche"
+
+#: bp-gtm-admin.php:44
+#@ bp_gtm
+msgid "Extra Actions for Admin"
+msgstr "Azioni supplementari per Admin"
+
+#: bp-gtm-admin.php:45
+#@ bp_gtm
+msgid "GTM Themes for Front-end"
+msgstr "Temi GTM per il Front-end"
+
+#: bp-gtm-admin.php:47
+#@ bp_gtm
+msgid "Deactivation Options"
+msgstr "Opzioni di disattivazione"
+
+#: bp-gtm-admin.php:49
+#@ bp_gtm
+msgid "Groups Selection"
+msgstr "Selezione Gruppi"
+
+#: bp-gtm-admin.php:50
+#@ bp_gtm
+msgid "Default Global GTM Roles"
+msgstr "Ruoli predefiniti globali per GTM"
+
+#: bp-gtm-admin.php:52
+#@ bp_gtm
+msgid "Change Labels Names"
+msgstr "Modifica nomi etichette"
+
+#: bp-gtm-admin.php:53
+#@ bp_gtm
+msgid "Import All Groups Users"
+msgstr "Importa tutti i gruppi utenti"
+
+#: bp-gtm-admin.php:107
+#@ bp_gtm
+msgid "All changes were saved. Go and check results!"
+msgstr "Tutte le modifiche sono state salvate. Vai a controllare i risultati!"
+
+#. translators: plugin header field 'Name'
+#: bp-gtm-admin.php:125
+#: bp-gtm.php:0
+#@ bp_gtm
+msgid "BP GTM System"
+msgstr "BP GTM System"
+
+#: bp-gtm-admin.php:125
+#@ bp_gtm
+msgid "Group Tasks Management"
+msgstr "Gestione di attività di gruppo"
+
+#: bp-gtm-admin.php:140
+#: bp-gtm-admin.php:148
+#: templates/gtm/personal/settings.php:16
+#: templates/gtm/settings.php:46
+#@ bp_gtm
+msgid "Save Changes"
+msgstr "Salvare le modifiche"
+
+#: bp-gtm-admin.php:188
+#@ bp_gtm
+msgid "Do you want to use Rich Editor (TinyMCE) to format projects/tasks descriptions with visual editor?"
+msgstr "Utilizzare Rich Editor (TinyMCE) per formattare le descrizioni di progetti o attività con editor visuale?"
+
+#: bp-gtm-admin.php:189
+#: bp-gtm-admin.php:196
+#: bp-gtm-admin.php:203
+#: bp-gtm-admin.php:210
+#: bp-gtm-admin.php:217
+#: bp-gtm-admin.php:242
+#: lib/files.php:144
+#@ bp_gtm
+msgid "Enable"
+msgstr "Abilita"
+
+#: bp-gtm-admin.php:190
+#: bp-gtm-admin.php:197
+#: bp-gtm-admin.php:204
+#: bp-gtm-admin.php:211
+#: bp-gtm-admin.php:218
+#: bp-gtm-admin.php:243
+#: lib/files.php:145
+#@ bp_gtm
+msgid "Disable"
+msgstr "Disabilita"
+
+#: bp-gtm-admin.php:202
+#@ bp_gtm
+msgid "Do you want to display for each user his personal Assignments page under My Account menu?"
+msgstr "Si desidera visualizzare per ogni utente la sua pagina personale di assegnazioni sotto menu My Account?"
+
+#: bp-gtm-admin.php:209
+#@ bp_gtm
+msgid "Do you want to display a notification entry in activity feed for newly created tasks and projects?"
+msgstr "Si desidera visualizzare una notifica nella lista attività per le attività e progetti di nuova creazione?"
+
+#: bp-gtm-admin.php:216
+#@ bp_gtm
+msgid "Do you want to display a notification entry in activity feed for all discussion posts of any tasks and projects?"
+msgstr "Si desidera visualizzare una notifica nel feed attività per tutte le discussioni di qualsiasi attività e progetto?"
+
+#: bp-gtm-admin.php:223
+#@ bp_gtm
+msgid "Please choose here a theme, that will be used on frontend for BP GTM System:"
+msgstr "Scegli qui un tema, che verrà utilizzato sul frontend di BP GTM System:"
+
+#: bp-gtm-admin.php:236
+#@ bp_gtm
+msgid "Be patient, if there is no <code>index.php</code> in that theme, then you will be redirected to the site main page."
+msgstr "Sii paziente, se non c'è nessun <code>index.php</code> in quel tema, sarai reindirizzato alla pagina principale del sito."
+
+#: bp-gtm-admin.php:241
+#@ bp_gtm
+msgid "Display menu for changing members roles in groups members and involved lists?"
+msgstr "Visualizzare il menu per modificare i ruoli dei membri nei membri del gruppo e nelle liste coinvolte?"
+
+#: bp-gtm-admin.php:247
+#@ bp_gtm
+msgid "Export All GTM Data"
+msgstr "Esporta tutti i Dati GMT"
+
+#: bp-gtm-admin.php:250
+#@ bp_gtm
+msgid "Import Data"
+msgstr "Importa Dati"
+
+#: bp-gtm-admin.php:254
+#@ bp_gtm
+msgid "Please check here how you would like to uninstall BP GTM System:"
+msgstr "Controlla qui come disinstallare BP GTM System:"
+
+#: bp-gtm-admin.php:255
+#@ bp_gtm
+msgid "Deactivate the plugin and delete all options and tables from the DB"
+msgstr "Disattivare il plugin e cancellare tutte le opzioni e le tabelle da DB"
+
+#: bp-gtm-admin.php:256
+#@ bp_gtm
+msgid "Deactivate the plugin only, all saved data won't be touched"
+msgstr "Disattivare solo il plugin, tutti i dati salvati non saranno toccati"
+
+#: bp-gtm-admin.php:257
+#@ bp_gtm
+msgid "After choosing deactivation method you could go to <a href=\"plugins.php?plugin_status=all\">Plugins's page</a> and deactivate the plugin safely."
+msgstr "Dopo aver scelto il metodo di disattivazione puoi andare alla <a href=\"plugins.php?plugin_status=all\">pagina dei plugin</a> e disattivare il plugin in modo sicuro."
+
+#: bp-gtm-admin.php:270
+#@ bp_gtm
+msgid "Which groups should have GTM System turned on?"
+msgstr "Quali gruppi dovrebbero avere GTM System abilitato?"
+
+#: bp-gtm-admin.php:271
+#@ bp_gtm
+msgid "Own roles?"
+msgstr "Own roles?"
+
+#: bp-gtm-admin.php:277
+#: bp-gtm-admin.php:298
+#@ bp_gtm
+msgid "All groups"
+msgstr "Tutti i gruppi"
+
+#: bp-gtm-admin.php:326
+#@ bp_gtm
+msgid "Add New Default Role"
+msgstr "Aggiungi nuovo ruolo predefinito"
+
+#: bp-gtm-admin.php:330
+#@ bp_gtm
+msgid "Choose a default role for a new member of any group:"
+msgstr "Scegli un ruolo predefinito per un nuovo membro di un gruppo:"
+
+#: bp-gtm-admin.php:340
+#@ bp_gtm
+msgid "Choose a default role for a group creator in newly created group:"
+msgstr "Scegliere un ruolo predefinito per un creatore di gruppo in gruppo appena creato:"
+
+#: bp-gtm-admin.php:353
+#@ bp_gtm
+msgid "Here you can change some GTM labels that are used throughout your site."
+msgstr "Qui è possibile modificare alcune etichette GTM che vengono utilizzate in tutto il sito."
+
+#: bp-gtm-admin.php:358
+#@ bp_gtm
+msgid "Used in group menu navigation - to reach the list of group tasks or projects"
+msgstr "Utilizzato nel menu di navigazione di gruppo - per raggiungere l'elenco dei progetti o attività di gruppo"
+
+#: bp-gtm-admin.php:362
+#@ bp_gtm
+msgid "Used in user personal navigation under My Account menu"
+msgstr "Utilizzato in navigazione personale utente sotto menu My Account"
+
+#: bp-gtm-admin.php:377
+#@ bp_gtm
+msgid ""
+"Using this menu you can easily import all group members from any group into GTM System role tables.<br>\n"
+"                    This action is needed when you had a community for some time and then decided to use this awesome plugin.<br>\n"
+"                    You should do this <strong>only once</strong> - just after BP GTM System activation."
+msgstr ""
+"Usando questo menu è possibile importare facilmente tutti i membri del gruppo da qualsiasi gruppo nelle tabelle ruolo di GTM System.<br>\n"
+"                    Questa azione è necessaria quando si aveva già una comunità e poi hai deciso di utilizzare questo fantastico plugin.<br>\n"
+"                    Si dovrebbe fare questo <strong>solo una volta</strong> - dopo l'attivazione di BP GTM System."
+
+#: bp-gtm-admin.php:381
+#@ bp_gtm
+msgid "Please choose here, whom you would like group users to be after importing:"
+msgstr "Scegli qui, cosa vorresti che diventassero gli utenti di gruppo dopo l'importazione:"
+
+#: bp-gtm-admin.php:384
+#@ bp_gtm
+msgid "Administrators"
+msgstr "Amministratori"
+
+#: bp-gtm-admin.php:392
+#@ bp_gtm
+msgid "Moderators"
+msgstr "Moderatori"
+
+#: bp-gtm-admin.php:400
+#@ bp_gtm
+msgid "Ordinary Members"
+msgstr "Membri ordinari"
+
+#: bp-gtm-admin.php:407
+#@ bp_gtm
+msgid "Import Users"
+msgstr "Importa utenti"
+
+#: bp-gtm-admin.php:468
+#@ bp_gtm
+msgid "All users from all groups were successfully imported"
+msgstr "Tutti gli utenti di tutti i gruppi sono stati correttamente importati"
+
+#: bp-gtm-admin.php:470
+#@ bp_gtm
+msgid "Some error occured while importing users. Perhaps, you have already imported all of them?"
+msgstr "Qualche errore durante l'importazione degli utenti. Forse li hai già importati tutti?"
+
+#: bp-gtm-admin.php:500
+#, php-format
+#@ bp_gtm
+msgid "GTM data backup was successfully created in <code>/wp-content/uploads/gtm/</code>. <a href=\"%s\">Download that file</a>"
+msgstr "Backup dei dati GTM è stato creato correttamente <code>/wp-content/uploads/gtm/</code>. <a href=\"%s\">Scarica il file</a>"
+
+#: bp-gtm-admin.php:502
+#@ bp_gtm
+msgid "There were some errors while exporting data. Please try again."
+msgstr "Si sono verificati errori durante l'esportazione dei dati. Si prega di riprovare."
+
+#: bp-gtm-admin.php:517
+#@ bp_gtm
+msgid "File with GTM data should have .zip or .json extension"
+msgstr "File con dati GTM deve avere estensione .zip o .json"
+
+#: bp-gtm-admin.php:523
+#@ bp_gtm
+msgid "File was successfully uploaded."
+msgstr "Il file è stato caricato con successo."
+
+#: bp-gtm-admin.php:602
+#@ bp_gtm
+msgid "All GTM data was successfully imported."
+msgstr "Tutti i dati GTM sono stati importati con successo."
+
+#: bp-gtm-admin.php:604
+#@ bp_gtm
+msgid "There was an error while importing GTM data."
+msgstr "C'è stato un errore durante l'importazione dei dati GTM."
+
+#: bp-gtm-admin.php:606
+#@ bp_gtm
+msgid "There were some errors while uploading a backup file. Please try again."
+msgstr "Si sono verificati errori durante il caricamento di un file di backup. Si prega di riprovare."
+
+#: bp-gtm-classes.php:41
+#@ bp_gtm
+msgid "inGroup GTM Classifier"
+msgstr "classificatore GTM nel gruppo"
+
+#: bp-gtm-classes.php:77
+#@ bp_gtm
+msgid "<strong>Tags:</strong>"
+msgstr "<strong>Tags:</strong>"
+
+#: bp-gtm-classes.php:88
+#: bp-gtm-classes.php:99
+#@ bp_gtm
+msgid "No tags to display"
+msgstr "Nessun tag da visualizzare"
+
+#: bp-gtm-classes.php:107
+#@ bp_gtm
+msgid "<strong>Categories:</strong>"
+msgstr "<strong>Categorie:</strong>"
+
+#: bp-gtm-classes.php:117
+#: bp-gtm-classes.php:128
+#@ bp_gtm
+msgid "No categories to display"
+msgstr "Nessuna categoria da visualizzare"
+
+#: bp-gtm-classes.php:134
+#@ bp_gtm
+msgid "There is nothing to display yet."
+msgstr "Non c'è ancora nulla da visualizzare."
+
+#: bp-gtm-classes.php:164
+#@ bp_gtm
+msgid "Display tags?"
+msgstr "Visualizza tag?"
+
+#: bp-gtm-classes.php:169
+#@ bp_gtm
+msgid "Display categories?"
+msgstr "Visualizza le categorie?"
+
+#: bp-gtm-classes.php:172
+#@ bp_gtm
+msgid "How do you want to display tags?"
+msgstr "Come si desidera visualizzare i tag?"
+
+#: bp-gtm-classes.php:174
+#: bp-gtm-classes.php:181
+#@ bp_gtm
+msgid "As a Cloud"
+msgstr "Come una nuvola"
+
+#: bp-gtm-classes.php:176
+#: bp-gtm-classes.php:183
+#@ bp_gtm
+msgid "As a List"
+msgstr "Come elenco"
+
+#: bp-gtm-classes.php:179
+#@ bp_gtm
+msgid "How do you want to display categories?"
+msgstr "Come si desidera visualizzare le categorie?"
+
+#: bp-gtm-classes.php:186
+#@ bp_gtm
+msgid "Do you want to display categories and tags usage count?"
+msgstr "Si desidera visualizzare il conteggio di utilizzo di categorie e tag?"
+
+#: bp-gtm-classes.php:188
+#: bp-gtm-templatetags.php:197
+#@ bp_gtm
+msgid "Yes"
+msgstr "Si"
+
+#: bp-gtm-classes.php:190
+#: bp-gtm-templatetags.php:197
+#@ bp_gtm
+msgid "No"
+msgstr "No"
+
+#: bp-gtm-core.php:133
+#@ bp_gtm
+msgid "There was an error updating GTM System settings, please try again."
+msgstr "Errore durante l'aggiornamento delle impostazioni di GTM System, riprovare."
+
+#: bp-gtm-core.php:135
+#@ bp_gtm
+msgid "GTM System settings were successfully updated."
+msgstr "Le impostazioni di GTM System sono state aggiornate con successo."
+
+#: bp-gtm-core.php:159
+#@ bp_gtm
+msgid "New term was successfully created."
+msgstr "Nuovo termine è stato creato correttamente."
+
+#: bp-gtm-core.php:161
+#@ bp_gtm
+msgid "There was an error creating new term, please try again."
+msgstr "Errore durante la creazione del nuovo termine, riprovare."
+
+#: bp-gtm-core.php:208
+#@ bp_gtm
+msgid "Your reply was successfully posted."
+msgstr "La risposta è stata inviata con successo."
+
+#: bp-gtm-core.php:218
+#@ bp_gtm
+msgid "There was an error posting your reply, please try again."
+msgstr "Si è verificato un errore nell'invio della risposta, si prega di riprovare."
+
+#: bp-gtm-core.php:263
+#@ bp_gtm
+msgid "New project was successfully created."
+msgstr "Il nuovo progetto è stato creato correttamente."
+
+#: bp-gtm-core.php:273
+#@ bp_gtm
+msgid "There was an error creating new project, please try again."
+msgstr "Si è verificato un errore durante la creazione del nuovo progetto, si prega di riprovare."
+
+#: bp-gtm-core.php:338
+#@ bp_gtm
+msgid "Project data was successfully updated."
+msgstr "I dati di progetto sono stati aggiornati con successo."
+
+#: bp-gtm-core.php:362
+#@ bp_gtm
+msgid "Everything was deleted successfully."
+msgstr "Tutto è stato cancellato con successo."
+
+#: bp-gtm-core.php:412
+#@ bp_gtm
+msgid "New task was successfully created."
+msgstr "La nuova attività è stata creata correttamente."
+
+#: bp-gtm-core.php:422
+#@ bp_gtm
+msgid "There was an error creating new task, please try again."
+msgstr "Errore durante la creazione di nuove attività, si prega di riprovare."
+
+#: bp-gtm-core.php:490
+#@ bp_gtm
+msgid "Task data was successfully updated."
+msgstr "I dati dell'attività sono stati aggiornati con successo."
+
+#: bp-gtm-core.php:649
+#: bp-gtm-core.php:684
+#: bp-gtm-core.php:746
+#: bp-gtm-templatetags.php:700
+#: templates/gtm/involved/involved_list.php:22
+#: templates/gtm/projects/projects_list.php:41
+#@ bp_gtm
+msgid "Tasks"
+msgstr "Attività"
+
+#: bp-gtm-core.php:658
+#: bp-gtm-core.php:685
+#: bp-gtm-core.php:742
+#: bp-gtm-templatetags.php:691
+#: templates/gtm/involved/involved_list.php:23
+#@ bp_gtm
+msgid "Projects"
+msgstr "Progetti"
+
+#: bp-gtm-core.php:667
+#: bp-gtm-core.php:686
+#: bp-gtm-core.php:767
+#: bp-gtm-templatetags.php:747
+#: templates/gtm/settings.php:1
+#@ bp_gtm
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: bp-gtm-core.php:713
+#@ bp_gtm
+msgid "Personal settings were successfully updated."
+msgstr "Le impostazioni personali sono state aggiornate con successo."
+
+#: bp-gtm-core.php:715
+#: bp-gtm-core.php:718
+#@ bp_gtm
+msgid "There was an error updating personal settings, please try again."
+msgstr "Si è verificato un errore nell'aggiornamento delle impostazioni personali, si prega di riprovare."
+
+#: bp-gtm-core.php:750
+#: bp-gtm-templatetags.php:720
+#@ bp_gtm
+msgid "Classifier"
+msgstr "Classificatore"
+
+#: bp-gtm-core.php:754
+#: bp-gtm-templatetags.php:729
+#@ bp_gtm
+msgid "Involved"
+msgstr "Coinvolti"
+
+#: bp-gtm-core.php:760
+#@ bp_gtm
+msgid "Files"
+msgstr "Files"
+
+#: bp-gtm-core.php:763
+#: bp-gtm-templatetags.php:738
+#@ bp_gtm
+msgid "Discussions"
+msgstr "Discussioni"
+
+#: bp-gtm-core.php:775
+#: bp-gtm-templatetags.php:177
+#: bp-gtm-templatetags.php:568
+#: bp-gtm-templatetags.php:709
+#: bp-gtm-templatetags.php:1006
+#: bp-gtm-templatetags.php:1038
+#: bp-gtm-templatetags.php:1146
+#: templates/gtm/files.php:39
+#@ bp_gtm
+msgid "Delete"
+msgstr "Elimina"
+
+#: bp-gtm-cssjs.php:38
+#@ bp_gtm
+msgid "Role was successfully changed"
+msgstr "Il ruolo è stato cambiato con successo"
+
+#: bp-gtm-cssjs.php:39
+#@ bp_gtm
+msgid "Error: please try again"
+msgstr "Errore: si prega di riprovare"
+
+#: bp-gtm-cssjs.php:40
+#@ bp_gtm
+msgid "Please select a new role for this user"
+msgstr "Si prega di selezionare un nuovo ruolo per l'utente"
+
+#: bp-gtm-cssjs.php:41
+#@ bp_gtm
+msgid "Update post"
+msgstr "Aggiorna post"
+
+#: bp-gtm-cssjs.php:42
+#@ bp_gtm
+msgid "Cancel"
+msgstr "Annulla"
+
+#: bp-gtm-cssjs.php:43
+#@ bp_gtm
+msgid ""
+"Are you sure you want to delete it?\n"
+"This action cannot be undone."
+msgstr ""
+"Sei sicuro di che voler eliminare?\n"
+"Questa azione non può essere annullata."
+
+#: bp-gtm-cssjs.php:44
+#@ bp_gtm
+msgid "List of SubTasks"
+msgstr "Elenco delle sottoattività"
+
+#: bp-gtm-cssjs.php:45
+#@ bp_gtm
+msgid "There are no subtasks to display"
+msgstr "Non ci sono sottoattività da mostrare"
+
+#: bp-gtm-cssjs.php:46
+#@ bp_gtm
+msgid "Email was sent to that involved user to remind about pending tasks/projects."
+msgstr "Una Email è stata inviata a quell'utente coinvolto per ricordare progetti/attività in sospeso."
+
+#: bp-gtm-cssjs.php:47
+#@ bp_gtm
+msgid "Save"
+msgstr "Salva"
+
+#: bp-gtm-cssjs.php:48
+#: bp-gtm-templatetags.php:1070
+#: lib/tasks.php:297
+#: templates/gtm/tasks/task_view.php:9
+#@ bp_gtm
+msgid "completed"
+msgstr "completato"
+
+#: bp-gtm-cssjs.php:49
+#@ bp_gtm
+msgid "deleted"
+msgstr "cancellato"
+
+#: bp-gtm-filters.php:17
+#: bp-gtm-filters.php:26
+#@ bp_gtm
+msgid "doesn't exist"
+msgstr "non esiste"
+
+#: bp-gtm-filters.php:21
+#@ bp_gtm
+msgid "Task:"
+msgstr "Attività:"
+
+#: bp-gtm-filters.php:30
+#@ bp_gtm
+msgid "Project:"
+msgstr "Progetto:"
+
+#: bp-gtm-functions.php:230
+#@ bp_gtm
+msgid "Mark as pending"
+msgstr "Segna come in sospeso"
+
+#: bp-gtm-functions.php:230
+#@ bp_gtm
+msgid "Undone"
+msgstr "Riaperta (undone)"
+
+#: bp-gtm-functions.php:233
+#: bp-gtm-templatetags.php:1137
+#@ bp_gtm
+msgid "Mark as completed"
+msgstr "Segna come completa"
+
+#: bp-gtm-functions.php:233
+#: templates/gtm/terms/terms_list.php:40
+#@ bp_gtm
+msgid "Done"
+msgstr "Fatto"
+
+#: bp-gtm-notifications.php:13
+#@ bp_gtm
+msgid "Tasks you're now responsible for were created"
+msgstr "Sono state create attività di cui ora sei responsabile"
+
+#: bp-gtm-notifications.php:15
+#@ bp_gtm
+msgid "Task you're now responsible for was created"
+msgstr "E' stata creata un'attività di cui ora sei responsabile"
+
+#: bp-gtm-notifications.php:20
+#@ bp_gtm
+msgid "Tasks you're responsible for were updated"
+msgstr "Sono state aggiornate attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:22
+#@ bp_gtm
+msgid "Task you're responsible for was updated"
+msgstr "E' stata aggiornata un'attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:27
+#@ bp_gtm
+msgid "Tasks you're responsible for were done"
+msgstr "Sono state completate attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:29
+#@ bp_gtm
+msgid "Task you're responsible for was done"
+msgstr "E' stata completata un'attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:34
+#@ bp_gtm
+msgid "Tasks you're responsible for were undone"
+msgstr "Sono state riaperte attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:36
+#@ bp_gtm
+msgid "Task you're responsible for was undone"
+msgstr "E' stata riaperta un'attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:41
+#@ bp_gtm
+msgid "Tasks you're responsible for were deleted"
+msgstr "Sono state cancellate attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:43
+#@ bp_gtm
+msgid "Task you're responsible for was deleted"
+msgstr "E' stata cancellata un'attività di cui sei responsabile"
+
+#: bp-gtm-notifications.php:50
+#@ bp_gtm
+msgid "Projects you're now responsible for were created"
+msgstr "Sono stati creati progetti di cui ora sei responsabile"
+
+#: bp-gtm-notifications.php:52
+#@ bp_gtm
+msgid "Project you're now responsible for was created"
+msgstr "E' stato creato un progetto di cui sei responsabile"
+
+#: bp-gtm-notifications.php:57
+#@ bp_gtm
+msgid "Projects you're responsible for were updated"
+msgstr "Sono stati aggiornati progetti di cui sei responsabile"
+
+#: bp-gtm-notifications.php:59
+#@ bp_gtm
+msgid "Project you're responsible for was updated"
+msgstr "E' stato aggiornato un progetto di cui sei responsabile"
+
+#: bp-gtm-notifications.php:64
+#@ bp_gtm
+msgid "Projects you're responsible for were done"
+msgstr "Sono stati completati progetti di cui sei responsabile"
+
+#: bp-gtm-notifications.php:66
+#@ bp_gtm
+msgid "Project you're responsible for was done"
+msgstr "E' stato completato un progetto di cui sei responsabile"
+
+#: bp-gtm-notifications.php:71
+#@ bp_gtm
+msgid "Projects you're responsible for were undone"
+msgstr "Sono stati riaperti progetti di cui sei responsabile"
+
+#: bp-gtm-notifications.php:73
+#@ bp_gtm
+msgid "Project you're responsible for was undone"
+msgstr "E' stato riaperto un progetto di cui sei responsabile"
+
+#: bp-gtm-notifications.php:78
+#@ bp_gtm
+msgid "Projects you're responsible for were deleted"
+msgstr "Sono stati cancellati progetti di cui sei responsabile"
+
+#: bp-gtm-notifications.php:80
+#@ bp_gtm
+msgid "Project you're responsible for was deleted"
+msgstr "E' stato cancellato un progetto di cui sei responsabile"
+
+#: bp-gtm-notifications.php:116
+#@ bp_gtm
+msgid "Created the task"
+msgstr "Ha creato l'attività"
+
+#: bp-gtm-notifications.php:117
+#@ bp_gtm
+msgid "Created the project"
+msgstr "Ha creato il progetto"
+
+#: bp-gtm-notifications.php:118
+#@ bp_gtm
+msgid "Created the discussion post"
+msgstr "Ha iniziato la discussione"
+
+#: bp-gtm-notifications.php:149
+#, php-format
+#@ bp_gtm
+msgid "%s created the project - %s"
+msgstr "%s ha creato il progetto - %s"
+
+#: bp-gtm-notifications.php:152
+#, php-format
+#@ bp_gtm
+msgid "%s created the task - %s"
+msgstr "%s ha creato l'attività - %s"
+
+#: bp-gtm-notifications.php:160
+#, php-format
+#@ bp_gtm
+msgid "%s posted a comment to the task %s"
+msgstr "%s ha inviato un commento sull'attività %s"
+
+#: bp-gtm-notifications.php:162
+#, php-format
+#@ bp_gtm
+msgid "%s posted a comment to the project %s"
+msgstr "%s ha inviato un commento sul progetto %s"
+
+#: bp-gtm-templatetags.php:31
+#@ buddypress
+msgid "Sorry, no members were found."
+msgstr ""
+
+#: bp-gtm-templatetags.php:71
+#@ bp_gtm
+msgid "Admin"
+msgstr "Admin"
+
+#: bp-gtm-templatetags.php:106
+#@ bp_gtm
+msgid "Mention this user"
+msgstr "Menziona questo utente"
+
+#: bp-gtm-templatetags.php:123
+#@ bp_gtm
+msgid "Send a private meassage"
+msgstr "Invia un messaggio privato"
+
+#: bp-gtm-templatetags.php:123
+#@ bp_gtm
+msgid "PM"
+msgstr "PM"
+
+#: bp-gtm-templatetags.php:139
+#@ bp_gtm
+msgid "Notify user about pending tasks and projects"
+msgstr "Informare l'utente circa attività e progetti in sospeso"
+
+#: bp-gtm-templatetags.php:139
+#@ bp_gtm
+msgid "N"
+msgstr "N"
+
+#: bp-gtm-templatetags.php:156
+#: templates/gtm/delete.php:11
+#, php-format
+#@ bp_gtm
+msgid "%s task"
+msgid_plural "%s tasks"
+msgstr[0] "%s attività"
+msgstr[1] "%s attività"
+
+#: bp-gtm-templatetags.php:158
+#: templates/gtm/delete.php:12
+#, php-format
+#@ bp_gtm
+msgid "%s project"
+msgid_plural "%s projects"
+msgstr[0] "%s progetto"
+msgstr[1] "%s progetti"
+
+#: bp-gtm-templatetags.php:169
+#@ bp_gtm
+msgid "Permalink on this term page"
+msgstr "Permalink alla pagina di questo termine"
+
+#: bp-gtm-templatetags.php:174
+#: bp-gtm-templatetags.php:563
+#: bp-gtm-templatetags.php:1015
+#: bp-gtm-templatetags.php:1097
+#@ bp_gtm
+msgid "Edit"
+msgstr "Modifica"
+
+#: bp-gtm-templatetags.php:194
+#, php-format
+#@ bp_gtm
+msgid "Permalink to this %s page"
+msgstr "Permalink a questa pagina %s"
+
+#: bp-gtm-templatetags.php:208
+#@ bp_gtm
+msgid "Project that this task corresponds to"
+msgstr "Progetto a cui appartiene questa attività"
+
+#: bp-gtm-templatetags.php:220
+#: templates/gtm/personal/projects.php:24
+#: templates/gtm/personal/tasks.php:38
+#: templates/gtm/projects/project_view.php:53
+#: templates/gtm/projects/projects_list.php:40
+#: templates/gtm/tasks/task_view.php:73
+#: templates/gtm/tasks/tasks_list.php:44
+#@ bp_gtm
+msgid "Deadline"
+msgstr "Scadenza"
+
+#: bp-gtm-templatetags.php:226
+#@ bp_gtm
+msgid "Please create at least one project to proceed."
+msgstr "Si prega di creare almeno un progetto per procedere."
+
+#: bp-gtm-templatetags.php:251
+#, php-format
+#@ bp_gtm
+msgid "There are no %ss to display. Create them <a href=\"%s\" target=\"_blank\">here</a>"
+msgstr "Non ci sono %ss da visualizzare. Creali <a href=\"%s\" target=\"_blank\">qui</a>"
+
+#: bp-gtm-templatetags.php:267
+#, php-format
+#@ bp_gtm
+msgid "said %s:"
+msgstr "ha detto %s:"
+
+#: bp-gtm-templatetags.php:292
+#: templates/gtm/projects/projects_list.php:39
+#: templates/gtm/tasks/tasks_list.php:42
+#@ bp_gtm
+msgid "Responsible"
+msgstr "Responsabili"
+
+#: bp-gtm-templatetags.php:326
+#, php-format
+#@ bp_gtm
+msgid "<p>There are no tags to display. Create them <a href=\"%s\" target=\"_blank\">here</a></p>"
+msgstr "<p>Non ci sono tag da visualizzare. Creali <a href=\"%s\" target=\"_blank\">qui</a></p>"
+
+#: bp-gtm-templatetags.php:349
+#@ bp_gtm
+msgid "Completed Projects"
+msgstr "Progetti conclusi"
+
+#: bp-gtm-templatetags.php:353
+#@ bp_gtm
+msgid "Projects by A/Z"
+msgstr "Progetti per A/Z"
+
+#: bp-gtm-templatetags.php:357
+#@ bp_gtm
+msgid "Projects by Deadline"
+msgstr "Progetti per scadenza"
+
+#: bp-gtm-templatetags.php:374
+#@ bp_gtm
+msgid "All Completed Tasks"
+msgstr "Tutte le attività completate"
+
+#: bp-gtm-templatetags.php:378
+#@ bp_gtm
+msgid "Tasks by A/Z"
+msgstr "Attività per A/Z"
+
+#: bp-gtm-templatetags.php:382
+#: bp-gtm-templatetags.php:390
+#: bp-gtm-templatetags.php:407
+#@ bp_gtm
+msgid "Tasks by Deadline"
+msgstr "Attività per scadenza"
+
+#: bp-gtm-templatetags.php:386
+#: bp-gtm-templatetags.php:403
+#@ bp_gtm
+msgid "Tasks whithout Project"
+msgstr "Attività senza progetto"
+
+#: bp-gtm-templatetags.php:397
+#@ bp_gtm
+msgid "Completed Tasks in Project"
+msgstr "Attività completate nel progetto"
+
+#: bp-gtm-templatetags.php:413
+#@ bp_gtm
+msgid "Pending Tasks in Project"
+msgstr "Attività in sospeso nel progetto"
+
+#: bp-gtm-templatetags.php:415
+#: bp-gtm-templatetags.php:622
+#: bp-gtm-templatetags.php:881
+#@ bp_gtm
+msgid "Go to project's page"
+msgstr "Vai alla pagina del progetto"
+
+#: bp-gtm-templatetags.php:415
+#: lib/roles.php:40
+#@ bp_gtm
+msgid "View Project"
+msgstr "Visualizza progetto"
+
+#: bp-gtm-templatetags.php:450
+#: templates/gtm/tasks/tasks_list.php:59
+#@ bp_gtm
+msgid "Current number of subtasks"
+msgstr "Numero corrente di sottoattività"
+
+#: bp-gtm-templatetags.php:480
+#: bp-gtm-templatetags.php:644
+#: templates/gtm/personal/tasks.php:51
+#: templates/gtm/tasks/tasks_list.php:94
+#: templates/gtm/terms/term_view.php:26
+#@ bp_gtm
+msgid "There are no tasks to display."
+msgstr "Non esistono attività da visualizzare."
+
+#: bp-gtm-templatetags.php:525
+#@ bp_gtm
+msgid "There are no posts to display."
+msgstr "Non ci sono post da visualizzare."
+
+#: bp-gtm-templatetags.php:541
+#, php-format
+#@ bp_gtm
+msgid "<span id=\"cur_discuss\">%d - %d</span> out of %d.&nbsp;"
+msgstr "<span id=\"cur_discuss\">%d - %d</span> di %d.&nbsp;"
+
+#: bp-gtm-templatetags.php:542
+#: lib/personal.php:181
+#: lib/tasks.php:225
+#@ bp_gtm
+msgid "Pagination:"
+msgstr "Paginazione:"
+
+#: bp-gtm-templatetags.php:551
+#@ bp_gtm
+msgid "List of the latest tasks/projects discussions in this group."
+msgstr "Elenco delle ultime discussioni attività/progetti di questo gruppo."
+
+#: bp-gtm-templatetags.php:560
+#: bp-gtm-templatetags.php:911
+#: bp-gtm-templatetags.php:1174
+#: lib/files.php:272
+#@ bp_gtm
+msgid "Permalink"
+msgstr "Permalink"
+
+#: bp-gtm-templatetags.php:616
+#: bp-gtm-templatetags.php:875
+#@ bp_gtm
+msgid "Permalink on task's page"
+msgstr "Permalink alla pagina dell'attività"
+
+#: bp-gtm-templatetags.php:667
+#: bp-gtm-templatetags.php:670
+#: templates/gtm/involved/involved_list.php:20
+#@ bp_gtm
+msgid "Role"
+msgstr "Ruolo"
+
+#: bp-gtm-templatetags.php:670
+#@ bp_gtm
+msgid "Group Admin"
+msgstr "Gruppo Admin"
+
+#: bp-gtm-templatetags.php:672
+#@ bp_gtm
+msgid "No Role"
+msgstr "Nessun ruolo"
+
+#: bp-gtm-templatetags.php:683
+#@ bp_gtm
+msgid "Permissions"
+msgstr "Autorizzazioni"
+
+#: bp-gtm-templatetags.php:684
+#@ bp_gtm
+msgid "Delete role"
+msgstr "Elimina ruolo"
+
+#: bp-gtm-templatetags.php:774
+#@ bp_gtm
+msgid "All Completed Personal Tasks"
+msgstr "Tutte le attività personali completate"
+
+#: bp-gtm-templatetags.php:778
+#@ bp_gtm
+msgid "Personal Tasks by A/Z"
+msgstr "Attività personali per A/Z"
+
+#: bp-gtm-templatetags.php:782
+#@ bp_gtm
+msgid "Personal Tasks by Deadline"
+msgstr "Attività personali per scadenza"
+
+#: bp-gtm-templatetags.php:786
+#@ bp_gtm
+msgid "Personal Tasks without Projects"
+msgstr "Attività personali senza progetto"
+
+#: bp-gtm-templatetags.php:792
+#@ bp_gtm
+msgid "Personal Tasks in Group"
+msgstr "Attività personali nel gruppo"
+
+#: bp-gtm-templatetags.php:798
+#@ bp_gtm
+msgid "Personal Tasks in Project"
+msgstr "Attività personali nel progetto"
+
+#: bp-gtm-templatetags.php:812
+#: bp-gtm-templatetags.php:851
+#@ bp_gtm
+msgid "Projects List"
+msgstr "Elenco progetti"
+
+#: bp-gtm-templatetags.php:812
+#: bp-gtm-templatetags.php:832
+#: bp-gtm-templatetags.php:851
+#@ bp_gtm
+msgid "Close"
+msgstr "Chiudi"
+
+#: bp-gtm-templatetags.php:822
+#: bp-gtm-templatetags.php:861
+#@ bp_gtm
+msgid "Click on a project to see its tasks"
+msgstr "Fare clic su un progetto per vederne le attività"
+
+#: bp-gtm-templatetags.php:832
+#@ bp_gtm
+msgid "Groups List"
+msgstr "Elenco gruppi"
+
+#: bp-gtm-templatetags.php:842
+#@ bp_gtm
+msgid "Click on a group to see its tasks"
+msgstr "Fare clic su un gruppo per vederne le attività"
+
+#: bp-gtm-templatetags.php:935
+#@ bp_gtm
+msgid "Personal Projects by Deadline"
+msgstr "Progetti personali per scadenza"
+
+#: bp-gtm-templatetags.php:939
+#@ bp_gtm
+msgid "Personal Projects by A/Z"
+msgstr "Progetti personali per A/Z"
+
+#: bp-gtm-templatetags.php:951
+#@ bp_gtm
+msgid "Tasks Discussions"
+msgstr "Discussioni di attività"
+
+#: bp-gtm-templatetags.php:953
+#: templates/gtm/terms/term_view.php:15
+#@ bp_gtm
+msgid "Task Name"
+msgstr "Nome attività"
+
+#: bp-gtm-templatetags.php:957
+#@ bp_gtm
+msgid "Projects Discussions"
+msgstr "Discussioni di progetti"
+
+#: bp-gtm-templatetags.php:958
+#: templates/gtm/personal/projects.php:22
+#: templates/gtm/terms/term_view.php:33
+#@ bp_gtm
+msgid "Project Name"
+msgstr "Nome del progetto"
+
+#: bp-gtm-templatetags.php:998
+#: bp-gtm-templatetags.php:1104
+#@ bp_gtm
+msgid "Pending tasks"
+msgstr "Attività in sospeso"
+
+#: bp-gtm-templatetags.php:1000
+#: bp-gtm-templatetags.php:1105
+#@ bp_gtm
+msgid "Completed tasks"
+msgstr "Attività completate"
+
+#: bp-gtm-templatetags.php:1006
+#@ bp_gtm
+msgid "Delete this project and all corresponding tasks"
+msgstr "Eliminare questo progetto e tutte le attività corrispondenti"
+
+#: bp-gtm-templatetags.php:1015
+#: bp-gtm-templatetags.php:1097
+#, php-format
+#@ bp_gtm
+msgid "Edit this %s"
+msgstr "Modifica questo %s"
+
+#: bp-gtm-templatetags.php:1038
+#: bp-gtm-templatetags.php:1146
+#@ bp_gtm
+msgid "Delete this task"
+msgstr "Elimina questa attività"
+
+#: bp-gtm-templatetags.php:1048
+#: templates/gtm/terms/terms_list.php:7
+#: templates/gtm/terms/terms_list.php:20
+#@ bp_gtm
+msgid "Create new"
+msgstr "Crea"
+
+#: bp-gtm-templatetags.php:1057
+#: bp-gtm-templatetags.php:1058
+#@ bp_gtm
+msgid "Create SubTask"
+msgstr "Crea sottoattività"
+
+#: bp-gtm-templatetags.php:1076
+#, php-format
+#@ bp_gtm
+msgid "%s created project on %s:"
+msgstr "%s progetto creato su %s:"
+
+#: bp-gtm-templatetags.php:1078
+#, php-format
+#@ bp_gtm
+msgid "%s created task on %s:"
+msgstr "%s creato attività su %s:"
+
+#: bp-gtm-templatetags.php:1085
+#@ bp_gtm
+msgid "&larr; Back To Projects List"
+msgstr "&larr; Torna all'elenco progetti"
+
+#: bp-gtm-templatetags.php:1088
+#@ bp_gtm
+msgid "&larr; Back To Tasks List"
+msgstr "&larr; Torna all'elenco attività"
+
+#: bp-gtm-templatetags.php:1112
+#@ bp_gtm
+msgid "Create new subtask for this task"
+msgstr "Crea nuova sottoattività per questa attività"
+
+#: bp-gtm-templatetags.php:1112
+#@ bp_gtm
+msgid "New SubTask"
+msgstr "Nuova sottoattività"
+
+#: bp-gtm-templatetags.php:1118
+#@ bp_gtm
+msgid "Show SubTasks for this task"
+msgstr "Mostra le sottoattività per questa attività"
+
+#: bp-gtm-templatetags.php:1118
+#@ bp_gtm
+msgid "Show SubTasks"
+msgstr "Mostra le sottoattività"
+
+#: bp-gtm-templatetags.php:1126
+#@ bp_gtm
+msgid "Go to a parent task page: "
+msgstr "Vai alla pagina di attività superiore: "
+
+#: bp-gtm-templatetags.php:1128
+#@ bp_gtm
+msgid "Parent Task"
+msgstr "Attività superiore"
+
+#: bp-gtm-templatetags.php:1137
+#@ bp_gtm
+msgid "Complete"
+msgstr "Completa"
+
+#. translators: plugin header field 'Description'
+#: bp-gtm.php:0
+#@ bp_gtm
+msgid "Create a tasks management system for BuddyPress groups in your network with lots of features. <a href=\"http://wp-bp.com\">Powered by WP-BP.com</a>"
+msgstr "Crea un sistema di gestione di attività per i gruppi di BuddyPress con un sacco di funzioni. <a href=\"http://wp-bp.com\">Powered by WP-BP.com</a>"
+
+#: bp-gtm.php:44
+#@ bp_gtm
+msgid "ToDo"
+msgstr "Da-Fare"
+
+#: bp-gtm.php:45
+#: lib/involved.php:70
+#@ bp_gtm
+#@ default
+msgid "Assignments"
+msgstr "Assegnazioni"
+
+#: bp-gtm.php:235
+#@ bp_gtm
+msgid "Owner"
+msgstr "Proprietario"
+
+#: bp-gtm.php:236
+#@ bp_gtm
+msgid "Project Manager"
+msgstr "Responsabile di progetto"
+
+#: bp-gtm.php:237
+#@ bp_gtm
+msgid "Doer"
+msgstr "Agente"
+
+#: bp-gtm.php:238
+#@ bp_gtm
+msgid "Client"
+msgstr "Client"
+
+#: bp-gtm.php:239
+#@ bp_gtm
+msgid "Guest"
+msgstr "Ospite"
+
+#: lib/actions.php:33
+#@ bp_gtm
+msgid "Close this window"
+msgstr "Chiudi questa finestra"
+
+#: lib/actions.php:34
+#, php-format
+#@ bp_gtm
+msgid "Change a role for %s"
+msgstr "Modificare un ruolo per %s"
+
+#: lib/actions.php:35
+#@ bp_gtm
+msgid "Select new role for this user."
+msgstr "Selezionare nuovo ruolo per l'utente."
+
+#: lib/actions.php:38
+#@ bp_gtm
+msgid "select a role"
+msgstr "seleziona un ruolo"
+
+#: lib/actions.php:67
+#@ bp_gtm
+msgid "Change role"
+msgstr "Modifica ruolo"
+
+#: lib/actions.php:67
+#@ bp_gtm
+msgid "R"
+msgstr "R"
+
+#: lib/files.php:24
+#@ bp_gtm
+msgid "Upload Files"
+msgstr "Carica files"
+
+#: lib/files.php:25
+#@ bp_gtm
+msgid "Select files you want to add to the project."
+msgstr "Seleziona i files che vuoi aggiungere al progetto."
+
+#: lib/files.php:28
+#@ bp_gtm
+msgid "Add new"
+msgstr "Aggiungi nuovo"
+
+#: lib/files.php:34
+#@ bp_gtm
+msgid "Allowed file types"
+msgstr "Tipi di file consentiti"
+
+#: lib/files.php:41
+#@ bp_gtm
+msgid "Maximum size of uploaded file"
+msgstr "Dimensione massima del file caricato"
+
+#: lib/files.php:60
+#, php-format
+#@ bp_gtm
+msgid "List of %s documents."
+msgstr "Elenco dei documenti di %s."
+
+#: lib/files.php:101
+#, php-format
+#@ bp_gtm
+msgid "You cannot upload %s. This file type is not supported."
+msgstr "Non puoi caricare %s. Questo tipo di file non è supportato."
+
+#: lib/files.php:104
+#, php-format
+#@ bp_gtm
+msgid "You cannot upload %s-files. File size is larger than the maximum."
+msgstr "Non puoi caricare il file %s. La dimensione del file è maggiore rispetto al massimo."
+
+#: lib/files.php:125
+#, php-format
+#@ bp_gtm
+msgid "There was an error uploding %s. Do you have enough rights?"
+msgstr "Si è verificato un errore caricando %s. Hai permessi sufficienti?"
+
+#: lib/files.php:137
+#@ bp_gtm
+msgid "Tasks/Projects/Discussion Posts Files Management"
+msgstr "Gestione dell'invio file di progetti/attività/discussioni"
+
+#: lib/files.php:142
+#@ bp_gtm
+msgid "If you want your users and group members upload files into tasks, projects and discussion post, you can set all the options here."
+msgstr "Se si desidera che gli utenti membri del gruppo possano caricare file in attività, progetti e post di discussione, è possibile impostare tutte le opzioni qui."
+
+#: lib/files.php:143
+#@ bp_gtm
+msgid "First of all you need to decide - do you need file management?"
+msgstr "Prima di tutto che dovete decidere - hai bisogno della gestione file?"
+
+#: lib/files.php:149
+#@ bp_gtm
+msgid "Up to how many files would you like to allow users to upload for each task, project or discussion post?"
+msgstr "Fino a quanti file vuoi consentire agli utenti di caricare per ogni attività, progetto o post discussione?"
+
+#: lib/files.php:150
+#@ bp_gtm
+msgid "Should be numeric, otherwise will not be saved. Set 0 for unlimited number."
+msgstr "Deve essere numerico, altrimenti non verra salvato. Impostare a 0 per un numero illimitato."
+
+#: lib/files.php:154
+#@ bp_gtm
+msgid "Which file types would you like users have ability to upload?"
+msgstr "Quali tipi di file hanno la possibilità di caricare gli utenti?"
+
+#: lib/files.php:160
+#@ bp_gtm
+msgid "Media"
+msgstr "Media"
+
+#: lib/files.php:162
+#@ bp_gtm
+msgid "Archives"
+msgstr "Archivi"
+
+#: lib/files.php:164
+#@ bp_gtm
+msgid "Documents"
+msgstr "Documenti"
+
+#: lib/files.php:166
+#@ bp_gtm
+msgid "Other"
+msgstr "Altri"
+
+#: lib/files.php:183
+#@ bp_gtm
+msgid "What is the maximum size of uploaded file?"
+msgstr "Qual è la dimensione massima per file caricato?"
+
+#: lib/files.php:194
+#, php-format
+#@ bp_gtm
+msgid "Please remember that 1MB = 1024KB. Should be less than WordPress limit: %d%s"
+msgstr "Si ricorda che 1MB = 1024KB. Deve essere inferiore al limite di WordPress: %d%s"
+
+#: lib/files.php:217
+#@ bp_gtm
+msgid "Edit description"
+msgstr "Modifica descrizione"
+
+#: lib/files.php:218
+#@ bp_gtm
+msgid "Delete file"
+msgstr "Elimina file"
+
+#: lib/files.php:222
+#@ bp_gtm
+msgid "Update Description"
+msgstr "Aggiorna descrizione"
+
+#: lib/involved.php:72
+#, php-format
+#@ bp_gtm
+msgid ""
+"Hello there %s,\n"
+"\n"
+"%s (%s) reminds you, that pending tasks and projects you are responsible for need to be done.\n"
+"\n"
+"To see your personal tasks click here: %s\n"
+"\n"
+"To see your personal projects click here: %s\n"
+"\n"
+"---------------------\n"
+"%s. %s\n"
+msgstr ""
+"Ciao %s,\n"
+"\n"
+"%s (%s) ti ricorda, che attività e progetti in sospeso di cui sei responsabile necessitano di essere completati.\n"
+"\n"
+"Per vedere le tue attività personali clicca qui: %s\n"
+"\n"
+"Per vedere i tuoi progetti personali Clicca qui: %s\n"
+"\n"
+"---------------------\n"
+"%s. %s\n"
+
+#: lib/personal.php:180
+#, php-format
+#@ bp_gtm
+msgid "<span id=\"cur_tasks\">%s - %s</span> out of %s.&nbsp;"
+msgstr "<span id=\"cur_tasks\">%s - %s</span> di %s.&nbsp;"
+
+#: lib/personal.php:193
+#, php-format
+#@ bp_gtm
+msgid "There is only %d task you are responsible for."
+msgid_plural "%d tasks you are responsible for. You may use filters."
+msgstr[0] "C'è solo %d attività di cui sei responsabile."
+msgstr[1] "%d attività di cui sei responsabile. È possibile utilizzare i filtri."
+
+#: lib/roles.php:41
+#: templates/gtm/projects/project_create.php:74
+#@ bp_gtm
+msgid "Create Project"
+msgstr "Crea progetto"
+
+#: lib/roles.php:42
+#@ bp_gtm
+msgid "Edit Project"
+msgstr "Modifica progetto"
+
+#: lib/roles.php:43
+#@ bp_gtm
+msgid "Delete Project"
+msgstr "Elimina progetto"
+
+#: lib/roles.php:44
+#@ bp_gtm
+msgid "Mark Project as Done"
+msgstr "Segna progetto come concluso"
+
+#: lib/roles.php:45
+#@ bp_gtm
+msgid "Mark Project as Undone"
+msgstr "Segna progetto come riaperto"
+
+#: lib/roles.php:46
+#@ bp_gtm
+msgid "Comment Project"
+msgstr "Comment Project"
+
+#: lib/roles.php:47
+#@ bp_gtm
+msgid "Upload Files to Project"
+msgstr "Caricare file di progetto"
+
+#: lib/roles.php:48
+#@ bp_gtm
+msgid "Delete Files from Project"
+msgstr "Elimina i file dal progetto"
+
+#: lib/roles.php:50
+#@ bp_gtm
+msgid "View Task"
+msgstr "Visualizza attività"
+
+#: lib/roles.php:51
+#: templates/gtm/tasks/task_create.php:86
+#@ bp_gtm
+msgid "Create Task"
+msgstr "Crea attività"
+
+#: lib/roles.php:52
+#@ bp_gtm
+msgid "Edit Task"
+msgstr "Modifica attività"
+
+#: lib/roles.php:53
+#@ bp_gtm
+msgid "Delete Task"
+msgstr "Elimina attività"
+
+#: lib/roles.php:54
+#@ bp_gtm
+msgid "Mark Task as Done"
+msgstr "Segna attività come completa"
+
+#: lib/roles.php:55
+#@ bp_gtm
+msgid "Mark Task as Undone"
+msgstr "Segna attività come riaperta"
+
+#: lib/roles.php:56
+#@ bp_gtm
+msgid "Comment Task"
+msgstr "Attività di commento"
+
+#: lib/roles.php:57
+#@ bp_gtm
+msgid "Upload Files to Task"
+msgstr "Carica files su attività"
+
+#: lib/roles.php:58
+#@ bp_gtm
+msgid "Delete Files from Task"
+msgstr "Elimina files da attività"
+
+#: lib/roles.php:60
+#@ bp_gtm
+msgid "View Terms"
+msgstr "Vista termini"
+
+#: lib/roles.php:61
+#@ bp_gtm
+msgid "Create Terms"
+msgstr "Crea termini"
+
+#: lib/roles.php:62
+#@ bp_gtm
+msgid "Edit Terms"
+msgstr "Modifica termini"
+
+#: lib/roles.php:63
+#@ bp_gtm
+msgid "Delete Terms"
+msgstr "Eliminare termini"
+
+#: lib/roles.php:65
+#@ bp_gtm
+msgid "View Involved"
+msgstr "Vista coinvolti"
+
+#: lib/roles.php:66
+#@ bp_gtm
+msgid "Action: Send a PM to Involved"
+msgstr "Azione: Invia un messaggio privato ai coinvolti"
+
+#: lib/roles.php:67
+#@ bp_gtm
+msgid "Action: Mention Involved"
+msgstr "Azione: Menziona coinvolti"
+
+#: lib/roles.php:68
+#@ bp_gtm
+msgid "Action: Send an Email to Involved"
+msgstr "Azione: Invia una Email ai coinvolti"
+
+#: lib/roles.php:69
+#@ bp_gtm
+msgid "Change User Roles"
+msgstr "Modifica ruoli utente"
+
+#: lib/roles.php:71
+#@ bp_gtm
+msgid "View Discussions"
+msgstr "Visualizza discussioni"
+
+#: lib/roles.php:72
+#@ bp_gtm
+msgid "Create Discussion Posts"
+msgstr "Crea messaggi in discussione"
+
+#: lib/roles.php:73
+#@ bp_gtm
+msgid "Edit Any Discussion Posts"
+msgstr "Modifica qualsiasi messaggio discussione"
+
+#: lib/roles.php:74
+#@ bp_gtm
+msgid "Delete Any Discussion Posts"
+msgstr "Elimina qualsiasi post discussione"
+
+#: lib/roles.php:75
+#@ bp_gtm
+msgid "Upload files to Discussion Posts"
+msgstr "Carica i file su messaggi di discussione"
+
+#: lib/roles.php:76
+#@ bp_gtm
+msgid "Delete files from Discussion Posts"
+msgstr "Elimina i file da tutti i messaggi di discussione"
+
+#: lib/roles.php:78
+#@ bp_gtm
+msgid "View All Settings"
+msgstr "Mostra tutte le impostazioni"
+
+#: lib/roles.php:79
+#@ bp_gtm
+msgid "Edit Base Settings"
+msgstr "Modifica le impostazioni di Base"
+
+#: lib/roles.php:80
+#@ bp_gtm
+msgid "Edit Group Roles"
+msgstr "Modifica ruoli gruppo"
+
+#: lib/roles.php:82
+#@ bp_gtm
+msgid "Delete all GTM group data"
+msgstr "Elimina tutti i dati GTM del gruppo"
+
+#: lib/roles.php:236
+#: lib/roles.php:243
+#@ bp_gtm
+msgid "Some error occured while creating a default role"
+msgstr "Si è verificato un errore durante la creazione di un ruolo predefinito"
+
+#: lib/tasks.php:224
+#, php-format
+#@ bp_gtm
+msgid "<span id=\"cur_tasks\">%d - %d</span> out of <span class=\"counter\">%d</span>.&nbsp;"
+msgstr "<span id=\"cur_tasks\">%d - %d</span> di <span class=\"counter\">%d</span>.&nbsp;"
+
+#: lib/tasks.php:237
+#, php-format
+#@ bp_gtm
+msgid "There is only %s task in this group for now."
+msgid_plural "%s tasks in this group. Use links in the right to filter them."
+msgstr[0] "C'è solo %s attività in questo gruppo per ora."
+msgstr[1] "%s attività in questo gruppo. Utilizzare i collegamenti nella parte destra per filtrarli."
+
+#: lib/terms.php:185
+#: lib/terms.php:217
+#@ bp_gtm
+msgid "No tags"
+msgstr "Nessun tag"
+
+#: lib/terms.php:186
+#: lib/terms.php:218
+#@ bp_gtm
+msgid "No categories"
+msgstr "Nessuna categoria"
+
+#: lib/terms.php:188
+#: lib/terms.php:220
+#@ bp_gtm
+msgid "Tags: "
+msgstr "Tags: "
+
+#: lib/terms.php:189
+#: lib/terms.php:221
+#@ bp_gtm
+msgid "Category: "
+msgstr "Categoria: "
+
+#: lib/terms.php:244
+#, php-format
+#@ default
+msgid "%d element"
+msgid_plural "%d elements"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/terms.php:250
+#@ bp_gtm
+msgid "Tasks and projects with this term"
+msgstr "Attività e progetti con questo termine"
+
+#: templates/gtm/delete.php:1
+#@ bp_gtm
+msgid "Delete everything?"
+msgstr "Cancellare tutto?"
+
+#: templates/gtm/delete.php:7
+#@ bp_gtm
+msgid "Are you sure you want to delete all tags, categories, tasks, projects and discussions? This action cannot be undone, so be careful."
+msgstr "Sei sicuro di voler eliminare tutti i tag, categorie, attività, progetti e discussioni? Questa azione non può essere annullata, quindi state attenti."
+
+#: templates/gtm/delete.php:9
+#@ bp_gtm
+msgid "You will delete only data, not tables. All in all there are:"
+msgstr "Cancellerai solo i dati, non le tabelle del DB. In tutto ci sono:"
+
+#: templates/gtm/delete.php:13
+#, php-format
+#@ bp_gtm
+msgid "%s tag"
+msgid_plural "%s tags"
+msgstr[0] "%s tag"
+msgstr[1] "%s tags"
+
+#: templates/gtm/delete.php:14
+#, php-format
+#@ bp_gtm
+msgid "%s category"
+msgid_plural "%s categories"
+msgstr[0] "%s categoria"
+msgstr[1] "%s categorie"
+
+#: templates/gtm/delete.php:17
+#@ bp_gtm
+msgid "Later you will have the ability to create new projects/tasks/tags/categories if site administrator doesn't disable GTM System for this group."
+msgstr "Successivamente si avrà la possibilità di creare nuovi progetti/attività/tags/categorie se l'amministratore non disabilita GTM System per questo gruppo."
+
+#: templates/gtm/delete.php:21
+#@ bp_gtm
+msgid "Delete everything"
+msgstr "Cancella tutto"
+
+#: templates/gtm/discuss.php:14
+#@ bp_gtm
+msgid "Show: "
+msgstr "Visualizza: "
+
+#: templates/gtm/discuss.php:15
+#@ bp_gtm
+msgid "For Tasks"
+msgstr "Per attività"
+
+#: templates/gtm/discuss.php:16
+#@ bp_gtm
+msgid "For Projects"
+msgstr "Per progetti"
+
+#: templates/gtm/discuss.php:25
+#@ bp_gtm
+msgid "Latest Poster"
+msgstr "Ultimo Poster"
+
+#: templates/gtm/discuss.php:26
+#@ bp_gtm
+msgid "Posts"
+msgstr "Posts"
+
+#: templates/gtm/discuss.php:27
+#@ bp_gtm
+msgid "Freshness"
+msgstr "Freschezza"
+
+#: templates/gtm/discuss.php:59
+#@ bp_gtm
+msgid "There are no discussion posts to display."
+msgstr "Non ci sono messaggi da visualizzare."
+
+#: templates/gtm/files.php:7
+#@ bp_gtm
+msgid "List Of Files"
+msgstr "Elenco dei file"
+
+#: templates/gtm/files.php:13
+#@ bp_gtm
+msgid "File Name"
+msgstr "Nome del file"
+
+#: templates/gtm/files.php:14
+#@ bp_gtm
+msgid "Uploaded by"
+msgstr "Caricato da"
+
+#: templates/gtm/files.php:15
+#@ bp_gtm
+msgid "Type"
+msgstr "Tipo"
+
+#: templates/gtm/files.php:16
+#@ bp_gtm
+msgid "Date Uploaded"
+msgstr "Data caricamento"
+
+#: templates/gtm/files.php:17
+#: templates/gtm/involved/involved_list.php:24
+#: templates/gtm/projects/projects_list.php:42
+#: templates/gtm/tasks/tasks_list.php:45
+#: templates/gtm/terms/terms_list.php:53
+#: templates/gtm/terms/terms_list.php:72
+#@ bp_gtm
+msgid "Actions"
+msgstr "Azioni"
+
+#: templates/gtm/files.php:53
+#@ bp_gtm
+msgid "There are no files to display."
+msgstr "Non esistono file da visualizzare."
+
+#: templates/gtm/index.php:57
+#@ bp_gtm
+msgid "<h4>Error 404</h4>"
+msgstr "<h4>Errore 404</h4>"
+
+#: templates/gtm/index.php:58
+#@ bp_gtm
+msgid "<p>No such page exists in GTM System or you don't have enough rights to access it.</p>"
+msgstr "<p>La pagina non esiste in GTM System oppure non hai sufficienti diritti di accesso.</p>"
+
+#: templates/gtm/involved/involved_list.php:6
+#@ bp_gtm
+msgid "Involved People"
+msgstr "Persone coinvolte"
+
+#: templates/gtm/involved/involved_list.php:10
+#@ bp_gtm
+msgid "List of users that are responsible for tasks and/or projects in this group. Their tasks and projects are not completed"
+msgstr "Lista di utenti che sono responsabili di attività e/o progetti non completi in questo gruppo."
+
+#: templates/gtm/involved/involved_list.php:18
+#@ bp_gtm
+msgid "User"
+msgstr "Utente"
+
+#: templates/gtm/involved/involved_list.php:37
+#@ bp_gtm
+msgid "There are no users to display yet."
+msgstr "Non ci sono ancora utenti da visualizzare."
+
+#: templates/gtm/personal/projects.php:9
+#@ bp_gtm
+msgid "List of projects you are responsible for."
+msgstr "Elenco dei progetti di cui sei responsabile."
+
+#: templates/gtm/personal/projects.php:12
+#: templates/gtm/personal/tasks.php:13
+#: templates/gtm/projects/projects_list.php:21
+#: templates/gtm/tasks/tasks_list.php:19
+#: templates/gtm/terms/terms_list.php:37
+#@ bp_gtm
+msgid "Filter: "
+msgstr "Filtro: "
+
+#: templates/gtm/personal/projects.php:13
+#: templates/gtm/personal/tasks.php:14
+#: templates/gtm/projects/projects_list.php:23
+#: templates/gtm/tasks/tasks_list.php:21
+#@ bp_gtm
+msgid "By A/Z"
+msgstr "Per A / Z"
+
+#: templates/gtm/personal/projects.php:14
+#: templates/gtm/personal/tasks.php:15
+#: templates/gtm/projects/projects_list.php:25
+#: templates/gtm/tasks/tasks_list.php:23
+#@ bp_gtm
+msgid "By deadline"
+msgstr "Per scadenza"
+
+#: templates/gtm/personal/projects.php:23
+#@ bp_gtm
+msgid "Group Name"
+msgstr "Nome del gruppo"
+
+#: templates/gtm/personal/projects.php:37
+#@ bp_gtm
+msgid "You are not responsible for any projects on this site."
+msgstr "Non sei responsabile di nessun progetto su questo sito."
+
+#: templates/gtm/personal/settings.php:1
+#@ bp_gtm
+msgid "Personal Settings"
+msgstr "Impostazioni personali"
+
+#: templates/gtm/personal/settings.php:6
+#@ bp_gtm
+msgid "How many tasks per page do you want to see on Personal Tasks page?"
+msgstr "Quante attività per pagina si desidera vedere nella pagina delle attività personali?"
+
+#: templates/gtm/personal/tasks.php:16
+#: templates/gtm/tasks/tasks_list.php:25
+#@ bp_gtm
+msgid "By project"
+msgstr "Per progetto"
+
+#: templates/gtm/personal/tasks.php:17
+#@ bp_gtm
+msgid "By group"
+msgstr "Per gruppo"
+
+#: templates/gtm/personal/tasks.php:18
+#: templates/gtm/projects/projects_list.php:27
+#: templates/gtm/tasks/tasks_list.php:27
+#@ bp_gtm
+msgid "Completed"
+msgstr "Completato"
+
+#: templates/gtm/personal/tasks.php:35
+#: templates/gtm/tasks/tasks_list.php:41
+#@ bp_gtm
+msgid "Task Title"
+msgstr "Titolo attività"
+
+#: templates/gtm/personal/tasks.php:36
+#: templates/gtm/tasks/tasks_list.php:43
+#@ bp_gtm
+msgid "Project"
+msgstr "Progetto"
+
+#: templates/gtm/personal/tasks.php:37
+#@ bp_gtm
+msgid "Group"
+msgstr "Gruppo"
+
+#: templates/gtm/projects/project_create.php:1
+#@ bp_gtm
+msgid "Create New Project"
+msgstr "Crea nuovo progetto"
+
+#: templates/gtm/projects/project_create.php:5
+#: templates/gtm/projects/project_edit.php:7
+#@ bp_gtm
+msgid "Project name"
+msgstr "Nome del progetto"
+
+#: templates/gtm/projects/project_create.php:8
+#: templates/gtm/projects/project_edit.php:10
+#@ bp_gtm
+msgid "Project description"
+msgstr "Descrizione del progetto"
+
+#: templates/gtm/projects/project_create.php:25
+#@ bp_gtm
+msgid "Responsible Users"
+msgstr "Utenti responsabili"
+
+#: templates/gtm/projects/project_create.php:27
+#@ bp_gtm
+msgid "Please select one or more responsible users. You can select them by clicking them"
+msgstr "Si prega di selezionare uno o più utenti responsabili. È possibile selezionarli cliccandoli"
+
+#: templates/gtm/projects/project_create.php:32
+#: templates/gtm/projects/project_edit.php:28
+#@ bp_gtm
+msgid "Project Deadline"
+msgstr "Scadenza progetto"
+
+#: templates/gtm/projects/project_create.php:33
+#: templates/gtm/projects/project_edit.php:29
+#@ bp_gtm
+msgid "Select a date for the project when it should be finished."
+msgstr "Selezionare una data per quando dovrebbe essere concluso il progetto."
+
+#: templates/gtm/projects/project_create.php:38
+#: templates/gtm/projects/project_edit.php:34
+#@ bp_gtm
+msgid "Project Tags"
+msgstr "Tags progetto"
+
+#: templates/gtm/projects/project_create.php:39
+#: templates/gtm/projects/project_create.php:53
+#: templates/gtm/tasks/task_create.php:53
+#: templates/gtm/tasks/task_create.php:65
+#: templates/gtm/tasks/task_edit.php:41
+#: templates/gtm/tasks/task_edit.php:59
+#@ bp_gtm
+msgid "(comma separated)"
+msgstr "(separati da virgola)"
+
+#: templates/gtm/projects/project_create.php:40
+#: templates/gtm/projects/project_edit.php:37
+#@ bp_gtm
+msgid "You can add tags to your project. If you want to add more tags, separate it with comma."
+msgstr "È possibile aggiungere tags al progetto. Se si desiderano aggiungere più tag, separarli con la virgola."
+
+#: templates/gtm/projects/project_create.php:44
+#: templates/gtm/projects/project_edit.php:41
+#: templates/gtm/tasks/task_create.php:59
+#: templates/gtm/tasks/task_edit.php:47
+#@ bp_gtm
+msgid "Add tag"
+msgstr "Aggiungi tag"
+
+#: templates/gtm/projects/project_create.php:51
+#: templates/gtm/projects/project_edit.php:52
+#@ bp_gtm
+msgid "Project Categories"
+msgstr "Categorie di progetto"
+
+#: templates/gtm/projects/project_create.php:54
+#: templates/gtm/projects/project_edit.php:55
+#@ bp_gtm
+msgid "You can select or add categories for your project. If you want to add more categories, separate it with comma."
+msgstr "È possibile selezionare o aggiungere le categorie al progetto. Se si desiderano aggiungere più categorie, separarle con la virgola."
+
+#: templates/gtm/projects/project_create.php:58
+#: templates/gtm/projects/project_edit.php:60
+#: templates/gtm/tasks/task_create.php:71
+#: templates/gtm/tasks/task_edit.php:65
+#@ bp_gtm
+msgid "Add cat"
+msgstr "Aggiungi categoria"
+
+#: templates/gtm/projects/project_edit.php:1
+#: templates/gtm/projects/project_edit.php:77
+#@ bp_gtm
+msgid "Update Project"
+msgstr "Aggiorna progetto"
+
+#: templates/gtm/projects/project_edit.php:26
+#@ bp_gtm
+msgid "Who is responsible for this project execution?"
+msgstr "Chi è responsabile per l'esecuzione del progetto?"
+
+#: templates/gtm/projects/project_edit.php:35
+#: templates/gtm/projects/project_edit.php:53
+#@ bp_gtm
+msgid " (comma separated)"
+msgstr " (separati da virgola)"
+
+#: templates/gtm/projects/project_view.php:4
+#: templates/gtm/tasks/task_view.php:4
+#@ bp_gtm
+msgid "Error - 404"
+msgstr "Errore - 404"
+
+#: templates/gtm/projects/project_view.php:5
+#@ bp_gtm
+msgid "There is no project in the database with such ID. Please go to the main projects list."
+msgstr "Non non c'è nessun progetto nel database con tale ID. Vai all'elenco principale dei progetti."
+
+#: templates/gtm/projects/project_view.php:41
+#@ bp_gtm
+msgid "Permalink to project description"
+msgstr "Permalink a descrizione del progetto"
+
+#: templates/gtm/projects/project_view.php:59
+#, php-format
+#@ all
+msgid "%d task left out of %d: %s done"
+msgid_plural "%d tasks left out of %d: %s done"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/gtm/projects/project_view.php:61
+#@ bp_gtm
+msgid "There are no tasks yet."
+msgstr "Non esistono ancora attività."
+
+#: templates/gtm/projects/project_view.php:78
+#: templates/gtm/tasks/task_view.php:92
+#@ bp_gtm
+msgid "Add a reply:"
+msgstr "Aggiungere una risposta:"
+
+#: templates/gtm/projects/project_view.php:88
+#: templates/gtm/tasks/task_view.php:105
+#@ bp_gtm
+msgid "Post Reply"
+msgstr "Invia Risposta"
+
+#: templates/gtm/projects/projects_list.php:17
+#@ bp_gtm
+msgid "List of projects in this group. Use links in the right to filter them."
+msgstr "Elenco dei progetti in questo gruppo. Utilizzare i collegamenti nella parte destra per filtrarli."
+
+#: templates/gtm/projects/projects_list.php:38
+#@ bp_gtm
+msgid "Project Title"
+msgstr "Titolo del progetto"
+
+#: templates/gtm/projects/projects_list.php:86
+#: templates/gtm/terms/term_view.php:42
+#@ bp_gtm
+msgid "There are no projects to display."
+msgstr "Non ci sono progetti da mostrare."
+
+#: templates/gtm/settings.php:7
+#@ bp_gtm
+msgid "How many tasks per page do you want to see on Tasks page?"
+msgstr "Quante attività per pagina si desidera vedere nella pagina attività?"
+
+#: templates/gtm/settings.php:14
+#@ bp_gtm
+msgid "How many elements per page do you want to see on Discussions page?"
+msgstr "Quanti elementi per pagina si desidera vedere nella pagina discussioni?"
+
+#: templates/gtm/settings.php:20
+#@ bp_gtm
+msgid "Tab name in group navigation menu"
+msgstr "Nome della scheda nel menu di navigazione del gruppo"
+
+#: templates/gtm/settings.php:27
+#@ bp_gtm
+msgid "Tasks/Projects discussion"
+msgstr "Discussione attività/progetti"
+
+#: templates/gtm/settings.php:31
+#@ bp_gtm
+msgid "Enable tasks and projects discussion (disabling it will make impossible to discuss any tasks or projects)."
+msgstr "Consentire la discussione di progetti e attività (disattivandolo renderà impossibile discutere qualsiasi attività o progetto)."
+
+#: templates/gtm/tasks/task_create.php:7
+#@ bp_gtm
+msgid "Create New SubTask for"
+msgstr "Crea nuova sottoattività per"
+
+#: templates/gtm/tasks/task_create.php:10
+#@ bp_gtm
+msgid "Create New Task"
+msgstr "Crea nuova attività"
+
+#: templates/gtm/tasks/task_create.php:19
+#: templates/gtm/tasks/task_edit.php:8
+#@ bp_gtm
+msgid "Task name"
+msgstr "Nome attività"
+
+#: templates/gtm/tasks/task_create.php:24
+#: templates/gtm/tasks/task_edit.php:11
+#@ bp_gtm
+msgid "Task description"
+msgstr "Descrizione attività"
+
+#: templates/gtm/tasks/task_create.php:41
+#: templates/gtm/tasks/task_edit.php:27
+#@ bp_gtm
+msgid "Who is responsible for this task execution?"
+msgstr "Chi è responsabile per l'esecuzione di questa attività?"
+
+#: templates/gtm/tasks/task_create.php:47
+#: templates/gtm/tasks/task_edit.php:34
+#@ bp_gtm
+msgid "Task Deadline"
+msgstr "Scadenza attività"
+
+#: templates/gtm/tasks/task_create.php:53
+#: templates/gtm/tasks/task_edit.php:40
+#@ bp_gtm
+msgid "Task Tags"
+msgstr "Tags attività"
+
+#: templates/gtm/tasks/task_create.php:54
+#: templates/gtm/tasks/task_edit.php:43
+#@ bp_gtm
+msgid "You can add tags to your task. If you want to add more tags, separate it with comma."
+msgstr "È possibile aggiungere tag all'attività. Se si desiderano aggiungere più tag, separarli con la virgola."
+
+#: templates/gtm/tasks/task_create.php:65
+#: templates/gtm/tasks/task_edit.php:58
+#@ bp_gtm
+msgid "Task Categories"
+msgstr "Categorie di attività"
+
+#: templates/gtm/tasks/task_create.php:66
+#: templates/gtm/tasks/task_edit.php:61
+#@ bp_gtm
+msgid "You can select or add categories for your task. If you want to add more categories, separate it with comma."
+msgstr "È possibile selezionare o aggiungere categorie per l'attività. Se si desiderano aggiungere più categorie, separarle con la virgola."
+
+#: templates/gtm/tasks/task_edit.php:1
+#: templates/gtm/tasks/task_edit.php:80
+#@ bp_gtm
+msgid "Update Task"
+msgstr "Aggiorna attività"
+
+#: templates/gtm/tasks/task_view.php:5
+#@ bp_gtm
+msgid "There is no task in the database with such ID. Please go to the main tasks list."
+msgstr "Non non c'è nessuna attività nel database con tale ID. Consultare l'elenco principale delle attività."
+
+#: templates/gtm/tasks/task_view.php:54
+#@ bp_gtm
+msgid "Permalink to task description"
+msgstr "Permalink a descrizione attività"
+
+#: templates/gtm/tasks/task_view.php:67
+#@ bp_gtm
+msgid "Project: "
+msgstr "Progetto: "
+
+#: templates/gtm/tasks/tasks_list.php:15
+#@ bp_gtm
+msgid "List of tasks in this group. Use links in the right to filter them."
+msgstr "Elenco delle attività in questo gruppo. Utilizzare i collegamenti nella parte destra per filtrarle."
+
+#: templates/gtm/terms/term_view.php:1
+#, php-format
+#@ bp_gtm
+msgid "View tasks and projects for <i>\"%s\"</i>"
+msgstr "Mostra attività e progetti per <i>\"%s\"</i>"
+
+#: templates/gtm/terms/term_view.php:17
+#: templates/gtm/terms/term_view.php:34
+#@ bp_gtm
+msgid "Done?"
+msgstr "Fatto?"
+
+#: templates/gtm/terms/terms_list.php:5
+#@ bp_gtm
+msgid "Tags and Categories"
+msgstr "Tags e Categorie"
+
+#: templates/gtm/terms/terms_list.php:12
+#@ bp_gtm
+msgid "New term name"
+msgstr "Nome nuovo termine"
+
+#: templates/gtm/terms/terms_list.php:16
+#@ bp_gtm
+msgid "What's this?"
+msgstr "Cos'è questo?"
+
+#: templates/gtm/terms/terms_list.php:17
+#@ bp_gtm
+msgid "Tag"
+msgstr "Tag"
+
+#: templates/gtm/terms/terms_list.php:18
+#@ bp_gtm
+msgid "Category"
+msgstr "Categoria"
+
+#: templates/gtm/terms/terms_list.php:33
+#@ bp_gtm
+msgid "All tags and categories for this group are displayed here"
+msgstr "Tutti i tag e le categorie per questo gruppo vengono visualizzate qui"
+
+#: templates/gtm/terms/terms_list.php:38
+#@ bp_gtm
+msgid "Standart"
+msgstr "Standard"
+
+#: templates/gtm/terms/terms_list.php:39
+#@ bp_gtm
+msgid "Alphabetical"
+msgstr "Alfabetico"
+
+#: templates/gtm/terms/terms_list.php:51
+#@ bp_gtm
+msgid "Tag Name"
+msgstr "Nome del tag"
+
+#: templates/gtm/terms/terms_list.php:52
+#: templates/gtm/terms/terms_list.php:71
+#@ bp_gtm
+msgid "Count"
+msgstr "Conteggio"
+
+#: templates/gtm/terms/terms_list.php:62
+#@ bp_gtm
+msgid "There are no tags to display."
+msgstr "Non ci sono tag da mostrare."
+
+#: templates/gtm/terms/terms_list.php:70
+#@ bp_gtm
+msgid "Category Name"
+msgstr "Nome categoria"
+
+#: templates/gtm/terms/terms_list.php:81
+#@ bp_gtm
+msgid "There are no categories to display."
+msgstr "Ci sono categorie da visualizzare."
+
+#: bp-gtm-admin.php:195
+#@ bp_gtm
+msgid "Do you want to use subtasks feature (tasks under tasks in hierarchy)?"
+msgstr "Utilizzare la funzione sottoattività (gerarchia di attività in attività)?"
+
+#. translators: plugin header field 'PluginURI'
+#: bp-gtm.php:0
+#@ bp_gtm
+msgid "http://ovirium.com/portfolio/bp-gtm-system/"
+msgstr "http://ovirium.com/portfolio/bp-gtm-system/"
+
+#. translators: plugin header field 'Author'
+#: bp-gtm.php:0
+#@ bp_gtm
+msgid "slaFFik"
+msgstr "slaFFik"
+
+#. translators: plugin header field 'AuthorURI'
+#: bp-gtm.php:0
+#@ bp_gtm
+msgid "http://ovirium.com/"
+msgstr "http://ovirium.com/"
+
+#. translators: plugin header field 'Version'
+#: bp-gtm.php:0
+#@ bp_gtm
+msgid "1.9.6"
+msgstr "1.9.6"
+
