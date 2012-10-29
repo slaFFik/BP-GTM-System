@@ -32,7 +32,8 @@ if (function_exists('wp_editor') && $bp_gtm['mce'] == 'on') {
     <?php bp_gtm_task_project(null, $task[0]->project_id); ?>
 
     <label for="task_deadline"><?php _e('Task Deadline', 'bp_gtm'); ?><span class="required">*</span></label>
-    <input type="text" name="task_deadline" id="task_deadline" value="<?php echo date($date_format, strtotime($task[0]->deadline)) ?>" readonly="readonly"/>
+    <input type="text" name="task_deadline_human" id="task_deadline_human" value="<?php bp_gtm_format_date($task[0]->deadline) ?>" readonly="readonly"/>
+    <input type="hidden" name="task_deadline" id="task_deadline" value="<?php echo $task[0]->deadline ?>" readonly="readonly"/>
     <?php do_action('bp_after_gtm_task_create', $bp_gtm); ?>
     <div class="clear"></div>
     <div id="tasks_tax">

@@ -396,9 +396,14 @@ jQuery(document).ready(function() {
     });
     if(jQuery.fn.datepicker){
         var datepicker_settings        = jQuery.datepicker.regional[bp_gtm_strings.lang];
-        datepicker_settings.dateFormat = bp_gtm_strings.date_format;
-        jQuery("#project_deadline").datepicker(datepicker_settings);
-        jQuery("#task_deadline").datepicker(datepicker_settings);
+        datepicker_settings.dateFormat = bp_gtm_strings.date_format_human;
+        datepicker_settings.altFormat = bp_gtm_strings.date_format;
+
+        datepicker_settings.altField = '#project_deadline';
+        jQuery("#project_deadline_human").datepicker(datepicker_settings);
+
+        datepicker_settings.altField = '#task_deadline';
+        jQuery("#task_deadline_human").datepicker(datepicker_settings);
     }
     if(bp_gtm_strings.mce=='on'){
         id = 'gtm_desc';
