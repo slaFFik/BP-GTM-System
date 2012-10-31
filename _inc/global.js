@@ -398,6 +398,8 @@ jQuery(document).ready(function() {
         var datepicker_settings        = jQuery.datepicker.regional[bp_gtm_strings.lang];
         datepicker_settings.dateFormat = bp_gtm_strings.date_format_human;
         datepicker_settings.altFormat = bp_gtm_strings.date_format;
+        datepicker_settings.changeMonth = true;
+        datepicker_settings.changeYear = true;
 
         datepicker_settings.altField = '#project_deadline';
         jQuery("#project_deadline_human").datepicker(datepicker_settings);
@@ -633,7 +635,7 @@ jQuery(document).ready(function() {
     var height_one_user = jQuery('#member-list li').height();
     var height_users = jQuery('.wrap-roles').height();
     if(jQuery('#member-list li').length > height_users/height_one_user){
-        jQuery('#member-list li').parent().parent().css('overflow-y', 'scroll');
+        jQuery('#member-list li').parent().parent().css('overflow-y', 'auto');
     }
     jQuery('#member-list li input').click(function(e){
         e.stopPropagation();

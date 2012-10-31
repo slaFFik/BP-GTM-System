@@ -7,7 +7,7 @@ input#project_deadline_human, input#task_deadline_human {width:275px !important}
 .ui-datepicker .ui-datepicker-prev {left:2px}
 .ui-datepicker .ui-datepicker-next {right:7px}
 .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {font-weight:normal;cursor:pointer}
-.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {left:50%;margin-left:-8px;margin-top:-8px; display: initial; position: relative;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {display: block;top:50%;left:50%;margin-left:-8px;margin-top:-8px;position: relative;}
 .ui-datepicker .ui-datepicker-prev a, .ui-datepicker .ui-datepicker-next a {font-weight:normal}
 .ui-datepicker .ui-datepicker-prev a:hover, .ui-datepicker .ui-datepicker-next a:hover {}
 .ui-datepicker .ui-datepicker-title {margin:0 2.3em;line-height:1.8em;text-align:center}
@@ -18,6 +18,9 @@ input#project_deadline_human, input#task_deadline_human {width:275px !important}
 .ui-datepicker td {border:0;padding:1px}
 .ui-datepicker td span, .ui-datepicker td a {display:block;padding:.2em;text-align:center;text-decoration:none}
 .ui-datepicker-today, .ui-datepicker-current-day {background:#eaeaea;border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}
+.ui-icon-circle-triangle-w, .ui-icon-circle-triangle-e { background-image: url("images/ui-icons_222222_256x240.png"); width: 16px; height: 16px; }
+.ui-icon-circle-triangle-e { background-position: -32px 0; }
+.ui-icon-circle-triangle-w { background-position: -96px 0; }
 /* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
 .ui-datepicker-cover {display:none;display/**/:block;position:absolute;z-index:-1;filter:mask();top:-4px;left:-4px;width:200px;height:200px}
 
