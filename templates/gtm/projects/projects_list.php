@@ -1,9 +1,8 @@
 <?php
 $options = bp_gtm_project_list_settings();
 
-do_action('bp_gtm_delete_view_notification', $bp->loggedin_user->id, $ids = 'none', $option['action']);
-?>
-<?php
+do_action('bp_gtm_delete_view_notification', $bp->loggedin_user->id, $ids = 'none', $options['action']);
+
 if (bp_gtm_check_access('project_create')) {
     bp_gtm_create_button($gtm_link, 'project');
 }
@@ -69,7 +68,7 @@ if (count($options['projects'])) { ?>
                         <?php
                         bp_gtm_edit_link($project->id, $gtm_link, 'projects');
                         bp_gtm_delete_link($project->id);
-                        bp_gtm_done_link($filter, $project->id, $el_type = 'project');
+                        bp_gtm_done_link($project->id, $el_type = 'project');
                         ?>
 
                     </td>

@@ -115,6 +115,8 @@ class BP_GTM_Taxon {
    function get_terms_4project($group_id, $project_id = false, $taxon = false){
       global $bp, $wpdb;
 
+      $terms = array();
+      
       // get all terms in this group
       $all_terms = $wpdb->get_results( $wpdb->prepare( "
          SELECT `id`, `name` FROM {$bp->gtm->table_terms}

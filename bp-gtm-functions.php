@@ -224,7 +224,7 @@ function bp_gtm_ajax_autocomplete_results() {
 }
 
 // Not really ajax - but is used for it
-function bp_gtm_done_link($type, $elem_id, $el_type = false) {
+function bp_gtm_done_link($elem_id, $el_type = false) {
     if (!empty($_GET['filter']) && $_GET['filter'] == 'done') {
         if (bp_gtm_check_access($el_type . '_undone'))
             echo "<a class='undone_me' id='$elem_id' href='#' title='" . __('Mark as pending', 'bp_gtm') . "'><img height='16' width='16' src='" . plugins_url("_inc/images/undone.png", __FILE__) . "' alt='" . __('Undone', 'bp_gtm') . "' /></a>";

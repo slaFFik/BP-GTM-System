@@ -79,8 +79,7 @@ if (count($task) == 0) {
 
     <?php
     if ($bp_gtm_group_settings['discuss'] == 'on' && bp_gtm_check_access('discuss_view')) {
-        bp_gtm_discussion_list($task[0]->id, 'task', $avatar);
-        ?>
+        bp_gtm_discussion_list($task[0]->id, 'task'); ?>
         <!-- #discussion-post-list -->
 
             <?php if (bp_gtm_check_access('discuss_create')) { ?>

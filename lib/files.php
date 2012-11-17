@@ -51,6 +51,7 @@ add_action('bp_gtm_task_after_content', 'bp_gtm_files_discuss_display', 10, 3);
 
 function bp_gtm_files_discuss_display($post, $type, $discuss_exist) {
     global $wpdb, $bp;
+    $project = '';
     if (!$discuss_exist) {
         $project = 'AND discuss_id=0';
     }

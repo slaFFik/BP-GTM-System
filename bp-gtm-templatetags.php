@@ -202,14 +202,13 @@ function bp_gtm_terms_nodes($elements = array(), $task_or_proj = 'project', $gtm
 }
 
 function bp_gtm_task_project($parent_task = 0, $task = null) {
-    if ($parent_task == 0) :
-        ?>
+    $projects = array();
+    if ($parent_task == 0) { ?>
         <p>
             <label for="task_project"><?php _e('Project that this task corresponds to', 'bp_gtm'); ?></label>
             <?php
             $projects = bp_gtm_get_projects(bp_get_current_group_id(), 'alpha');
-            if (count($projects) > 0) :
-                ?>
+            if (count($projects) > 0) : ?>
             <table>
                 <?php
                 foreach ($projects as $project) :
@@ -228,7 +227,7 @@ function bp_gtm_task_project($parent_task = 0, $task = null) {
         ?>
         </p>
         <?php
-    endif;
+    }
     return count($projects);
 }
 
@@ -252,7 +251,7 @@ function bp_gtm_term_task_edit_loop($task_id, $tax) {
     }
 }
 
-function bp_gtm_discussion_list($task_id, $tax = 'task', $avatar) {
+function bp_gtm_discussion_list($task_id, $tax = 'task') {
     ?>
     <ul id="topic-post-list" class="item-list discussions">
         <?php
@@ -304,6 +303,8 @@ function bp_gtm_get_responsibles($task_resp_id) {
 }
 
 function bp_gtm_terms_for_project($project_id, $tax) {
+    global $bp;
+    $gtm_link = bp_get_group_permalink(). $bp->gtm->slug . '/';
     $terms = BP_GTM_Taxon::get_terms_4project(bp_get_current_group_id(), $project_id, $tax);
     if (count($terms) > 0) {
         if ($tax != 'tag') {
@@ -1209,7 +1210,7 @@ function bp_gtm_get_personal_filter_project_list() {
 //       var_dump($parent_task);
 //       var_dump($parent_task[0]);
        if (bp_gtm_check_access('task_view')) {
-            
+            if(!isset($parent_task[0]) || !is_object($parent_task[0])) return false;
             return '<a class="topic-title parent-task-link" href="'. $gtm_link . 'tasks/view/' . $parent_task[0]->id .'" 
                         title="'.trim(strip_tags($parent_task[0]->desc)).'">'. $parent_task[0]->name.'</a>';
             

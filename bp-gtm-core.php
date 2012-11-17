@@ -26,7 +26,9 @@ class BP_GTM extends BP_Group_Extension {
         global $bp;
 
         $bp_gtm                   = get_option('bp_gtm');
-        $bp_gtm_group             = get_option('bp_gtm_g_' . $bp->groups->current_group->id . '_settings');
+        $bp_gtm_group             = false;
+        if(is_object($bp->groups->current_group))
+            $bp_gtm_group         = get_option('bp_gtm_g_' . $bp->groups->current_group->id . '_settings');
         $this->name               = esc_html(empty($bp_gtm_group['tab-name']) ? $bp_gtm['label_gtm_system'] : $bp_gtm_group['tab-name']);
         $this->slug               = $bp->gtm->slug;
         $this->display_hook       = 'bp_gtm_screen_pages';
@@ -53,15 +55,15 @@ class BP_GTM extends BP_Group_Extension {
         $bp_gtm_group_settings = get_option('bp_gtm_g_' . $bp->groups->current_group->id . '_settings');
 
         if (!$bp_gtm_group_settings || !$bp_gtm_group_settings['discuss'] || !$bp_gtm_group_settings['tasks_pp'] || !$bp_gtm_group_settings['discuss_pp'] || !$bp_gtm_group_settings['display'] || !$bp_gtm_group_settings['resp']) {
-            if ($bp_gtm_group_settings['discuss'] == '')
+            if (isset($bp_gtm_group_settings['discuss']) && empty($bp_gtm_group_settings['discuss']))
                 $bp_gtm_group_settings['discuss'] = 'on';
-            if ($bp_gtm_group_settings['display'] == '')
+            if (isset($bp_gtm_group_settings['display']) && empty($bp_gtm_group_settings['display']))
                 $bp_gtm_group_settings['display'] = 'gmembers';
-            if ($bp_gtm_group_settings['resp'] == '')
+            if (isset($bp_gtm_group_settings['display']) && empty($bp_gtm_group_settings['resp']))
                 $bp_gtm_group_settings['resp'] = 'gmembers';
-            if ($bp_gtm_group_settings['tasks_pp'] == '')
+            if (isset($bp_gtm_group_settings['display']) && empty($bp_gtm_group_settings['tasks_pp']))
                 $bp_gtm_group_settings['tasks_pp'] = 10;
-            if ($bp_gtm_group_settings['discuss_pp'] == '')
+            if (isset($bp_gtm_group_settings['display']) && empty($bp_gtm_group_settings['discuss_pp']))
                 $bp_gtm_group_settings['discuss_pp'] = 10;
             update_option('bp_gtm_g_' . $bp->groups->current_group->id . '_settings', $bp_gtm_group_settings);
         }

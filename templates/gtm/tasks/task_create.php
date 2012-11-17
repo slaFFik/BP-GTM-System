@@ -2,11 +2,14 @@
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $parent_task = parse_url($url, PHP_URL_QUERY);
 if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY) > 0 && $bp_gtm['subtasks'] == 'on') {
-    $parent_task = parse_url($url, PHP_URL_QUERY);
-    //$parent_task = BP_GTM_Tasks::get_task_by_id($parent_task);
-    $h4_title    = __('Create New SubTask for', 'bp_gtm') . ' ' . bp_gtm_get_parent_task_link($parent_task, $gtm_link) . '';
+    $parent_task     = parse_url($url, PHP_URL_QUERY);
+    $parent_task     = BP_GTM_Tasks::get_task_by_id($parent_task);
+    $parent_task_id  = 0;
+    if(!empty($parent_task) && is_numeric($parent_task[0]->id))
+        $parent_task_id = $parent_task[0]->id;
+    $h4_title        = __('Create New SubTask for', 'bp_gtm') . ' ' . bp_gtm_get_parent_task_link($parent_task, $gtm_link) . '';
 } else {
-    $parent_task = 0;
+    $parent_task_id = 0;
     $h4_title = __('Create New Task', 'bp_gtm');
 }
 ?>
@@ -78,7 +81,7 @@ if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY)
     </div>
 </div>  
 <input type="hidden" name="task_creator" value="<?php echo $bp->loggedin_user->id; ?>" />
-<input type="hidden" name="task_parent" value="<?php echo $parent_task ?>" />
+<input type="hidden" name="task_parent" value="<?php echo $parent_task_id ?>" />
 <input type="hidden" name="task_group" value="<?php bp_current_group_id() ?>" />
 <input type="hidden" name="task_tag_names" id="tag_names" value="" class="" />
 <input type="hidden" name="task_cat_names" id="cat_names" value="" class="" />
