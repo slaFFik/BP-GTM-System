@@ -3,7 +3,7 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $parent_task = parse_url($url, PHP_URL_QUERY);
 if (is_numeric(parse_url($url, PHP_URL_QUERY)) && parse_url($url, PHP_URL_QUERY) > 0 && $bp_gtm['subtasks'] == 'on') {
     $parent_task = parse_url($url, PHP_URL_QUERY);
-    $parent_task = BP_GTM_Tasks::get_task_by_id($parent_task);
+    //$parent_task = BP_GTM_Tasks::get_task_by_id($parent_task);
     $h4_title    = __('Create New SubTask for', 'bp_gtm') . ' ' . bp_gtm_get_parent_task_link($parent_task, $gtm_link) . '';
 } else {
     $parent_task = 0;
