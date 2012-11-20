@@ -14,6 +14,7 @@ $options = bp_gtm_get_personal_profile_settings();
             <a href="projects?filter=deadline" class="<?php echo $options['styles_d_cur'] ?>"><?php _e('By deadline', 'bp_gtm'); ?></a>
         </div>
     </div>
+</div>
 
 <?php if (count($options['projects']) > 0) { ?>
     <table class="forum zebra projects-list">
