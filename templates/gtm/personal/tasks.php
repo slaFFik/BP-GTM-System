@@ -20,11 +20,8 @@ $options = bp_gtm_get_presonal_tasks_option($bp_gtm_p_tasks_pp);
             <?php bp_gtm_get_personal_filter_project_list(); ?>
             <?php bp_gtm_get_personal_filter_group_list(); ?>
 
-
         </div>
-
-    
-</div>
+    </div>
 </div>
 <?php do_action('bp_before_gtm_personal_tasks_list');
 
