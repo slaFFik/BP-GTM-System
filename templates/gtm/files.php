@@ -53,4 +53,4 @@ if(!empty($files)){ ?>
     echo '<div id="message" class="info"><p>'.__('There are no files to display.','bp_gtm').'</p></div>';
 }
 ?>
-<div class="clear-both">
+<div class="clear-both"></div>
