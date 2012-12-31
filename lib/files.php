@@ -56,7 +56,7 @@ function bp_gtm_files_discuss_display($post, $type, $discuss_exist) {
         $project = 'AND discuss_id=0';
     }
 //    var_dump($discuss_exist);die;
-    $files = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_files} WHERE {$type}_id = {$post->id} $project"));
+    $files = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_files} WHERE {$type}_id = {$post->id} $project",''));
     if (!empty($files)) {
         echo '<div class="clear-both"></div><h4>'.sprintf(__('List of %s documents.', 'bp_gtm'), $type).'</h4><div class="gtm_files_list"><ul>';
         if ($discuss_exist) {
@@ -201,7 +201,7 @@ function on_bp_gtm_admin_files() {
  */
 function bp_gtm_get_all_files() {
     global $bp, $wpdb;
-    $files = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_files}"));
+    $files = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_files}",''));
     return $files;
 }
 
