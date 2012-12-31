@@ -22,7 +22,7 @@ function bp_gtm_get_access($user_id = false, $group_id = false, $action = false)
                         )
                     LIMIT 1";
 
-    $result = $wpdb->get_results($wpdb->prepare($sql));
+    $result = $wpdb->get_results($wpdb->prepare($sql,''));
 
     if (empty ($result))
         return false;
@@ -107,7 +107,7 @@ function bp_gtm_get_user_roles(){
                                 )
                     LIMIT 1";
 
-    $result = $wpdb->get_results($wpdb->prepare($sql));
+    $result = $wpdb->get_results($wpdb->prepare($sql,''));
 
     if (!empty ($result)){
         $result[0]->group_id = $bp->groups->current_group->id;
@@ -234,7 +234,7 @@ function bp_gtm_add_def_role(){
     $role_name = apply_filters('bp_gtm_role_name', $_GET['role_name']);
     if(trim($role_name) == '')
         die('<div class="error"><p>'.__('Some error occured while creating a default role','bp_gtm').'</p></div>');
-    $result = $wpdb->query($wpdb->prepare("INSERT INTO {$bp->gtm->table_roles} (`group_id`,`role_name`) VALUES ('0', '$role_name')"));
+    $result = $wpdb->query($wpdb->prepare("INSERT INTO {$bp->gtm->table_roles} (`group_id`,`role_name`) VALUES ('0', '$role_name')",''));
     if($result){
         $role->id = $wpdb->insert_id;
         $role->role_name = $role_name;

@@ -129,7 +129,7 @@ function bp_gtm_is_elem_done($elem_id, $elem_type) {
         $table = $bp->gtm->table_tasks;
     }
 
-    $done = $wpdb->get_results($wpdb->prepare("SELECT `done` FROM $table WHERE `id` = $elem_id"));
+    $done = $wpdb->get_results($wpdb->prepare("SELECT `done` FROM $table WHERE `id` = %d",$elem_id));
 
     if ($done[0]->done == 1)
         return true;
@@ -149,34 +149,34 @@ function bp_gtm_get_allcount($group_id = false, $type = 'all') {
             $count['tasks'] = $wpdb->get_var($wpdb->prepare("
                               SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `group_id` = '%d'", $group_id));
         } else { // no matter in which group
-            $count['cats'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'cat'"));
-            $count['tags'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'tag'"));
-            $count['projects'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_projects));
-            $count['tasks'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks));
+            $count['cats'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'cat'",''));
+            $count['tags'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'tag'",''));
+            $count['projects'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_projects,''));
+            $count['tasks'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks,''));
         }
     } elseif ($type == 'tags') {
         if ($group_id != false) {
             $count['tags'] = count(BP_GTM_Taxon::get_terms_in_group($group_id, 'tag'));
         } else { // no matter in which group
-            $count['tags'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'tag'"));
+            $count['tags'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'tag'",''));
         }
     } elseif ($type == 'cats') {
         if ($group_id != false) {
             $count['cats'] = count(BP_GTM_Taxon::get_terms_in_group($group_id, 'cat'));
         } else { // no matter in which group
-            $count['cats'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'cat'"));
+            $count['cats'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_terms . " WHERE `taxon` = 'cat'",''));
         }
     } elseif ($type == 'tasks') {
         if ($group_id != false) {
             $count['tasks'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `group_id` = '%d'", $group_id));
         } else { // no matter in which group
-            $count['tasks'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks));
+            $count['tasks'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks,''));
         }
     } elseif ($type == 'projects') {
         if ($group_id != false) {
             $count['projects'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_projects . " WHERE `group_id` = '%d'", $group_id));
         } else { // no matter in which group
-            $count['projects'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_projects));
+            $count['projects'] = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_projects,''));
         }
     }
 

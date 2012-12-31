@@ -63,7 +63,7 @@ class BP_GTM_Discussion {
 
 //         print_var($sql);
 
-      $posts = $wpdb->get_results($wpdb->prepare($sql));
+      $posts = $wpdb->get_results($wpdb->prepare($sql,''));
 
       return $posts;
    }
@@ -91,7 +91,7 @@ class BP_GTM_Discussion {
          {$in_group}";
 //         print_var($sql);
 
-      $count = $wpdb->get_var($wpdb->prepare($sql));
+      $count = $wpdb->get_var($wpdb->prepare($sql,''));
 
       return $count;
    }

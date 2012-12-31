@@ -48,7 +48,7 @@ class BP_GTM_Personal {
                 {$order}
                 {$with_limit}";
 
-        return $wpdb->get_results($wpdb->prepare($sql));
+        return $wpdb->get_results($wpdb->prepare($sql,''));
     }
 
     function get_projects($user_id, $filter) {
@@ -103,7 +103,7 @@ class BP_GTM_Personal {
          {$filtered}
       ";
 
-        $groups = $wpdb->get_results($wpdb->prepare($sql));
+        $groups = $wpdb->get_results($wpdb->prepare($sql,''));
 
         return $groups;
     }
@@ -132,8 +132,8 @@ class BP_GTM_Personal {
                   WHERE `resp_id` = {$filter['user']}
                   AND `task_id` = 0 )";
 
-            $count['tasks'] = $wpdb->get_var($wpdb->prepare($sql_1));
-            $count['projects'] = $wpdb->get_var($wpdb->prepare($sql_2));
+            $count['tasks'] = $wpdb->get_var($wpdb->prepare($sql_1,''));
+            $count['projects'] = $wpdb->get_var($wpdb->prepare($sql_2,''));
             $count['all'] = ($count['tasks'] + $count['projects']);
         } else {
             $in_project = $in_group = '';
@@ -158,7 +158,7 @@ class BP_GTM_Personal {
                )
          ";
 
-            $count = $wpdb->get_var($wpdb->prepare($sql));
+            $count = $wpdb->get_var($wpdb->prepare($sql,''));
         }
 
         return $count;

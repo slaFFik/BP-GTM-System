@@ -21,7 +21,7 @@ class BP_GTM_Resps{
                 LEFT JOIN {$bp->gtm->table_roles} ON {$bp->gtm->table_roles}.id = {$bp->gtm->table_roles_caps}.role_id
                 WHERE ({$bp->gtm->table_projects}.group_id = $group_id AND {$bp->gtm->table_projects}.`done` = 0) AND r.`task_id`=0
                 GROUP BY r.`resp_id`";
-      $resps = $wpdb->get_results($wpdb->prepare($sql));
+      $resps = $wpdb->get_results($wpdb->prepare($sql,''));
       
 
       return $resps;

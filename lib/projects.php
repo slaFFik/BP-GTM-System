@@ -9,7 +9,7 @@ class BP_GTM_Projects {
       }elseif(is_numeric($group_id)){
          $in_group = ' WHERE `group_id` = ' . $group_id;
       }
-      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . $in_group ) );
+      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . $in_group, '') );
       return $projects;
    }
 
@@ -28,7 +28,7 @@ class BP_GTM_Projects {
          $done = '0';
       }
 
-      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . " WHERE `done` = ". $done . $in_group ) );
+      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . " WHERE `done` = ". $done . $in_group,'' ) );
 
       return $projects;
    }
@@ -42,7 +42,7 @@ class BP_GTM_Projects {
          $in_group = " WHERE `group_id` = '" . $group_id . "' AND `done` = 0";
       }
 
-      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . $in_group . " ORDER BY `name` ASC" ) );
+      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . $in_group . " ORDER BY `name` ASC",'' ) );
 
       return $projects;
    }
@@ -56,7 +56,7 @@ class BP_GTM_Projects {
          $in_group = " WHERE `group_id` = '" . $group_id . "' AND `done` = 0";
       }
 
-      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . $in_group . " ORDER BY `deadline` ASC" ) );
+      $projects = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_projects . $in_group . " ORDER BY `deadline` ASC",'' ) );
 
       return $projects;
    }
@@ -76,8 +76,8 @@ class BP_GTM_Projects {
          $in_group = ' AND `group_id` = ' . $group_id;
       }
 
-      $count['all'] = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `project_id` = ". $project_id . $in_group) );;
-      $count['done'] = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `done` = 1 AND `project_id` = ". $project_id . $in_group) );
+      $count['all'] = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `project_id` = ". $project_id . $in_group,'') );;
+      $count['done'] = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `done` = 1 AND `project_id` = ". $project_id . $in_group,'') );
       $count['undone'] = $count['all'] - $count['done'];
 
       return $count;
@@ -121,7 +121,7 @@ function bp_gtm_project_check_date($project_id, $time){
 function bp_gtm_get_project_status($project_id){
    global $bp, $wpdb;
 
-   $data = $wpdb->get_results( $wpdb->prepare( "SELECT `status` FROM {$bp->gtm->table_projects} WHERE `id` = {$project_id}"));
+   $data = $wpdb->get_results( $wpdb->prepare( "SELECT `status` FROM {$bp->gtm->table_projects} WHERE `id` = {$project_id}",''));
    $status = $data['0']->status;
 
    return $status;

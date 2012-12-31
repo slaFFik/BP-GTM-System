@@ -416,7 +416,7 @@ class BP_GTM_ADMIN_PAGE {
 function bp_gtm_import_users() {
     global $wpdb, $bp;
     // get all groups to work with
-    $groups = $wpdb->get_results($wpdb->prepare("SELECT id FROM {$bp->groups->table_name}"));
+    $groups = $wpdb->get_results($wpdb->prepare("SELECT id FROM {$bp->groups->table_name}",''));
     // get all users for all groups, group them according to their roles
     foreach ($groups as $group) {
         $admins[$group->id] = $wpdb->get_results($wpdb->prepare("SELECT user_id FROM {$bp->groups->table_name_members} WHERE group_id = %d AND is_admin = 1 AND is_banned = 0", $group->id));
@@ -484,14 +484,14 @@ function bp_gtm_export_data() {
     $url_stamp  = WP_CONTENT_URL . '/uploads/gtm/' . $file_stamp . '.zip';
     $file       = $dir_stamp . $file_stamp;
 
-    $data->tasks      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_tasks}"));
-    $data->projects   = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_projects}"));
-    $data->resps      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_resps}"));
-    $data->discuss    = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_discuss}"));
-    $data->terms      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_terms}"));
-    $data->taxon      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_taxon}"));
-    $data->roles      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles}"));
-    $data->roles_caps = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles_caps}"));
+    $data->tasks      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_tasks}",''));
+    $data->projects   = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_projects}",''));
+    $data->resps      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_resps}",''));
+    $data->discuss    = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_discuss}",''));
+    $data->terms      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_terms}",''));
+    $data->taxon      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_taxon}",''));
+    $data->roles      = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles}",''));
+    $data->roles_caps = $wpdb->get_results($wpdb->prepare("SELECT * FROM {$bp->gtm->table_roles_caps}",''));
 
     if (file_put_contents($file . '.json', $json->encode($data))) {
         chdir(WP_CONTENT_DIR . '/uploads/gtm');
@@ -589,14 +589,14 @@ function bp_gtm_import_data() {
 
             do_action('bp_gtm_install');
         }
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_tasks}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_projects}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_resps}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_discuss}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_terms}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_taxon}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_roles}"));
-//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_roles_caps}"));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_tasks}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_projects}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_resps}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_discuss}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_terms}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_taxon}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_roles}",''));
+//        $wpdb->query($wpdb->prepare("TRUNCATE TABLE {$bp->gtm->table_roles_caps}",''));
 
         if ($imported)
             echo '<div id="message" class="updated fade"><p>' . __('All GTM data was successfully imported.', 'bp_gtm') . '</p></div>';
