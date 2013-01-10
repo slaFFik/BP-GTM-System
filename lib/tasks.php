@@ -19,7 +19,7 @@ class BP_GTM_Tasks {
 
       $no_parent = ' AND `parent_id` = 0';
 
-      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . $in_group . $no_parent . $with_limit ) );
+      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . $in_group . $no_parent . $with_limit,'' ) );
 
       return $tasks;
    }
@@ -73,7 +73,7 @@ class BP_GTM_Tasks {
 
       $no_parent = ' AND `parent_id` = 0';
 
-      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . " WHERE `done` = ". $done . $in_group . $no_parent . $with_limit ) );
+      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . " WHERE `done` = ". $done . $in_group . $no_parent . $with_limit,'' ) );
 
       return $tasks;
    }
@@ -95,7 +95,7 @@ class BP_GTM_Tasks {
 
       $no_parent = ' AND `parent_id` = 0';
 
-      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . $in_group . $no_parent . " ORDER BY `name` ASC" . $with_limit ) );
+      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . $in_group . $no_parent . " ORDER BY `name` ASC" . $with_limit,'' ) );
 
       return $tasks;
    }
@@ -117,7 +117,7 @@ class BP_GTM_Tasks {
 
       $no_parent = ' AND `parent_id` = 0';
 
-      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . $in_group . $no_parent . " ORDER BY `deadline` ASC" . $with_limit ) );
+      $tasks = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM " . $bp->gtm->table_tasks . $in_group . $no_parent . " ORDER BY `deadline` ASC" . $with_limit,'' ) );
 
       return $tasks;
    }
@@ -138,15 +138,15 @@ class BP_GTM_Tasks {
       }
 
       if (is_numeric($filter)) {
-         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 0 AND `project_id` = ". $filter . $in_group) );
+         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 0 AND `project_id` = ". $filter . $in_group,'') );
       }elseif(!$filter || $filter == 'undone' || $filter == 'alpha' || $filter == 'deadline') {
-         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 0" . $in_group ) );
+         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 0" . $in_group,'' ) );
       }elseif($filter == 'done' && is_numeric($project_id)) {
          $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 1 AND `project_id` = '" . $in_group, $project_id ) );
       }elseif($filter == 'done' && $project_id == false) {
-         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 1" . $in_group ) );
+         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `parent_id` = 0 AND `done` = 1" . $in_group,'' ) );
       }elseif($filter == 'without' && $project_id == false) {
-         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `project_id` = 0 AND `done` = 0" . $in_group ) );
+         $count = $wpdb->get_var( $wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM " . $bp->gtm->table_tasks . " WHERE `project_id` = 0 AND `done` = 0" . $in_group,'' ) );
       }
       return $count;
    }
@@ -158,7 +158,7 @@ class BP_GTM_Tasks {
       }else{
          $with_limit = '';
       }
-      $tasks = $wpdb->get_results( $wpdb->prepare("SELECT * FROM `{$bp->gtm->table_tasks}` WHERE `done` = 0 AND `project_id` = 0 AND `group_id`=$group_id". $with_limit));
+      $tasks = $wpdb->get_results( $wpdb->prepare("SELECT * FROM `{$bp->gtm->table_tasks}` WHERE `done` = 0 AND `project_id` = 0 AND `group_id`=$group_id". $with_limit,''));
       return $tasks; 
       
    }
@@ -310,7 +310,7 @@ function bp_gtm_get_subtasks_count($task_id = false) {
 
 //   $task_id = $_GET['parent_id'];
 
-    $subtasks = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM {$bp->gtm->table_tasks} WHERE `parent_id` = {$task_id} AND `done` = 0"));
+    $subtasks = $wpdb->get_var($wpdb->prepare("SELECT COUNT(DISTINCT `id`) FROM {$bp->gtm->table_tasks} WHERE `parent_id` = {$task_id} AND `done` = 0",''));
 
     echo $subtasks;
 }
